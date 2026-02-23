@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekker Laminate Flooring | Premium HDF Surfaces</title>
+    <meta name="description" content="Discover Bekker Laminate Flooring. Featuring high-density 8mm core, AC4 durability rating, and authentic European wood textures for residential and commercial spaces.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            gold: '#C5A059',
+                            gray: '#F3F4F6',
+                            welspun: '#D32F2F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .clip-path-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .feature-card:hover i {
+            transform: scale(1.15);
+            transition: transform 0.3s ease;
+        }
+        .swatch-circle {
+            width: 100%;
+            height: 60px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+            background-size: cover;
+            background-position: center;
+            background-color: #E5E7EB; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .group:hover .swatch-circle {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Modal Animation */
+        #swatch-modal:not(.hidden) {
+            display: flex;
+        }
+        #swatch-modal.active {
+            animation: fadeIn 0.3s ease forwards;
+        }
+        #swatch-modal.active .modal-content {
+            animation: scaleUp 0.3s ease forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleUp {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* Slider Styles */
+        .slide {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            opacity: 1;
+            z-index: 10;
+        }
+        .slide.inactive {
+            opacity: 0;
+            z-index: 0;
+        }
+
+        /* Thumb Box Active State */
+        .thumb-box {
+            opacity: 0.6;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .thumb-box:hover {
+            opacity: 0.9;
+        }
+        .thumb-box.active {
+            opacity: 1;
+            border-color: #C5A059;
+        }
+    </style>    
+</head>
+<body class="antialiased font-sans">
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 99589 98122</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+                  <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                         <div class="border-t my-1"></div>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Pare/lvt-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">LVT Flooring</a>
+                        <a href="/Pare/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">SPC Flooring</a>
+                        <a href="/Pare/hdf-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">HDF Flooring</a>
+                        <div class="border-t my-1"></div>
+                        <a href="/Pare/wall-and-ceiling.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold font-semibold text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </div>
+
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
+            <div class="flex flex-col p-6 gap-2">
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Carpet Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                         <a href="/Welspun/carpet tiles/Celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
+                         <a href="/Welspun/carpet tiles/Earthy Woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
+                         <a href="/Welspun/carpet tiles/Meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
+                         <a href="/Welspun/carpet tiles/Savy Street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
+                         <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Pare
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">LVT Flooring</a>
+                         <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                         <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">HDF Flooring</a>
+                         <a href="/Pare/wall-and-ceiling.html" class="text-sm text-gray-600 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </details>
+
+                <details class="group border-b border-gray-50 pb-2" open>
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Bekker
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                         <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                         <a href="/Bekker/laminate-flooring.html" class="text-sm text-brand-gold font-semibold">Laminate Flooring</a>
+                         <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </details>
+                
+                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[600px] flex items-center bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="/Bekker/assets/laminate/hero-laminate.jpg" alt="Bekker Laminate Flooring Application" class="w-full h-full object-cover opacity-70" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2000&auto=format&fit=crop'; this.style.opacity='0.4'">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+                <div class="h-12 mb-6 bg-white/90 px-4 py-2 rounded inline-block font-heading font-bold text-2xl tracking-widest text-black">BEKKER</div>
+                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm mb-2 block">High-Density Laminate</span>
+                <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
+                    Laminate Flooring<br>
+                    <span class="text-3xl md:text-4xl font-normal block mt-2 text-gray-200">Classic Aesthetics. <span class="text-brand-gold">AC4 Durability.</span></span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Elevate your space with Bekker's premium 8mm laminate collections. Featuring a high-density fiberboard (HDF) core, commercial-grade AC4 wear rating, and beautifully detailed European wood textures.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#collections" class="px-6 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">Explore Collections</a>
+                    <a href="#features" class="px-6 py-3 border border-white text-white font-bold rounded hover:bg-white/10 transition flex items-center gap-2">
+                        View Advantages
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Built for Life's High Traffic</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Bekker Laminate flooring relies on an exceptionally dense HDF core to prevent denting and provide dimensional stability. The transparent AC4 top layer guards against scratching, fading, and everyday wear in both bustling homes and commercial settings.</p>
+                
+                <h3 class="font-bold text-lg text-brand-gold mb-4 uppercase tracking-wide">Key Features:</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-shield"></i></span>
+                        <span class="text-gray-700 mt-1 font-medium">AC4 Rating: Highly resistant to micro-scratches from pets, heels, and furniture.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-puzzle-piece"></i></span>
+                        <span class="text-gray-700 mt-1 font-medium">Click-Lock System: Fast, glue-less floating floor installation.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-sun"></i></span>
+                        <span class="text-gray-700 mt-1 font-medium">UV Protection: Colors won't fade or yellow under direct sunlight.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="font-bold text-xl mb-6 border-b pb-4">Standard vs. WV4 Grooved Edges</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-square text-gray-400 text-lg mt-1"></i>
+                        <div>
+                            <strong class="text-gray-900">Standard Series (Seamless)</strong>
+                            <p class="text-sm mt-1">Planks fit flush together creating a smooth, continuous surface ideal for a sleek, modern aesthetic and exceptionally easy cleaning.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-grip-lines text-brand-gold text-lg mt-1"></i>
+                        <div>
+                            <strong class="text-gray-900">WV4 Series (V-Groove)</strong>
+                            <p class="text-sm mt-1">Features a subtle bevel on all four sides. When clicked together, it forms a V-shaped groove that meticulously replicates the look of traditional solid hardwood planks.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-heading font-bold text-gray-900">Laminate Collections</h2>
+                <p class="text-gray-500 mt-2">Precision-milled 8mm planks showcasing classic Walnuts, Hickory, and European Oaks.</p>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2 shadow">SEAMLESS EDGE</div>
+                        <h3 class="text-3xl font-bold mb-4 text-brand-gold">Standard Series</h3>
+                        <p class="text-gray-600 mb-6">Featuring a flush square-edge locking system, these planks create a continuous, uninterrupted visual flow across your space.</p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-ruler-combined text-brand-gold mr-2"></i> Wide Planks (~193 mm)</li>
+                            <li><i class="fa-solid fa-box text-brand-gold mr-2"></i> 2.4023 Sq.m Coverage/Box</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Walnut Euforia', 'BKL376')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Walnut Euforia1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Walnut Euforia</h4>
+                        <p class="text-[10px] text-gray-400">BKL376</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Walnut Blackburn', 'BKL370')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/Assets/laminate flooring/Walnut Blackburn1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Walnut Blackburn</h4>
+                        <p class="text-[10px] text-gray-400">BKL370</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Oak Dorchester', 'BKL372')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Oak Dorchester1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Oak Dorchester</h4>
+                        <p class="text-[10px] text-gray-400">BKL372 (Quintessence)</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Oak Aria', 'BKL345')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Oak Aria1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Oak Aria</h4>
+                        <p class="text-[10px] text-gray-400">BKL345 (Quintessence)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2 shadow">BEVELED V-GROOVE</div>
+                        <h3 class="text-3xl font-bold mb-4 text-brand-gold">WV4 Premium Series</h3>
+                        <p class="text-gray-600 mb-6">Designed with a subtle 4-sided V-groove (WV4) that masterfully replicates the depth and individuality of authentic hardwood floorboards.</p>
+                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-ruler-combined text-brand-gold mr-2"></i> Narrow Planks (~159 mm)</li>
+                            <li><i class="fa-solid fa-box text-brand-gold mr-2"></i> 2.199 - 2.4023 Sq.m Coverage/Box</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Hickory Cielo', 'BKL235')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Hickory Cielo1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Hickory Cielo</h4>
+                        <p class="text-[10px] text-gray-400">BKL235 (Quintessence)</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Oak Rochester', 'BKL270')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Oak Rochester1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Oak Rochester</h4>
+                        <p class="text-[10px] text-gray-400">BKL270</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('laminate flooring', 'Hickory Aurora', 'BKL340')">
+                        <div class="swatch-circle" style="background-image: url('/Bekker/assets/laminate flooring/Hickory Aurora1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Hickory Aurora</h4>
+                        <p class="text-[10px] text-gray-400">BKL340 (Magnifique)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 text-center">Bekker Laminate Advantages</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center border-t-4 border-brand-black feature-card hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 border border-gray-200 shadow-sm">
+                        <i class="fa-solid fa-cat text-2xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">AC4 Durability</h3>
+                    <p class="text-xs text-gray-500 mt-2">Rated for heavy residential and light commercial foot traffic.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center border-t-4 border-brand-black feature-card hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 border border-gray-200 shadow-sm">
+                        <i class="fa-solid fa-layer-group text-2xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">HDF Core</h3>
+                    <p class="text-xs text-gray-500 mt-2">High-Density Fiberboard base resists severe impacts and denting.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center border-t-4 border-brand-black feature-card hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 border border-gray-200 shadow-sm">
+                        <i class="fa-solid fa-sun text-2xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">UV Protected</h3>
+                    <p class="text-xs text-gray-500 mt-2">Specialized coating prevents fading when exposed to sunlight.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center border-t-4 border-brand-black feature-card hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 border border-gray-200 shadow-sm">
+                        <i class="fa-solid fa-leaf text-2xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-800 uppercase tracking-wide">Eco-Friendly</h3>
+                    <p class="text-xs text-gray-500 mt-2">Sustainably sourced materials safe for indoor air quality.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="specs" class="py-20 bg-brand-black text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Product Matrix</span>
+                <h2 class="text-3xl font-bold mt-2">Technical Specifications</h2>
+                <p class="text-gray-400 mt-2">Precision manufactured details for our 8mm collections.</p>
+            </div>
+            
+            <div class="overflow-x-auto bg-gray-900 rounded-xl shadow-lg border border-gray-800">
+                <table class="w-full text-left border-collapse">
+                    <tbody class="text-sm">
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400 w-1/2">Total Thickness</td>
+                            <td class="p-6 font-bold text-brand-gold text-xl w-1/2">8.0 mm</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Wear Rating</td>
+                            <td class="p-6 font-bold text-white text-lg">AC4 (Heavy Residential / Light Commercial)</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Core Material</td>
+                            <td class="p-6 font-bold text-white text-lg">High-Density Fiberboard (HDF)</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Plank Lengths</td>
+                            <td class="p-6 text-white">1383 mm - 1389 mm</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Plank Widths</td>
+                            <td class="p-6 text-white">193 mm (Standard) / 159 mm (Narrow WV4)</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Installation Method</td>
+                            <td class="p-6 text-white">Click-Lock System (Glueless Floating Floor)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800/50 transition">
+                            <td class="p-6 font-bold text-gray-400">Coverage per Box</td>
+                            <td class="p-6 text-white">2.199 - 2.4023 Sq.m (Varies by Plank Size)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+                    </p>
+                    <!-- <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div> -->
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/Welspun/multistile/index.html" class="hover:text-brand-gold transition">Welspun Flooring</a></li>
+                        <li><a href="/Bekker/engineered-wood.html" class="hover:text-brand-gold transition">Bekker German Tech</a></li>
+                        <li><a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition">Pare Surfaces</a></li>
+                        <li><a href="/Cera/sanitaryware.html" class="hover:text-brand-gold transition">Cera Bathware</a></li>
+                        <li><a href="/Tiles/floor-tiles.html" class="hover:text-brand-gold transition">Premium Tiles</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99589 98122
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in
+                            </a>
+                        </li>
+                        <li class="flex items-start mt-1">
+                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> 
+                            <span>Showroom: New Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/919958998122" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="swatch-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6" style="background-color: rgba(0,0,0,0.85);">
+        <div class="absolute inset-0 cursor-pointer" onclick="closeModal()"></div>
+        
+        <div onclick="event.stopPropagation()" class="modal-content relative bg-white rounded-xl shadow-2xl overflow-hidden max-w-3xl w-full flex flex-col md:flex-row h-auto md:h-[500px] z-10">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-8 h-8 text-gray-400 hover:text-gray-600 rounded-full flex items-center justify-center transition">
+                <i class="fa-solid fa-circle-xmark text-2xl"></i>
+            </button>
+            
+            <div class="md:w-1/2 h-64 md:h-full relative overflow-hidden group bg-gray-100">
+                <div id="modal-slider" class="w-full h-full relative">
+                    <div class="slide active absolute inset-0 w-full h-full bg-gray-200">
+                         <img id="main-img-0" src="" alt="Texture View" class="absolute inset-0 w-full h-full object-cover">
+                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Texture View</div>
+                    </div>
+                    <div class="slide inactive absolute inset-0 w-full h-full bg-gray-200">
+                         <img id="main-img-1" src="" class="w-full h-full object-cover">
+                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Room View</div>
+                    </div>
+                    <div class="slide inactive absolute inset-0 w-full h-full bg-gray-200">
+                         <img id="main-img-2" src="" class="w-full h-full object-cover">
+                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Detail View</div>
+                    </div>
+                    <div class="slide inactive absolute inset-0 w-full h-full bg-gray-200">
+                         <img id="main-img-3" src="" class="w-full h-full object-cover">
+                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Floor Application</div>
+                    </div>
+                </div>
+                
+                <button onclick="changeSlide(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow hover:bg-white z-20 opacity-0 group-hover:opacity-100 transition">
+                    <i class="fa-solid fa-chevron-left text-gray-800"></i>
+                </button>
+                <button onclick="changeSlide(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow hover:bg-white z-20 opacity-0 group-hover:opacity-100 transition">
+                    <i class="fa-solid fa-chevron-right text-gray-800"></i>
+                </button>
+            </div>
+            
+            <div class="md:w-1/2 p-8 flex flex-col justify-center bg-white relative">
+                
+                <span class="text-xs font-bold text-brand-gold uppercase tracking-widest mb-2 border-b-2 border-brand-gold w-12 pb-1">Shade</span>
+                <h3 id="modal-title" class="text-3xl font-heading font-bold text-gray-900 mb-1 leading-tight">Name</h3>
+                <p class="text-gray-500 font-mono text-sm mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-barcode"></i> <span id="modal-sku">SKU</span>
+                </p>
+                
+                <p class="text-xs text-gray-500 mb-6 leading-relaxed">
+                    Elevate your space with this ultra-durable 8mm HDF Laminate plank. Featuring a commercial AC4 wear layer, UV protection, and a highly realistic wood texture.
+                </p>
+
+                <div class="grid grid-cols-4 gap-2 mb-8">
+                    <button onclick="showSlide(0)" class="thumb-box active h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group bg-gray-200">
+                        <img id="thumb-img-0" src="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                    </button>
+                    <button onclick="showSlide(1)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group bg-gray-200">
+                        <img id="thumb-img-1" src="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                    </button>
+                    <button onclick="showSlide(2)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group bg-gray-200">
+                        <img id="thumb-img-2" src="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                    </button>
+                    <button onclick="showSlide(3)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group bg-gray-200">
+                        <img id="thumb-img-3" src="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                    </button>
+                </div>
+
+                <div class="space-y-3 mt-auto">
+                    <a href="#" id="whatsapp-link" target="_blank" class="w-full py-3.5 border-2 border-green-500 text-green-600 font-bold rounded shadow-sm hover:bg-green-50 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('swatch-modal');
+        const titleText = document.getElementById('modal-title');
+        const skuText = document.getElementById('modal-sku');
+        const whatsappLink = document.getElementById('whatsapp-link');
+        
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const thumbBoxes = document.querySelectorAll('.thumb-box');
+
+        /**
+         * @param {string} collection - Collection Name
+         * @param {string} name - Product Name
+         * @param {string} sku - SKU Code
+         */
+        function openModal(collection, name, sku) {
+            // 1. Reset Slider
+            currentSlideIndex = 0;
+            showSlide(0);
+
+            // 2. Update Text & WhatsApp
+            titleText.innerText = name;
+            skuText.innerText = sku;
+            const message = encodeURIComponent(`Hi! I'm interested in the Bekker Laminate Flooring (${collection}) in shade: *${name}* (SKU: ${sku}). Please share pricing and details.`);
+            whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
+
+            // 3. Dynamic Image Paths specifically targeted to a Bekker Laminate folder structure
+            const basePath = `/Bekker/assets/laminate flooring/${name}`;
+            
+            // Update Main Slides
+            document.getElementById('main-img-0').src = `${basePath}.jpg`;
+            document.getElementById('main-img-1').src = `${basePath}1.jpg`;
+            document.getElementById('main-img-2').src = `${basePath}2.jpg`;
+            document.getElementById('main-img-3').src = `${basePath}3.jpg`; 
+
+            // Update Thumbnails
+            document.getElementById('thumb-img-0').src = `${basePath}.jpg`;
+            document.getElementById('thumb-img-1').src = `${basePath}1.jpg`;
+            document.getElementById('thumb-img-2').src = `${basePath}2.jpg`;
+            document.getElementById('thumb-img-3').src = `${basePath}3.jpg`;
+
+            // 4. Show Modal
+            modal.classList.remove('hidden');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+            showSlide(currentSlideIndex);
+        }
+
+        function showSlide(index) {
+            currentSlideIndex = index;
+            // Update Slides
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('inactive');
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                    slide.classList.add('inactive');
+                }
+            });
+            // Update Thumbnails
+            thumbBoxes.forEach((box, i) => {
+                if (i === index) {
+                    box.classList.add('active');
+                } else {
+                    box.classList.remove('active');
+                }
+            });
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; 
+            }, 300); 
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
