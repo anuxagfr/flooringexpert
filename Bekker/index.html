@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bekker Premium Flooring | Engineered Wood, SPC & Laminate</title>
-    <meta name="description" content="Discover Bekker's premium flooring collections. Crafted by nature, perfected by engineering.">
+    <title>Bekker Flooring Collection | German Engineering | Flooring Expert</title>
+    <meta name="description" content="High-performance German flooring solutions by Bekker. Explore our durable Engineered Wood, AC4/AC5 Laminate, and Aqua-Stop SPC Rigid Core collections.">
 
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -12,7 +12,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 
     <script>
         tailwind.config = {
@@ -20,260 +21,370 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
+                        heading: ['Roboto', 'sans-serif'],
                     },
                     colors: {
                         brand: {
-                            dark: '#1C1C1C',
-                            stone: '#F7F6F2',
-                            taupe: '#D9D4C7',
-                            gold: '#B89B5E'
+                            black: '#121212',
+                            gold: '#C5A059',
+                            gray: '#F3F4F6'
                         }
                     }
                 }
             }
         }
     </script>
-
-    <style>
-        .hover-trigger .hover-target {
-            opacity: 0;
-            transform: translateY(10px);
-            transition: all 0.4s ease;
-        }
-        .hover-trigger:hover .hover-target {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .image-zoom {
-            transition: transform 0.7s ease;
-        }
-        .group:hover .image-zoom {
-            transform: scale(1.05);
-        }
-    </style>    
 </head>
-<body class="antialiased font-sans text-brand-dark bg-brand-stone">
+<body class="antialiased font-sans bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
-        <div class="max-w-[1400px] mx-auto px-6 md:px-12 flex justify-between items-center h-20">
-            <a href="index.html" class="flex items-center gap-3 group z-50">
-                <div class="w-8 h-8 bg-brand-dark text-white flex items-center justify-center font-serif text-lg">B</div>
-                <span class="font-serif text-2xl tracking-wide font-medium text-brand-dark">BEKKER</span>
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 99589 98122</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
             </a>
 
-            <div class="hidden lg:flex items-center gap-10 font-medium text-[13px] tracking-widest uppercase text-gray-600">
-                <a href="#hardwood" class="hover:text-brand-dark transition-colors">Engineered Wood</a>
-                <a href="#spc" class="hover:text-brand-dark transition-colors">SPC Rigid Core</a>
-                <a href="#laminate" class="hover:text-brand-dark transition-colors">Laminate</a>
-                <a href="#inspiration" class="hover:text-brand-dark transition-colors">Inspiration</a>
-                <a href="#contact" class="hover:text-brand-dark transition-colors">Contact</a>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                  <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                         <div class="border-t my-1"></div>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Pare/lvt-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">LVT Flooring</a>
+                        <a href="/Pare/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">SPC Flooring</a>
+                        <a href="/Pare/hdf-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">HDF Flooring</a>
+                        <div class="border-t my-1"></div>
+                        <a href="/Pare/wall-and-ceiling.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </div>
+
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
             </div>
 
-            <div class="hidden lg:flex items-center gap-6">
-                <button class="text-gray-600 hover:text-brand-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <a href="#contact" class="px-6 py-2.5 bg-brand-dark text-white text-[11px] uppercase tracking-widest hover:bg-gray-800 transition-colors">Find a Dealer</a>
-            </div>
-
-            <button class="lg:hidden text-brand-dark focus:outline-none text-2xl">
-                <i class="fa-solid fa-bars"></i>
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
             </button>
+        </div>
+        
+        <!-- Mobile Menu with Accordion Dropdowns -->
+        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
+            <div class="flex flex-col p-6 gap-2">
+                
+                <!-- Carpet Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Carpet Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                         <a href="/Welspun/carpet tiles/Celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
+                         <a href="/Welspun/carpet tiles/Earthy Woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
+                         <a href="/Welspun/carpet tiles/Meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
+                         <a href="/Welspun/carpet tiles/Savy Street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
+                         <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </details>
+
+                <!-- Welspun Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Welspun
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                            <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </details>
+
+                <!-- Pare Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Pare
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">LVT Flooring</a>
+                         <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                         <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">HDF Flooring</a>
+                         <a href="/Pare/wall-and-ceiling.html" class="text-sm text-gray-600 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </details>
+
+                <!-- Bekker Accordion -->
+                 <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Bekker
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </details>
+
+                <!-- Cera Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Cera
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                            <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </details>
+
+                 <!-- Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </details>
+
+                <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
+                
+                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+            </div>
         </div>
     </nav>
 
-    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+    <header class="relative bg-brand-black h-[500px] md:h-[600px] flex items-center">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2000&auto=format&fit=crop" alt="Premium Bekker Hardwood Flooring" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/20"></div>
+            <img src="#" class="w-full h-full object-cover opacity-50" alt="Bekker Premium German Flooring">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/80 to-transparent"></div>
         </div>
         
-        <div class="relative z-10 text-center text-white px-6 mt-20">
-            <span class="block text-sm uppercase tracking-[0.3em] mb-4 text-white/90">The Premium Collection</span>
-            <h1 class="text-5xl md:text-7xl font-serif font-light mb-8 max-w-4xl mx-auto leading-tight">
-                Crafted by Nature.<br>Perfected by Bekker.
-            </h1>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-12">
-                <a href="#hardwood" class="px-10 py-4 bg-white text-brand-dark text-xs uppercase tracking-widest font-medium hover:bg-brand-stone transition-colors">
-                    Explore Hardwood
-                </a>
-                <a href="#collections" class="px-10 py-4 border border-white text-white text-xs uppercase tracking-widest font-medium hover:bg-white hover:text-brand-dark transition-colors">
-                    View All Collections
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full animate-fade-in-down">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6">
+                    <i class="fa-solid fa-microchip text-brand-gold"></i>
+                    <span class="text-white text-xs font-bold tracking-widest uppercase">German Technology</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-heading font-bold text-white mb-4 leading-tight">
+                    Bekker Flooring
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed font-light">
+                    High-performance German flooring solutions known for uncompromising durability and highly realistic, authentic textures. Discover the art of perfect surfaces.
+                </p>
+                <a href="#collections" class="inline-flex justify-center items-center gap-3 px-8 py-4 bg-brand-gold text-brand-black font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition-colors uppercase tracking-wide text-sm">
+                    View Collection
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="py-32 bg-white text-center px-6">
-        <div class="max-w-3xl mx-auto">
-            <i class="fa-brands fa-pagelines text-4xl text-brand-taupe mb-8"></i>
-            <h2 class="text-3xl md:text-4xl font-serif font-light leading-relaxed text-brand-dark mb-8">
-                "We believe a beautiful floor is the foundation of an extraordinary room. It sets the tone, dictates the light, and brings a piece of the natural world indoors."
-            </h2>
-            <p class="text-gray-500 uppercase tracking-widest text-xs font-medium">The Bekker Philosophy</p>
-        </div>
-    </section>
-
-    <section id="collections" class="py-24 bg-brand-stone">
-        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <h2 class="text-4xl font-serif text-brand-dark mb-3">Our Collections</h2>
-                    <p class="text-gray-500 font-light">Precision engineering meets architectural beauty.</p>
-                </div>
+    <section id="collections" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900">Crafted by Nature. Perfected by Bekker.</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <a href="#hardwood" class="group block overflow-hidden bg-white">
-                    <div class="relative h-[450px] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1000&auto=format&fit=crop" alt="Engineered Wood" class="w-full h-full object-cover image-zoom">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                
+                <a href="/Bekker/engineered-wood.html" class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group cursor-pointer hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/Bekker/Assets/laminate flooring/Oak Aria.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Bekker Engineered Wood Flooring">
+                        <div class="absolute top-4 left-4 bg-brand-black text-white text-xs font-bold px-3 py-1 uppercase tracking-widest rounded shadow">Premium Veneer</div>
                     </div>
-                    <div class="p-8 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold block mb-2">Authentic Luxury</span>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4">Engineered Wood</h3>
-                        <p class="text-sm text-gray-500 mb-6 font-light">Real hardwood veneer backed by a highly stable multi-layer core.</p>
-                        <span class="text-xs uppercase tracking-widest font-medium text-brand-dark border-b border-brand-dark pb-1 group-hover:text-brand-gold group-hover:border-brand-gold transition-colors">Discover Series</span>
-                    </div>
-                </a>
-
-                <a href="#laminate" class="group block overflow-hidden bg-white">
-                    <div class="relative h-[450px] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop" alt="Laminate Flooring" class="w-full h-full object-cover image-zoom">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                    </div>
-                    <div class="p-8 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold block mb-2">AC4 Durability</span>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4">HDF Laminate</h3>
-                        <p class="text-sm text-gray-500 mb-6 font-light">High-density 8mm core with stunning true-to-life wood textures.</p>
-                        <span class="text-xs uppercase tracking-widest font-medium text-brand-dark border-b border-brand-dark pb-1 group-hover:text-brand-gold group-hover:border-brand-gold transition-colors">Discover Series</span>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-heading font-bold text-gray-900 mb-3 group-hover:text-brand-gold transition-colors">Engineered Wood</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed text-sm flex-grow">
+                            <strong>Authentic Hardwood.</strong> Features a 100% real wood top layer bonded to a highly stabilized cross-ply core to resist expansion and contraction.
+                        </p>
+                        <span class="inline-flex items-center text-brand-gold font-bold uppercase tracking-widest text-xs hover:text-yellow-600 transition-colors mt-auto">
+                            Explore Hardwood <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </span>
                     </div>
                 </a>
 
-                <a href="#spc" class="group block overflow-hidden bg-white">
-                    <div class="relative h-[450px] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581858326456-785cb2623a85?q=80&w=1000&auto=format&fit=crop" alt="SPC Flooring" class="w-full h-full object-cover image-zoom">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                <a href="/Bekker/laminate-flooring.html" class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group cursor-pointer hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/Bekker/Assets/laminate flooring/Hickory Aurora.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Bekker Laminate Flooring">
+                        <div class="absolute top-4 left-4 bg-brand-black text-white text-xs font-bold px-3 py-1 uppercase tracking-widest rounded shadow">High Density</div>
                     </div>
-                    <div class="p-8 text-center">
-                        <span class="text-[10px] text-gray-400 uppercase tracking-widest font-bold block mb-2">100% Waterproof</span>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4">SPC Rigid Core</h3>
-                        <p class="text-sm text-gray-500 mb-6 font-light">6.5mm heavy-duty planks with attached acoustic IXPE padding.</p>
-                        <span class="text-xs uppercase tracking-widest font-medium text-brand-dark border-b border-brand-dark pb-1 group-hover:text-brand-gold group-hover:border-brand-gold transition-colors">Discover Series</span>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-heading font-bold text-gray-900 mb-3 group-hover:text-brand-gold transition-colors">Laminate Flooring</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed text-sm flex-grow">
+                            <strong>Commercial Grade.</strong> Built on an ultra-dense HDF core with AC4/AC5 rated durability, ensuring a highly scratch-resistant and fade-proof surface.
+                        </p>
+                        <span class="inline-flex items-center text-brand-gold font-bold uppercase tracking-widest text-xs hover:text-yellow-600 transition-colors mt-auto">
+                            Explore Laminate <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </span>
                     </div>
                 </a>
+
+                <a href="/Bekker/spc-flooring.html" class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group cursor-pointer hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="/Bekker/Assets/spc/Cafe Au Lait.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Bekker SPC Rigid Core">
+                        <div class="absolute top-4 left-4 bg-brand-black text-white text-xs font-bold px-3 py-1 uppercase tracking-widest rounded shadow">Waterproof</div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-heading font-bold text-gray-900 mb-3 group-hover:text-brand-gold transition-colors">SPC Flooring</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed text-sm flex-grow">
+                            <strong>Rigid Core Technology.</strong> Heavy-duty Stone Polymer Composite vinyl equipped with advanced Aqua-Stop technology and pre-attached acoustic padding.
+                        </p>
+                        <span class="inline-flex items-center text-brand-gold font-bold uppercase tracking-widest text-xs hover:text-yellow-600 transition-colors mt-auto">
+                            Explore SPC <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <section id="hardwood" class="py-32 bg-white">
-        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-gray-100 pb-8">
-                <div class="max-w-2xl">
-                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2 block">Featured Collection</span>
-                    <h2 class="text-4xl md:text-5xl font-serif text-brand-dark mb-6">Exotique Engineered Wood</h2>
-                    <p class="text-gray-500 font-light text-lg">Responsibly sourced, meticulously crafted. From classic wide planks to intricate Herringbone patterns, experience the ultimate in luxury surfacing.</p>
-                </div>
-                <a href="#" class="hidden md:inline-block px-8 py-3 border border-brand-dark text-brand-dark text-[11px] uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors">View Full Catalog</a>
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Request a Consultation</h2>
+                <p class="text-gray-500 mt-2">Select your brand preference and get a custom quote. We deliver Pan-India.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-                <div class="group cursor-pointer hover-trigger">
-                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-gray-100">
-                        <img src="/Bekker/assets/engineered/American_Walnut_Herringbone.jpg" onerror="this.src='https://images.unsplash.com/photo-1512144605963-365287f3b4d4?q=80&w=800&auto=format&fit=crop'" alt="American Walnut Natural Herringbone" class="w-full h-full object-cover image-zoom">
+            <form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="John Doe" required>
                     </div>
                     <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg font-serif text-brand-dark">American Walnut Natural</h3>
-                        </div>
-                        <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Moda Series • Herringbone</p>
-                        
-                        <div class="text-sm font-light text-gray-500 space-y-1 border-t border-gray-100 pt-4 hover-target">
-                            <p class="flex justify-between"><span>Dimensions:</span> <span class="font-medium text-brand-dark">600 x 90 mm</span></p>
-                            <p class="flex justify-between"><span>Thickness:</span> <span class="font-medium text-brand-dark">12/2 mm</span></p>
-                            <p class="flex justify-between"><span>SKU:</span> <span class="font-medium text-brand-dark">BKEx104-H</span></p>
-                        </div>
+                        <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="+91 99999 99999" required>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-sm font-bold text-gray-700 mb-2">City / Location</label>
+                        <input type="text" name="city" id="city" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="e.g. Mumbai, Delhi">
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
+                        <select name="product" id="product" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none bg-white transition">
+                            <option value="Welspun SPC / Click-N-Lock">Welspun SPC / Click-N-Lock</option>
+                            <option value="Bekker Flooring">Bekker Flooring</option>
+                            <option value="Pare Flooring / Wall">Pare Flooring / Wall</option>
+                            <option value="Cera Sanitaryware / Tiles">Cera Sanitaryware / Tiles</option>
+                            <option value="Premium Tiles">Premium Tiles</option>
+                            <option value="MYK Laticrete">MYK Laticrete</option>
+                            <option value="Carpet Tiles">Carpet Tiles</option>
+                        </select>
                     </div>
                 </div>
 
-                <div class="group cursor-pointer hover-trigger">
-                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-gray-100">
-                        <img src="/Bekker/assets/engineered/Teak_Finessa.jpg" onerror="this.src='https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop'" alt="Teak Finessa" class="w-full h-full object-cover image-zoom">
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg font-serif text-brand-dark">Teak Natural</h3>
-                        </div>
-                        <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Finessa Series • Standard Plank</p>
-                        
-                        <div class="text-sm font-light text-gray-500 space-y-1 border-t border-gray-100 pt-4 hover-target">
-                            <p class="flex justify-between"><span>Dimensions:</span> <span class="font-medium text-brand-dark">910 x 125 mm</span></p>
-                            <p class="flex justify-between"><span>Thickness:</span> <span class="font-medium text-brand-dark">12/2 mm</span></p>
-                            <p class="flex justify-between"><span>SKU:</span> <span class="font-medium text-brand-dark">BKEx091</span></p>
-                        </div>
-                    </div>
+                <div>
+                    <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Project Details (Area in sq.ft)</label>
+                    <textarea name="message" id="message" rows="3" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="Tell us about your requirements..."></textarea>
                 </div>
-
-                <div class="group cursor-pointer hover-trigger">
-                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-gray-100">
-                        <img src="/Bekker/assets/engineered/Kaya_Kuku.jpg" onerror="this.src='https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=800&auto=format&fit=crop'" alt="Kaya KuKu" class="w-full h-full object-cover image-zoom">
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg font-serif text-brand-dark">Kaya KuKu</h3>
-                        </div>
-                        <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Exotique Series • Long Plank</p>
-                        
-                        <div class="text-sm font-light text-gray-500 space-y-1 border-t border-gray-100 pt-4 hover-target">
-                            <p class="flex justify-between"><span>Dimensions:</span> <span class="font-medium text-brand-dark">1200 x 125 mm</span></p>
-                            <p class="flex justify-between"><span>Thickness:</span> <span class="font-medium text-brand-dark">12/2 mm</span></p>
-                            <p class="flex justify-between"><span>SKU:</span> <span class="font-medium text-brand-dark">BKEx090</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group cursor-pointer hover-trigger">
-                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-gray-100">
-                        <img src="/Bekker/assets/engineered/Oak_Gingerbread.jpg" onerror="this.src='https://images.unsplash.com/photo-1581858326456-785cb2623a85?q=80&w=800&auto=format&fit=crop'" alt="Oak Gingerbread" class="w-full h-full object-cover image-zoom">
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-lg font-serif text-brand-dark">Oak Gingerbread</h3>
-                        </div>
-                        <p class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Arcadia Series • 4V Groove</p>
-                        
-                        <div class="text-sm font-light text-gray-500 space-y-1 border-t border-gray-100 pt-4 hover-target">
-                            <p class="flex justify-between"><span>Dimensions:</span> <span class="font-medium text-brand-dark">2200 x 190 mm</span></p>
-                            <p class="flex justify-between"><span>Thickness:</span> <span class="font-medium text-brand-dark">14/2.5 mm</span></p>
-                            <p class="flex justify-between"><span>SKU:</span> <span class="font-medium text-brand-dark">BKE009</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center md:hidden">
-                <a href="#" class="inline-block px-8 py-3 border border-brand-dark text-brand-dark text-[11px] uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors w-full">View Full Catalog</a>
-            </div>
+                
+                <button type="submit" class="w-full bg-brand-black text-white font-bold py-4 rounded hover:bg-gray-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">Submit Enquiry</button>
+            </form>
         </div>
     </section>
-
-    <section class="bg-brand-dark text-white">
-        <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/2 p-12 md:p-24 lg:p-32 flex flex-col justify-center">
-                <h2 class="text-4xl md:text-5xl font-serif mb-6 leading-tight">Find Your Perfect Expression</h2>
-                <p class="text-gray-400 font-light leading-relaxed mb-10 text-lg">
-                    Whether you are drawn to the rustic charm of knotted oak, the sleek sophistication of deep walnut, or the classic geometry of herringbone, our flooring serves as the perfect canvas for your interior design vision.
-                </p>
-                <div class="space-y-4 text-sm tracking-wider uppercase font-medium">
-                    <a href="#" class="flex items-center gap-4 hover:text-brand-gold transition-colors"><i class="fa-solid fa-arrow-right-long text-brand-gold"></i> View Inspiration Gallery</a>
-                    <a href="#" class="flex items-center gap-4 hover:text-brand-gold transition-colors"><i class="fa-solid fa-arrow-right-long text-brand-gold"></i> Order Physical Samples</a>
-                </div>
-            </div>
-            <div class="md:w-1/2 h-[500px] md:h-auto">
-                <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1500&auto=format&fit=crop" alt="Scandinavian Interior" class="w-full h-full object-cover">
-            </div>
-        </div>
-    </section>
-    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+ <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
@@ -281,10 +392,9 @@
                     <p class="text-sm leading-relaxed mb-6 max-w-sm">
                         Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
                     </p>
-                    <!-- <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div> -->
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div>
@@ -303,7 +413,7 @@
                     <ul class="space-y-3 text-sm">
                         <li>
                             <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
-                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99589 98122
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
                             </a>
                         </li>
                         <li>
@@ -324,21 +434,15 @@
                 <div class="flex gap-6 mt-4 md:mt-0">
                     <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
                     <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                    <a href="/index.html#contact" class="hover:text-white transition">Get Quote</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow-sm');
-                navbar.classList.remove('py-4');
-            } else {
-                navbar.classList.remove('shadow-sm');
-                navbar.classList.add('py-4');
-            }
-        });
-    </script>
+
+    <a href="https://wa.me/9910927068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>

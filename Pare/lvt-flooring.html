@@ -106,8 +106,7 @@
             border-color: #C5A059;
         }
     </style>    
-</head>
-<body class="antialiased font-sans">
+</head><body class="antialiased font-sans">
 
    <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
         <div class="flex gap-6">
@@ -127,7 +126,9 @@
                 </div>
             </a>
 
+            <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
                   <div class="relative group h-full py-4 cursor-pointer">
                     <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
                         Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
@@ -213,8 +214,11 @@
             </button>
         </div>
         
+        <!-- Mobile Menu with Accordion Dropdowns -->
         <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
             <div class="flex flex-col p-6 gap-2">
+                
+                <!-- Carpet Tiles Accordion -->
                 <details class="group border-b border-gray-50 pb-2">
                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
                         Carpet Tiles
@@ -231,7 +235,23 @@
                     </div>
                 </details>
 
-                <details class="group border-b border-gray-50 pb-2" open>
+                <!-- Welspun Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Welspun
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                            <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </details>
+
+                <!-- Pare Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
                      <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
                         Pare
                         <span class="transition-transform duration-300 group-open:rotate-180">
@@ -239,12 +259,60 @@
                         </span>
                     </summary>
                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                         <a href="/Pare/lvt-flooring.html" class="text-sm text-brand-gold font-semibold">LVT Flooring</a>
+                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">LVT Flooring</a>
                          <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
                          <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">HDF Flooring</a>
                          <a href="/Pare/wall-and-ceiling.html" class="text-sm text-gray-600 hover:text-brand-gold">Wall & Ceiling</a>
                     </div>
                 </details>
+
+                <!-- Bekker Accordion -->
+                 <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Bekker
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </details>
+
+                <!-- Cera Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Cera
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                            <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </details>
+
+                 <!-- Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </details>
+
+                <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
                 
                 <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
             </div>
@@ -627,7 +695,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+     <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
@@ -635,10 +703,9 @@
                     <p class="text-sm leading-relaxed mb-6 max-w-sm">
                         Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
                     </p>
-                    <!-- <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div> -->
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div>
@@ -657,7 +724,7 @@
                     <ul class="space-y-3 text-sm">
                         <li>
                             <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
-                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99589 98122
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
                             </a>
                         </li>
                         <li>
@@ -678,13 +745,16 @@
                 <div class="flex gap-6 mt-4 md:mt-0">
                     <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
                     <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                    <a href="/index.html#contact" class="hover:text-white transition">Get Quote</a>
                 </div>
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/919958998122" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+
+    <a href="https://wa.me/9910927068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
 
     <div id="swatch-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6" style="background-color: rgba(0,0,0,0.85);">
         <div class="absolute inset-0 cursor-pointer" onclick="closeModal()"></div>

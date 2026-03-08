@@ -3,243 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Bathroom Tiles | Flooring Expert</title>
-    <meta name="description" content="Our premium collection of bathroom tiles is currently under construction. Check back soon for updates.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Premium Tiles Collection | Flooring Expert</title>
     
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Roboto', 'sans-serif'],
+                        sans: ['Jost', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
-                        brand: {
-                            black: '#121212',
-                            gold: '#C5A059',
-                            gray: '#F3F4F6'
+                        boen: {
+                            dark: '#1a1a1a',
+                            light: '#fdfbf9',     /* Warm off-white background */
+                            grey: '#f5f5f5',      /* Soft section background */
+                            border: '#e6e6e6',
+                            text: '#4a4a4a'
                         }
                     }
                 }
             }
         }
     </script>
-</head>
-<body class="antialiased font-sans bg-gray-50 flex flex-col min-h-screen">
 
-   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center z-50 relative">
-        <div class="flex gap-6">
-            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 99589 98122</span>
-            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
-        </div>
-        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    <style>
+        .zoom-img { transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .group:hover .zoom-img { transform: scale(1.04); }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -4px; left: 0;
+            background-color: #1a1a1a; transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        
+        /* Hide scrollbar for horizontal scrolling containers */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-boen-light text-boen-dark antialiased">
+
+    <div class="bg-boen-grey text-center py-2 text-xs tracking-widest uppercase font-medium text-boen-text">
+        Crafting spaces with precision and elegance
     </div>
 
-    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <a href="/index.html" class="flex items-center gap-2 group z-50">
-                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
-                <div class="flex flex-col">
-                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
-                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
-                </div>
+    <nav class="sticky top-0 z-50 bg-white border-b border-boen-border transition-all duration-300">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-10 h-[80px] flex justify-between items-center">
+            
+            <a href="/index.html" class="text-2xl md:text-3xl font-sans font-semibold tracking-wide uppercase">
+                FLOORING EXPERT<span class="text-boen-border">.</span>
             </a>
 
-            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
-                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
-                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
-                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
-                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
-                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
-                    </div>
-                </div>
-
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
-                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
-                         <div class="border-t my-1"></div>
-                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
-                    </div>
-                </div>
-
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
-                        <a href="/Pare/lvt-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">LVT Flooring</a>
-                        <a href="/Pare/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">SPC Flooring</a>
-                        <a href="/Pare/hdf-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">HDF Flooring</a>
-                        <div class="border-t my-1"></div>
-                        <a href="/Pare/wall-and-ceiling.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Wall & Ceiling</a>
-                    </div>
-                </div>
-
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
-                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
-                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
-                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
-                    </div>
-                </div>
-
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
-                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
-                    </div>
-                </div>
-
-                <div class="relative group h-full py-4 cursor-pointer">
-                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
-                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
-                    </span>
-                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
-                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
-                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 bg-gray-50 text-brand-gold font-semibold">Bathroom Tiles</a>
-                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
-                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
-                    </div>
-                </div>
-
-                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
-
-                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            <div class="hidden lg:flex gap-10 text-[14px] font-medium tracking-wide">
+                <a href="#" class="nav-link">Floor Tiles</a>
+                <a href="#" class="nav-link">Kitchen Tiles</a>
+                <a href="#" class="nav-link">Bathroom Tiles</a>
+                <a href="#" class="nav-link">Wall Tiles</a>
+                <a href="#" class="nav-link text-gray-500">Parking Tiles</a>
             </div>
 
-            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-        </div>
-        
-        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
-            <div class="flex flex-col p-6 gap-2">
-                <details class="group border-b border-gray-50 pb-2" open>
-                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
-                        Tiles
-                        <span class="transition-transform duration-300 group-open:rotate-180">
-                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
-                        </span>
-                    </summary>
-                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
-                         <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
-                         <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
-                         <a href="/Tiles/bathroom-tiles.html" class="text-sm text-brand-gold font-semibold">Bathroom Tiles</a>
-                         <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
-                         <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
-                    </div>
-                </details>
-                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+            <div class="flex items-center gap-6 text-lg text-boen-dark">
+                <button class="hover:text-gray-500 transition-colors"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="hover:text-gray-500 transition-colors hidden md:block"><i class="fa-regular fa-heart"></i></button>
+                <button class="lg:hidden hover:text-gray-500 transition-colors"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </nav>
 
-    <main class="flex-grow relative flex items-center justify-center bg-brand-black">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1620626011761-9ea0189a720b?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-40" alt="Luxury Bathroom Tiles">
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/70 to-transparent"></div>
-        </div>
+    <header class="relative w-full h-[85vh] overflow-hidden bg-boen-dark">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" class="absolute w-full h-full object-cover opacity-80" alt="Premium Floor Tiles">
         
-        <div class="relative z-10 text-center px-6 py-24 max-w-2xl mx-auto animate-fade-in-down">
-            <div class="w-20 h-20 mx-auto bg-brand-gold/20 rounded-full flex items-center justify-center mb-6 border border-brand-gold/50 backdrop-blur-sm">
-                <i class="fa-solid fa-person-digging text-3xl text-brand-gold"></i>
-            </div>
-            <span class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">Coming Soon</span>
-            <h1 class="text-5xl md:text-6xl font-heading font-bold text-white mb-6">Bathroom Tiles</h1>
-            <p class="text-lg text-gray-300 mb-10 leading-relaxed font-light">
-                We are currently curating our premium collection of water-resistant, anti-skid bathroom tiles. This section is under construction and will be launched very soon.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/index.html" class="inline-flex justify-center items-center gap-3 px-8 py-4 bg-brand-gold text-brand-black font-bold rounded hover:bg-yellow-500 transition-colors uppercase tracking-wide text-sm shadow-lg">
-                    <i class="fa-solid fa-arrow-left"></i> Back to Home
-                </a>
-                <a href="#contact" class="inline-flex justify-center items-center gap-3 px-8 py-4 bg-white/10 text-white font-bold rounded border border-white/20 hover:bg-white/20 transition-colors uppercase tracking-wide text-sm backdrop-blur-sm">
-                    Contact Us
+        <div class="absolute inset-0 flex items-center justify-center md:justify-start md:pl-[10%]">
+            <div class="bg-white/95 p-10 md:p-16 max-w-lg text-center md:text-left shadow-2xl backdrop-blur-sm">
+                <h1 class="text-4xl md:text-5xl font-serif leading-tight mb-6">The foundation<br>of design.</h1>
+                <p class="text-boen-text text-lg mb-8 font-light leading-relaxed">
+                    Explore our curated collection of premium tiles. From luxurious large-format floor slabs to high-definition digital walls.
+                </p>
+                <a href="#categories" class="inline-block border border-boen-dark bg-boen-dark text-white px-8 py-3.5 text-sm uppercase tracking-widest font-medium hover:bg-white hover:text-boen-dark transition-colors duration-300">
+                    Explore Categories
                 </a>
             </div>
         </div>
-    </main>
+    </header>
 
-    <footer id="contact" class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
-                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
-                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+    <section id="categories" class="py-20 px-6 max-w-[1400px] mx-auto border-b border-boen-border">
+        <h2 class="text-center text-3xl font-serif mb-16">Find your perfect surface</h2>
+        
+        <div class="flex flex-nowrap overflow-x-auto hide-scrollbar gap-8 md:gap-12 justify-start lg:justify-center pb-8">
+            
+            <a href="/Tiles/floor-tiles.html" class="group flex flex-col items-center min-w-[130px] cursor-pointer">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1581858326456-785cb2623a85?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Floor Tiles">
+                </div>
+                <span class="text-[13px] uppercase tracking-widest font-medium group-hover:text-gray-500 transition-colors">Floor Tiles</span>
+            </a>
+
+            <a href="/Tiles/kitchen-tiles.html" class="group flex flex-col items-center min-w-[130px] cursor-pointer">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745a872f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Kitchen Tiles">
+                </div>
+                <span class="text-[13px] uppercase tracking-widest font-medium group-hover:text-gray-500 transition-colors">Kitchen Tiles</span>
+            </a>
+
+            <a href="/Tiles/bathroom-tiles.html" class="group flex flex-col items-center min-w-[130px] cursor-pointer">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1620626011761-9ea0189a720b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Bathroom Tiles">
+                </div>
+                <span class="text-[13px] uppercase tracking-widest font-medium group-hover:text-gray-500 transition-colors">Bathroom Tiles</span>
+            </a>
+
+            <a href="/Tiles/digital-wall-tiles.html" class="group flex flex-col items-center min-w-[130px] cursor-pointer">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 border border-gray-200">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Digital Wall Tiles">
+                </div>
+                <span class="text-[13px] uppercase tracking-widest font-medium group-hover:text-gray-500 transition-colors">Digital Wall</span>
+            </a>
+
+            <a href="/Tiles/parking-tiles.html" class="group flex flex-col items-center min-w-[130px] cursor-pointer">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 border border-gray-200 bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover zoom-img opacity-80" alt="Parking Tiles">
+                </div>
+                <span class="text-[13px] uppercase tracking-widest font-medium group-hover:text-gray-500 transition-colors">Parking Tiles</span>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="py-24 max-w-[1600px] mx-auto px-6 md:px-10">
+        <div class="flex justify-between items-end mb-12">
+            <h2 class="text-3xl md:text-4xl font-serif">Featured Selections</h2>
+            <a href="#" class="hidden md:inline-block border-b border-boen-dark text-sm tracking-wide hover:text-gray-500 hover:border-gray-500 transition-all pb-1">View Full Catalog</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <a href="/Tiles/floor-tiles.html" class="group block">
+                <div class="aspect-[4/5] overflow-hidden bg-boen-grey mb-5 relative">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Statuario Marble Slab">
+                    <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-50 transition-colors">
+                        <i class="fa-regular fa-heart text-gray-400"></i>
+                    </button>
+                </div>
+                <h3 class="text-xl font-serif mb-1">Statuario Classic</h3>
+                <p class="text-sm text-boen-text mb-3">Glazed Vitrified Tile (GVT)</p>
+                <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest text-gray-500">
+                    <span>Floor</span>
+                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>1200x600mm</span>
+                </div>
+            </a>
+
+            <a href="/Tiles/kitchen-tiles.html" class="group block">
+                <div class="aspect-[4/5] overflow-hidden bg-boen-grey mb-5 relative">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Kitchen Backsplash">
+                    <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-50 transition-colors">
+                        <i class="fa-regular fa-heart text-gray-400"></i>
+                    </button>
+                </div>
+                <h3 class="text-xl font-serif mb-1">Subway Artisan</h3>
+                <p class="text-sm text-boen-text mb-3">Ceramic Backsplash</p>
+                <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest text-gray-500">
+                    <span>Kitchen</span>
+                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>High Gloss</span>
+                </div>
+            </a>
+
+            <a href="/Tiles/bathroom-tiles.html" class="group block">
+                <div class="aspect-[4/5] overflow-hidden bg-boen-grey mb-5 relative">
+                    <img src="https://images.unsplash.com/photo-1620626011761-9ea0189a720b?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Terrazzo Bathroom Tile">
+                    <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-50 transition-colors">
+                        <i class="fa-regular fa-heart text-gray-400"></i>
+                    </button>
+                </div>
+                <h3 class="text-xl font-serif mb-1">Terrazzo Grigio</h3>
+                <p class="text-sm text-boen-text mb-3">Anti-Skid Matte</p>
+                <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest text-gray-500">
+                    <span>Bathroom</span>
+                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>Waterproof</span>
+                </div>
+            </a>
+
+            <a href="/Tiles/digital-wall-tiles.html" class="group block">
+                <div class="aspect-[4/5] overflow-hidden bg-boen-grey mb-5 relative">
+                    <img src="https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover zoom-img" alt="Digital Wall Feature">
+                    <button class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-50 transition-colors">
+                        <i class="fa-regular fa-heart text-gray-400"></i>
+                    </button>
+                </div>
+                <h3 class="text-xl font-serif mb-1">Onyx Noir</h3>
+                <p class="text-sm text-boen-text mb-3">High Definition Elevation</p>
+                <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest text-gray-500">
+                    <span>Wall Feature</span>
+                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>HD Print</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-12 text-center md:hidden">
+            <a href="#" class="inline-block border border-boen-dark px-8 py-3 text-sm uppercase tracking-widest w-full">See all tiles</a>
+        </div>
+    </section>
+
+    <section class="bg-boen-grey py-24">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1 max-w-md mx-auto md:ml-0 md:pl-10">
+                    <span class="text-xs uppercase tracking-widest text-gray-500 font-medium mb-4 block">Design Vision</span>
+                    <h2 class="text-4xl font-serif leading-tight mb-6">Artistry in Every Square Inch</h2>
+                    <p class="text-boen-text text-lg font-light leading-relaxed mb-10">
+                        Tiles are more than just functional coverings; they dictate the mood, light, and texture of a room. Whether you seek the natural veining of marble for your living room or heavy-duty pavers for your driveway, our collections provide absolute perfection.
                     </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="inline-block border-b border-boen-dark text-sm tracking-wide font-medium hover:text-gray-500 hover:border-gray-500 transition-all pb-1">
+                        Get expert advice
+                    </a>
+                </div>
+                <div class="order-1 md:order-2 h-[500px] md:h-[700px] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1500&auto=format&fit=crop" class="w-full h-full object-cover" alt="Interior Tile Inspiration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-10 border-t border-boen-border">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-sans font-semibold tracking-wide mb-6">FLOORING EXPERT<span class="text-boen-border">.</span></h3>
+                    <div class="max-w-sm">
+                        <p class="text-sm text-boen-text font-light mb-4">Subscribe for design inspiration and updates on new tile collections.</p>
+                        <div class="flex border-b border-boen-border pb-2 mt-6">
+                            <input type="email" placeholder="Email address" class="w-full bg-transparent outline-none text-sm font-light placeholder-gray-400">
+                            <button class="text-boen-dark text-lg hover:text-gray-500"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div>
-                    <h4 class="text-white font-bold mb-6">Products</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="/Welspun/multistile/index.html" class="hover:text-brand-gold transition">Welspun Flooring</a></li>
-                        <li><a href="/Bekker/engineered-wood.html" class="hover:text-brand-gold transition">Bekker German Tech</a></li>
-                        <li><a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition">Pare Surfaces</a></li>
-                        <li><a href="/Cera/sanitaryware.html" class="hover:text-brand-gold transition">Cera Bathware</a></li>
-                        <li><a href="/Tiles/floor-tiles.html" class="hover:text-brand-gold transition">Premium Tiles</a></li>
+                    <h4 class="text-xs uppercase tracking-widest font-semibold mb-6">Tile Categories</h4>
+                    <ul class="space-y-4 text-sm text-boen-text font-light">
+                        <li><a href="/Tiles/floor-tiles.html" class="hover:text-boen-dark transition-colors">Floor Tiles</a></li>
+                        <li><a href="/Tiles/kitchen-tiles.html" class="hover:text-boen-dark transition-colors">Kitchen Tiles</a></li>
+                        <li><a href="/Tiles/bathroom-tiles.html" class="hover:text-boen-dark transition-colors">Bathroom Tiles</a></li>
+                        <li><a href="/Tiles/digital-wall-tiles.html" class="hover:text-boen-dark transition-colors">Digital Wall</a></li>
+                        <li><a href="/Tiles/parking-tiles.html" class="hover:text-boen-dark transition-colors">Parking Tiles</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
-                    <h4 class="text-white font-bold mb-6">Contact</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li>
-                            <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
-                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99589 98122
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center">
-                                <i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in
-                            </a>
-                        </li>
-                        <li class="flex items-start mt-1">
-                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> 
-                            <span>Showroom: New Delhi, India</span>
-                        </li>
+                    <h4 class="text-xs uppercase tracking-widest font-semibold mb-6">Information</h4>
+                    <ul class="space-y-4 text-sm text-boen-text font-light">
+                        <li><a href="#" class="hover:text-boen-dark transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-boen-dark transition-colors">Installation Guides</a></li>
+                        <li><a href="#" class="hover:text-boen-dark transition-colors">Care & Maintenance</a></li>
+                        <li><a href="#" class="hover:text-boen-dark transition-colors">Contact</a></li>
                     </ul>
                 </div>
+
             </div>
-            
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
-                <div class="flex gap-6 mt-4 md:mt-0">
-                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-boen-border pt-8 text-[11px] uppercase tracking-wider text-gray-400 font-medium">
+                <div class="flex gap-6 mb-4 md:mb-0">
+                    <a href="/privacy-policy.html" class="hover:text-boen-dark">Privacy</a>
+                    <a href="/terms-of-service.html" class="hover:text-boen-dark">Terms</a>
+                    <p>&copy; 2026 Flooring Expert.</p>
+                </div>
+                <div class="flex gap-6 text-lg">
+                    <a href="#" class="hover:text-boen-dark"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-boen-dark"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="hover:text-boen-dark"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>

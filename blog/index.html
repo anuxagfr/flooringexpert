@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Design Insights | Flooring Expert</title>
+    <meta name="description" content="Explore the latest trends, installation guides, and design inspiration for premium flooring, wall panels, and bathware.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            gold: '#C5A059',
+                            gray: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased font-sans bg-gray-50 flex flex-col min-h-screen text-gray-800">
+
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 99589 98122</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                  <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                         <div class="border-t my-1"></div>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Pare/lvt-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">LVT Flooring</a>
+                        <a href="/Pare/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">SPC Flooring</a>
+                        <a href="/Pare/hdf-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">HDF Flooring</a>
+                        <div class="border-t my-1"></div>
+                        <a href="/Pare/wall-and-ceiling.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </div>
+
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu with Accordion Dropdowns -->
+        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
+            <div class="flex flex-col p-6 gap-2">
+                
+                <!-- Carpet Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Carpet Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                         <a href="/Welspun/carpet tiles/Celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
+                         <a href="/Welspun/carpet tiles/Earthy Woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
+                         <a href="/Welspun/carpet tiles/Meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
+                         <a href="/Welspun/carpet tiles/Savy Street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
+                         <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </details>
+
+                <!-- Welspun Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Welspun
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                            <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </details>
+
+                <!-- Pare Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Pare
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">LVT Flooring</a>
+                         <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                         <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">HDF Flooring</a>
+                         <a href="/Pare/wall-and-ceiling.html" class="text-sm text-gray-600 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </details>
+
+                <!-- Bekker Accordion -->
+                 <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Bekker
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </details>
+
+                <!-- Cera Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Cera
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                            <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </details>
+
+                 <!-- Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </details>
+
+                <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
+                
+                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-brand-black py-20 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#C5A059 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <span class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block animate-fade-in-down">Design & Architecture</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">Our Blog & Insights</h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto font-light">Explore expert advice, installation guides, and design inspiration to help you choose the perfect surfaces for your next project.</p>
+        </div>
+    </header>
+
+    <main class="py-16 px-6 max-w-7xl mx-auto w-full">
+        
+        <div id="category-filters" class="flex flex-wrap justify-center gap-3 mb-16">
+            <button data-category="" class="filter-btn px-5 py-2 bg-brand-black text-white rounded-full text-sm font-medium hover:bg-gray-800 transition">All Articles</button>
+            <button data-category="Flooring" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:border-brand-gold hover:text-brand-gold transition">Flooring</button>
+            <button data-category="Wall Panels" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:border-brand-gold hover:text-brand-gold transition">Wall Panels</button>
+            <button data-category="Bathware" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:border-brand-gold hover:text-brand-gold transition">Bathware</button>
+            <button data-category="Maintenance" class="filter-btn px-5 py-2 bg-white border border-gray-200 text-gray-600 rounded-full text-sm font-medium hover:border-brand-gold hover:text-brand-gold transition">Maintenance</button>
+        </div>
+
+        <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Blog posts will be injected here -->
+            <div class="col-span-full text-center py-20 text-gray-500">
+                <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-4 text-brand-gold"></i>
+                <p>Loading articles...</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-2">
+            <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-brand-gold hover:text-brand-gold transition disabled:opacity-50" disabled><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="w-10 h-10 rounded-full bg-brand-black text-white flex items-center justify-center font-medium shadow-md">1</button>
+            <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:border-brand-gold hover:text-brand-gold transition font-medium">2</button>
+            <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:border-brand-gold hover:text-brand-gold transition font-medium">3</button>
+            <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:border-brand-gold hover:text-brand-gold transition"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+    </main>
+
+    <section class="bg-brand-black py-16 mt-8">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-heading font-bold text-white mb-4">Never Miss an Update</h2>
+            <p class="text-gray-400 mb-8">Join our mailing list to receive the latest design trends, product launches, and exclusive trade offers directly to your inbox.</p>
+            <form class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
+                <input type="email" placeholder="Your email address" class="px-5 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-brand-gold border-none text-gray-800" required>
+                <button type="submit" class="bg-brand-gold hover:bg-yellow-500 text-brand-black font-bold px-8 py-3 rounded-lg transition shadow-lg whitespace-nowrap">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Request a Consultation</h2>
+                <p class="text-gray-500 mt-2">Select your brand preference and get a custom quote. We deliver Pan-India.</p>
+            </div>
+
+            <form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="+91 99999 99999" required>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-sm font-bold text-gray-700 mb-2">City / Location</label>
+                        <input type="text" name="city" id="city" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="e.g. Mumbai, Delhi">
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
+                        <select name="product" id="product" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none bg-white transition">
+                            <option value="Welspun SPC / Click-N-Lock">Welspun SPC / Click-N-Lock</option>
+                            <option value="Bekker Flooring">Bekker Flooring</option>
+                            <option value="Pare Flooring / Wall">Pare Flooring / Wall</option>
+                            <option value="Cera Sanitaryware / Tiles">Cera Sanitaryware / Tiles</option>
+                            <option value="Premium Tiles">Premium Tiles</option>
+                            <option value="MYK Laticrete">MYK Laticrete</option>
+                            <option value="Carpet Tiles">Carpet Tiles</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Project Details (Area in sq.ft)</label>
+                    <textarea name="message" id="message" rows="3" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-black text-white font-bold py-4 rounded hover:bg-gray-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/Welspun/multistile/index.html" class="hover:text-brand-gold transition">Welspun Flooring</a></li>
+                        <li><a href="/Bekker/engineered-wood.html" class="hover:text-brand-gold transition">Bekker German Tech</a></li>
+                        <li><a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition">Pare Surfaces</a></li>
+                        <li><a href="/Cera/sanitaryware.html" class="hover:text-brand-gold transition">Cera Bathware</a></li>
+                        <li><a href="/Tiles/floor-tiles.html" class="hover:text-brand-gold transition">Premium Tiles</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in
+                            </a>
+                        </li>
+                        <li class="flex items-start mt-1">
+                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> 
+                            <span>Showroom: New Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                    <a href="/index.html#contact" class="hover:text-white transition">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    
+    <script>
+
+
+
+
+        // --- CONFIGURATION ---
+        // Replace these with your actual Contentful credentials
+        const SPACE_ID = 'pgdqh7adat55';
+        const ACCESS_TOKEN = '4YAOHm5-cQs3CND_4GeeTAXqqdQIte2Aec0QJdL8DUM';
+        const CONTENT_TYPE = 'blogPost'; // Ensure this matches your Contentful content type ID
+
+        const client = contentful.createClient({
+            space: SPACE_ID,
+            accessToken: ACCESS_TOKEN
+        });
+
+        // --- MOCK DATA (Fallback content) ---
+        const MOCK_POSTS = [
+            {
+                sys: { id: 'mock-1', createdAt: '2023-10-24T00:00:00Z' },
+                fields: {
+                    title: 'Why SPC Flooring is the Future of Home Interiors',
+                    slug: 'why-spc-flooring-is-future',
+                    excerpt: 'Stone Polymer Composite (SPC) flooring combines durability, water resistance, and style. Learn why it is the top choice for modern homes.',
+                    content: 'SPC flooring stands for Stone Polymer Composite. It is known for being 100% waterproof and unparalleled durability. Unlike traditional vinyl, SPC has a rigid core that makes it more stable and resistant to indentation.',
+                    category: 'Flooring',
+                    publishedDate: '2023-10-24',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1581858726768-7dd696e95263?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            },
+            {
+                sys: { id: 'mock-2', createdAt: '2023-11-15T00:00:00Z' },
+                fields: {
+                    title: 'Elevate Your Space with Fluted Wall Panels',
+                    slug: 'elevate-space-fluted-panels',
+                    excerpt: 'Discover how Pare wall panels can transform plain walls into architectural statements with texture and depth.',
+                    content: 'Fluted panels are the latest trend in interior design, offering a linear texture that adds height and elegance to any room. They are perfect for feature walls, TV units, and even ceiling accents.',
+                    category: 'Wall Panels',
+                    publishedDate: '2023-11-15',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            },
+            {
+                sys: { id: 'mock-3', createdAt: '2023-09-10T00:00:00Z' },
+                fields: {
+                    title: 'Essential Maintenance Tips for Wooden Floors',
+                    slug: 'maintenance-tips-wooden-floors',
+                    excerpt: 'Keep your Bekker engineered wood floors looking pristine with these simple cleaning and care guidelines.',
+                    content: 'Wooden floors require specific care to maintain their luster. Avoid excessive water and use specialized cleaners. Regular sweeping and immediate spill cleanup are key to longevity.',
+                    category: 'Maintenance',
+                    publishedDate: '2023-09-10',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            },
+            {
+                sys: { id: 'mock-4', createdAt: '2023-12-05T00:00:00Z' },
+                fields: {
+                    title: 'Choosing the Right Sanitaryware for Your Bathroom',
+                    slug: 'choosing-right-sanitaryware',
+                    excerpt: 'A comprehensive guide to selecting Cera sanitaryware that balances functionality, hygiene, and aesthetics.',
+                    content: 'Selecting the right sanitaryware involves considering space, style, and plumbing requirements. Wall-hung closets save space and are easier to clean, while floor-mounted options offer classic stability.',
+                    category: 'Bathware',
+                    publishedDate: '2023-12-05',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1552321903-17aa25840d65?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            },
+            {
+                sys: { id: 'mock-5', createdAt: '2023-08-22T00:00:00Z' },
+                fields: {
+                    title: 'The Benefits of Carpet Tiles in Commercial Spaces',
+                    slug: 'benefits-carpet-tiles-commercial',
+                    excerpt: 'Welspun carpet tiles offer acoustics, modularity, and ease of maintenance. Perfect for offices and hotels.',
+                    content: 'Carpet tiles are the preferred choice for commercial flooring due to their modular nature. If one tile gets damaged, it can be easily replaced without redoing the entire floor. They also offer excellent sound absorption.',
+                    category: 'Flooring',
+                    publishedDate: '2023-08-22',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            },
+             {
+                sys: { id: 'mock-6', createdAt: '2023-07-30T00:00:00Z' },
+                fields: {
+                    title: 'Understanding Tile Adhesives: MYK Laticrete Guide',
+                    slug: 'understanding-tile-adhesives',
+                    excerpt: 'Not all adhesives are created equal. Learn which MYK Laticrete product is right for your tile or stone installation.',
+                    content: 'Using the right adhesive is crucial for the longevity of your tile installation. For large format tiles, use a polymer-modified adhesive like Laticrete 335 to ensure a strong bond and flexibility.',
+                    category: 'Maintenance',
+                    publishedDate: '2023-07-30',
+                    coverImage: { fields: { file: { url: '//images.unsplash.com/photo-1599619351208-3e6c839d6828?q=80&w=800&auto=format&fit=crop' } } }
+                }
+            }
+        ];
+
+        const container = document.getElementById('blog-posts-container');
+        const categoryFiltersContainer = document.getElementById('category-filters');
+
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('en-US', options);
+        }
+
+        function renderPosts(posts) {
+            if (posts.length === 0) {
+                container.innerHTML = '<div class="col-span-full text-center py-10 text-gray-500">No articles found.</div>';
+                return;
+            }
+
+            container.innerHTML = posts.map(post => {
+                const { title, slug, excerpt, category, publishedDate, coverImage } = post.fields;
+                const id = post.sys.id;
+                const postLink = `blog-post.html?id=${id}`;
+                const imageUrl = coverImage?.fields?.file?.url ? 'https:' + coverImage.fields.file.url : 'https://via.placeholder.com/800x600?text=No+Image';
+                const date = publishedDate ? formatDate(publishedDate) : '';
+                
+                return `
+                <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-60 overflow-hidden">
+                        <img src="${imageUrl}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${title}">
+                        ${category ? `<div class="absolute top-4 left-4 bg-brand-gold text-brand-black text-xs font-bold px-3 py-1 uppercase tracking-widest rounded shadow">${category}</div>` : ''}
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center text-xs text-gray-400 mb-3 gap-3">
+                            ${date ? `<span class="flex items-center gap-1"><i class="fa-regular fa-calendar"></i> ${date}</span>` : ''}
+                        </div>
+                        <h3 class="text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-brand-gold transition-colors leading-tight">
+                            <a href="${postLink}">${title}</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">
+                            ${excerpt || ''}
+                        </p>
+                        <a href="${postLink}" class="inline-flex items-center text-brand-black font-bold uppercase tracking-widest text-xs hover:text-brand-gold transition-colors mt-auto">
+                            Read Article <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+                `;
+            }).join('');
+        }
+
+        function fetchAndRenderPosts(category) {
+            const query = {
+                content_type: CONTENT_TYPE,
+                order: '-sys.createdAt'
+            };
+
+            if (category) {
+                query['fields.category'] = category;
+            }
+
+            container.innerHTML = `<div class="col-span-full text-center py-20 text-gray-500">
+                <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-4 text-brand-gold"></i>
+                <p>Loading articles...</p>
+            </div>`;
+
+            client.getEntries(query)
+                .then((response) => {
+                    if (response.items.length > 0) {
+                        renderPosts(response.items);
+                    } else {
+                        // Fallback to mock data if no contentful entries found
+                        const filteredMock = category ? MOCK_POSTS.filter(p => p.fields.category === category) : MOCK_POSTS;
+                        renderPosts(filteredMock);
+                    }
+                })
+                .catch((error) => {
+                    console.error("API Error, loading mock data:", error);
+                    const filteredMock = category ? MOCK_POSTS.filter(p => p.fields.category === category) : MOCK_POSTS;
+                    renderPosts(filteredMock);
+                });
+        }
+
+        // --- EVENT LISTENERS ---
+        const filterButtons = categoryFiltersContainer.querySelectorAll('.filter-btn');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+
+                // Update active button styles
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-brand-black', 'text-white');
+                    btn.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+                });
+                button.classList.add('bg-brand-black', 'text-white');
+                button.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-600');
+
+                fetchAndRenderPosts(category || null);
+            });
+        });
+
+        // Initial load (all posts)
+        fetchAndRenderPosts(null);
+    </script>
+</body>
+</html>

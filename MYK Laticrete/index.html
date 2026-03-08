@@ -35,8 +35,7 @@
             }
         }
     </script>  <link rel="stylesheet" href="/style.css">
-</head>
-<body class="antialiased font-sans">
+</head><body class="antialiased font-sans">
 
    <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
         <div class="flex gap-6">
@@ -269,9 +268,7 @@
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#adhesives" class="px-6 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">View Products</a>
-                    <a href="#application-areas" class="px-6 py-3 border border-white text-white font-bold rounded hover:bg-white/10 transition flex items-center gap-2">
-                        Find by Application
-                    </a>
+                   
                 </div>
             </div>
         </div>
@@ -294,8 +291,7 @@
                         <div class="flex flex-col items-end gap-1">
                             <div class="flex gap-1">
                                 <span class="px-2 py-1 bg-gray-400 text-white text-[10px] font-bold rounded uppercase">Grey</span>
-                                <span class="px-2 py-1 bg-white border border-gray-200 text-gray-600 text-[10px] font-bold rounded uppercase">White</span>
-                            </div>
+                               </div>
                             <span class="text-[10px] text-gray-400">ANSI 118.1</span>
                         </div>
                     </div>
@@ -414,7 +410,7 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="relative group overflow-hidden rounded-lg h-40">
-                        <img src="https://images.unsplash.com/photo-1584622050111-993a426fbf0a?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Bathroom">
+                        <img src="/MYK Laticrete/Assets/Bathrooms.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Bathroom">
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
                             <div class="text-center">
                                 <h4 class="text-white font-bold">Bathrooms</h4>
@@ -441,7 +437,7 @@
                         </div>
                     </div>
                     <div class="relative group overflow-hidden rounded-lg h-40">
-                        <img src="https://images.unsplash.com/photo-1484154218962-a1c00207099b?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Living Room">
+                        <img src="/MYK Laticrete/Assets/living.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Living Room">
                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
                             <div class="text-center">
                                 <h4 class="text-white font-bold">Living Areas</h4>
@@ -452,7 +448,9 @@
                 </div>
             </div>
 
-            <div id="grouts" class="border-t border-gray-200 pt-16">
+       
+       
+            <!-- <div id="grouts" class="border-t border-gray-200 pt-16">
                 <div class="text-center mb-12">
                     <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">SP-100 / SERIES 600</div>
                     <h2 class="text-3xl font-heading font-bold text-gray-900">Grouts & Fillers</h2>
@@ -559,8 +557,8 @@
                         <p class="text-xs text-gray-400">7126</p>
                     </div>
 
-                </div>
-
+                </div> -->
+<!-- 
                 <div class="mt-16 bg-gray-50 p-8 rounded-lg border border-gray-200">
                     <h4 class="text-lg font-bold text-gray-800 mb-6"><i class="fa-solid fa-clipboard-list mr-2 text-brand-gold"></i>Extended Stock List</h4>
                     
@@ -608,7 +606,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -715,6 +713,55 @@
             </div>
         </div>
     </section>
+<!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Request a Consultation</h2>
+                <p class="text-gray-500 mt-2">Select your brand preference and get a custom quote. We deliver Pan-India.</p>
+            </div>
+
+            <form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="+91 99999 99999" required>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-sm font-bold text-gray-700 mb-2">City / Location</label>
+                        <input type="text" name="city" id="city" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="e.g. Mumbai, Delhi">
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
+                        <select name="product" id="product" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none bg-white transition">
+                            <option value="Welspun SPC / Click-N-Lock">Welspun SPC / Click-N-Lock</option>
+                            <option value="Bekker Flooring">Bekker Flooring</option>
+                            <option value="Pare Flooring / Wall">Pare Flooring / Wall</option>
+                            <option value="Cera Sanitaryware / Tiles">Cera Sanitaryware / Tiles</option>
+                            <option value="Premium Tiles">Premium Tiles</option>
+                            <option value="MYK Laticrete">MYK Laticrete</option>
+                            <option value="Carpet Tiles">Carpet Tiles</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Project Details (Area in sq.ft)</label>
+                    <textarea name="message" id="message" rows="3" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-black text-white font-bold py-4 rounded hover:bg-gray-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
@@ -723,10 +770,9 @@
                     <p class="text-sm leading-relaxed mb-6 max-w-sm">
                         Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
                     </p>
-                    <!-- <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div> -->
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div>
@@ -744,8 +790,8 @@
                     <h4 class="text-white font-bold mb-6">Contact</h4>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
-                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99589 98122
+                            <a href="tel:+91 99109 27068" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
                             </a>
                         </li>
                         <li>
@@ -766,13 +812,15 @@
                 <div class="flex gap-6 mt-4 md:mt-0">
                     <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
                     <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                 
                 </div>
             </div>
         </div>
-    </footer>    <a href="https://wa.me/919958998122" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+    </footer>
+
+    <a href="https://wa.me/9910927068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
     <div id="swatch-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6" style="background-color: rgba(0,0,0,0.85);">
         <div class="absolute inset-0 cursor-pointer" onclick="closeModal()"></div>
         
