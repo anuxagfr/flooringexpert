@@ -55,10 +55,16 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body class="antialiased font-sans">
+ <!-- Global Announcement Banner -->
+   <div id="global-announcement" class="hidden bg-brand-gold text-brand-black text-center py-2 px-6 font-bold text-sm relative z-[60]">
+        <span id="announcement-text"></span>
+   </div>
 
    <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
         <div class="flex gap-6">
-            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 99589 98122</span>
+            <a href="https://www.instagram.com/flooringexpert.in/"><i class="fa-brands fa-instagram text-brand-gold mr-2"></i></a>
+
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 9910927068</span>
             <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
         </div>
         <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
@@ -66,7 +72,7 @@
 
     <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group z-50">
+            <a href="/index.html" class="flex items-center gap-2 group z-50">
                 <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
                 <div class="flex flex-col">
                     <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
@@ -96,6 +102,8 @@
                         Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </span>
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+
                         <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
                         <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
                          <div class="border-t my-1"></div>
@@ -128,7 +136,7 @@
                         <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
                     </div>
                 </div>
-
+<!-- 
                 <div class="relative group h-full py-4 cursor-pointer">
                     <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
                         Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
@@ -137,8 +145,11 @@
                         <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
                         <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
                     </div>
-                </div>
+                </div> -->
+                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                
 
+<!-- 
                 <div class="relative group h-full py-4 cursor-pointer">
                     <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
                         Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
@@ -150,11 +161,14 @@
                         <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
                         <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
                     </div>
-                </div>
+                </div> -->
 
                 <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
+                <a href="/Brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
+                
 
-                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+                <a href="/index.html#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
             </div>
 
             <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
@@ -193,7 +207,7 @@
                     </summary>
                      <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
                         <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
-                            <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
                         <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
                     </div>
                 </details>
@@ -238,13 +252,13 @@
                         </span>
                     </summary>
                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                            <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
                         <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
                     </div>
                 </details>
 
                  <!-- Tiles Accordion -->
-                <details class="group border-b border-gray-50 pb-2">
+                <!-- <details class="group border-b border-gray-50 pb-2">
                      <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
                         Tiles
                         <span class="transition-transform duration-300 group-open:rotate-180">
@@ -255,17 +269,19 @@
                         <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
                         <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
                         <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
-                        <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
+                            <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
                         <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
                     </div>
-                </details>
+                </details> -->
 
                 <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
-                
-                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+                  <a href="/Brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
+              
+                <a href="/index.html#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
             </div>
         </div>
     </nav>
+
     <!-- Add Tailwind Typography Plugin via CDN for nice blog content formatting -->
 </head>
     <main id="main-content" class="flex-grow">
@@ -334,11 +350,11 @@
                 <div>
                     <h4 class="text-white font-bold mb-6">Products</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="../Welspun/multistile/index.html" class="hover:text-brand-gold transition">Welspun Flooring</a></li>
-                        <li><a href="../Bekker/engineered-wood.html" class="hover:text-brand-gold transition">Bekker German Tech</a></li>
-                        <li><a href="../Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition">Pare Surfaces</a></li>
-                        <li><a href="../Cera/sanitaryware.html" class="hover:text-brand-gold transition">Cera Bathware</a></li>
-                        <li><a href="../Tiles/floor-tiles.html" class="hover:text-brand-gold transition">Premium Tiles</a></li>
+                        <li><a href="/Welspun" class="hover:text-brand-gold transition">Welspun</a></li>
+                        <li><a href="/Bekker" class="hover:text-brand-gold transition">Bekker</a></li>
+                        <li><a href="/Pare" class="hover:text-brand-gold transition">Pare</a></li>
+                        <li><a href="/Cera" class="hover:text-brand-gold transition">Cera</a></li>
+                        <li><a href="/Tiles" class="hover:text-brand-gold transition">Premium</a></li>
                     </ul>
                 </div>
                 
@@ -346,7 +362,7 @@
                     <h4 class="text-white font-bold mb-6">Contact</h4>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="tel:+919958998122" class="hover:text-brand-gold transition flex items-center">
+                            <a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center">
                                 <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
                             </a>
                         </li>
@@ -368,7 +384,7 @@
                 <div class="flex gap-6 mt-4 md:mt-0">
                     <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
                     <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
-                    <a href="/index.html#contact" class="hover:text-white transition">Get Quote</a>
+                 
                 </div>
             </div>
         </div>
