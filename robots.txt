@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /Brochure.html
+Allow: /blog/
+
+# Block unnecessary folders (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://flooringexpert.in/sitemap.xml
