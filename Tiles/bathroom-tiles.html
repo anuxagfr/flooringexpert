@@ -72,6 +72,7 @@
 
             <div class="flex items-center gap-6 text-lg text-boen-dark">
                 <button class="hover:text-gray-500 transition-colors"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-gray-500 transition-colors" title="Search Products"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button class="hover:text-gray-500 transition-colors hidden md:block"><i class="fa-regular fa-heart"></i></button>
                 <button class="lg:hidden hover:text-gray-500 transition-colors"><i class="fa-solid fa-bars"></i></button>
             </div>
@@ -289,5 +290,7 @@
         </div>
     </footer>
 
+    <script src="/search-data.js"></script>
+    <script src="/global-search.js"></script>
 </body>
 </html>

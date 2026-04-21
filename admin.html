@@ -112,6 +112,9 @@
         <header class="flex justify-between items-center mb-8">
             <h1 id="pageTitle" class="text-3xl font-bold text-white">Dashboard Overview</h1>
             <div class="flex items-center gap-4">
+                <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-400" title="Search Products & Catalogues">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </button>
                 <span id="admin-welcome-name" class="text-sm text-gray-400">Welcome, Admin</span>
                 <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center">
                     <i class="fa-solid fa-user text-brand-gold"></i>
@@ -443,6 +446,32 @@
         </div>
     </div>
 
+    <!-- Edit User Modal -->
+    <div id="editUserModal" class="fixed inset-0 z-50 bg-gray-900/90 hidden items-center justify-center p-4">
+        <div class="w-full max-w-md bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700">
+            <h2 class="text-2xl font-bold text-white mb-6">Edit User</h2>
+            <form id="editUserForm" class="space-y-4">
+                <input type="hidden" id="editUserId">
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">Full Name</label>
+                    <input type="text" id="editUserName" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">Role</label>
+                    <select id="editUserRole" class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none">
+                        <option value="Viewer">Viewer</option>
+                        <option value="Editor">Editor</option>
+                        <option value="Administrator">Administrator</option>
+                    </select>
+                </div>
+                <div class="flex gap-4 mt-6">
+                    <button type="button" onclick="document.getElementById('editUserModal').classList.add('hidden'); document.getElementById('editUserModal').classList.remove('flex');" class="flex-1 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600">Cancel</button>
+                    <button type="submit" class="flex-1 py-2 bg-brand-gold text-gray-900 font-bold rounded-lg hover:bg-white">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Edit Catalogue Modal -->
     <div id="editCatalogueModal" class="fixed inset-0 z-50 bg-gray-900/90 hidden items-center justify-center p-4">
         <div class="w-full max-w-lg bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700">
@@ -479,6 +508,48 @@
                 <div class="flex gap-4 mt-6">
                     <button type="button" onclick="document.getElementById('editCatalogueModal').classList.add('hidden')" class="flex-1 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600">Cancel</button>
                     <button type="submit" class="flex-1 py-2 bg-brand-gold text-gray-900 font-bold rounded-lg hover:bg-white">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Editor Modal -->
+    <div id="productModal" class="fixed inset-0 z-50 bg-gray-900/90 hidden items-center justify-center p-4">
+        <div class="w-full max-w-lg bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700">
+            <h2 id="productModalTitle" class="text-2xl font-bold text-white mb-6">Edit Product</h2>
+            <form id="productForm" class="space-y-4">
+                <input type="hidden" id="prodOriginalCode">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Product Code (SKU)</label>
+                        <input type="text" id="prodCode" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Product Name</label>
+                        <input type="text" id="prodName" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Brand (Catalogue)</label>
+                        <input type="text" id="prodCatalogue" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none" placeholder="e.g. Welspun">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1">Category</label>
+                        <input type="text" id="prodCategory" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none" placeholder="e.g. Click-N-Lock">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">Page URL</label>
+                    <input type="text" id="prodUrl" required class="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white focus:border-brand-gold outline-none" placeholder="/brand/page.html">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-1">New Image (Optional)</label>
+                    <input type="file" id="prodImage" accept="image/*" class="w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-gray-700 file:text-white hover:file:bg-gray-600 focus:outline-none">
+                </div>
+                <div class="flex gap-4 mt-6">
+                    <button type="button" onclick="if(window.closeProductModal) window.closeProductModal(); else { document.getElementById('productModal').classList.add('hidden'); document.getElementById('productModal').classList.remove('flex'); }" class="flex-1 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">Cancel</button>
+                    <button type="submit" class="flex-1 py-2 bg-brand-gold text-gray-900 font-bold rounded-lg hover:bg-white transition">Save Changes</button>
                 </div>
             </form>
         </div>
@@ -765,8 +836,9 @@
                     <td class="px-6 py-4">${user.email || 'No Email'}</td>
                     <td class="px-6 py-4"><span class="px-2 py-1 rounded text-xs font-bold ${user.role === 'Administrator' ? 'bg-purple-900 text-purple-300' : 'bg-gray-700 text-gray-300'}">${user.role || 'User'}</span></td>
                     <td class="px-6 py-4"><span class="px-2 py-1 rounded text-xs font-bold bg-green-900 text-green-300">Active</span></td>
-                    <td class="px-6 py-4 text-right">
-                        <button onclick="deleteUser('${user.id}')" class="text-red-400 hover:text-red-300"><i class="fa-solid fa-trash"></i></button>
+                    <td class="px-6 py-4 text-right space-x-3">
+                        <button onclick="openEditUserModal('${user.id}')" class="text-blue-400 hover:text-blue-300 transition" title="Edit"><i class="fa-solid fa-pencil"></i></button>
+                        <button onclick="deleteUser('${user.id}')" class="text-red-400 hover:text-red-300 transition" title="Delete"><i class="fa-solid fa-trash"></i></button>
                     </td>
                 </tr>
             `).join('');
@@ -815,6 +887,30 @@
                     if (app) app.delete();
                     alert("Error adding user: " + error.message);
                 });
+        });
+
+        // Open Edit User Modal
+        window.openEditUserModal = function(id) {
+            const user = currentUsers.find(u => u.id === id);
+            if (!user) return;
+            document.getElementById('editUserId').value = id;
+            document.getElementById('editUserName').value = user.name || '';
+            document.getElementById('editUserRole').value = user.role || 'Viewer';
+            document.getElementById('editUserModal').classList.remove('hidden');
+            document.getElementById('editUserModal').classList.add('flex');
+        };
+
+        // Handle Edit User Submission
+        document.getElementById('editUserForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const id = document.getElementById('editUserId').value;
+            db.collection('users').doc(id).update({
+                name: document.getElementById('editUserName').value,
+                role: document.getElementById('editUserRole').value
+            }).then(() => {
+                document.getElementById('editUserModal').classList.add('hidden');
+                document.getElementById('editUserModal').classList.remove('flex');
+            }).catch(error => alert('Error updating user: ' + error.message));
         });
 
         window.deleteUser = function(id) {
@@ -949,6 +1045,35 @@
                 });
             }
         }
+
+        // --- PRODUCT MANAGEMENT ---
+        window.openEditProductModal = function(code) {
+            // Populate the hidden field and SKU field with the code
+            document.getElementById('prodOriginalCode').value = code;
+            document.getElementById('prodCode').value = code;
+            
+            // Note: You can add logic here to fetch product data from Firestore using the code
+            // document.getElementById('prodName').value = fetchedName;
+            
+            const modal = document.getElementById('productModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        window.closeProductModal = function() {
+            const modal = document.getElementById('productModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        document.getElementById('productForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // TODO: Add logic to save product changes to Firestore
+            
+            alert('Product updated successfully!');
+            closeProductModal();
+        });
 
         // --- DOWNLOAD LEADS ---
         function renderDownloadLeads() {
@@ -1096,5 +1221,6 @@
             statusMessage.classList.add(type === 'success' ? 'text-green-400' : 'text-red-400', type === 'success' ? 'bg-green-900' : 'bg-red-900');
         }
     </script>
+    <script src="global-search.js"></script>
 </body>
 </html>

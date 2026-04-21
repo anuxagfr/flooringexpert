@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FE | Secret Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 p-6 md:p-12">
+
+    <div class="max-w-2xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden border border-gray-200">
+        <div class="bg-black p-6 text-center">
+            <h1 class="text-2xl font-bold text-white uppercase tracking-widest">Product Uploader</h1>
+            <p class="text-amber-500 text-xs mt-1">Direct GitHub Sync - Flooring Expert</p>
+        </div>
+
+        <div class="p-8 space-y-6">
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">GitHub Personal Token</label>
+                <input type="password" id="ghToken" class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Paste your PAT here...">
+            </div>
+
+            <hr>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Brand</label>
+                    <select id="brand" class="w-full px-4 py-2 border rounded bg-white">
+                        <option value="Welspun/welspun-lick-N-Lock/assets">Welspun (Click-N-Lock)</option>
+                        <option value="Pare/assets">Pare Flooring</option>
+                        <option value="Bekker/assets">Bekker</option>
+                        <option value="Cera/assets">Cera</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Collection (Sub-folder)</label>
+                    <select id="subfolder" class="w-full px-4 py-2 border rounded bg-white">
+                        <option value="Bliss">Bliss</option>
+                        <option value="Eden">Eden</option>
+                        <option value="Aristo">Aristo</option>
+                        <option value="General">General</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Product Name</label>
+                    <input type="text" id="prodName" class="w-full px-4 py-2 border rounded" placeholder="e.g. Copper Oak">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">SKU Code</label>
+                    <input type="text" id="sku" class="w-full px-4 py-2 border rounded" placeholder="e.g. HF000807">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">Select Images (Texture, Room, Detail...)</label>
+                <input type="file" id="imageFiles" multiple class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-amber-50 file:text-amber-700 hover:file:bg-amber-100">
+                <p class="text-[10px] text-gray-400 mt-2">*Pahli image "Name.jpg" banegi, baaki "Name1.jpg", "Name2.jpg" automatically ho jayengi.</p>
+            </div>
+
+            <button onclick="startUpload()" id="btnText" class="w-full bg-black text-white font-bold py-4 rounded-lg hover:bg-gray-800 transition shadow-lg flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Push to GitHub Repo
+            </button>
+
+            <div id="statusBox" class="hidden p-4 rounded text-sm font-medium"></div>
+        </div>
+    </div>
+
+    <script>
+        async function startUpload() {
+            const token = document.getElementById('ghToken').value;
+            const brand = document.getElementById('brand').value;
+            const subfolder = document.getElementById('subfolder').value;
+            const name = document.getElementById('prodName').value;
+            const files = document.getElementById('imageFiles').files;
+            const statusBox = document.getElementById('statusBox');
+
+            if(!token || !name || files.length === 0) {
+                alert("Token, Name aur Files zaroori hain!");
+                return;
+            }
+
+            statusBox.className = "block p-4 rounded text-sm bg-blue-50 text-blue-700";
+            statusBox.innerHTML = "Working... Please don't close this tab.";
+
+            for (let i = 0; i < files.length; i++) {
+                const suffix = i === 0 ? "" : i; // First file gets no number, others get 1, 2, 3...
+                const finalFileName = `${name}${suffix}.jpg`;
+                const path = `${brand}/${subfolder}/${finalFileName}`;
+                
+                try {
+                    const base64 = await toBase64(files[i]);
+                    await uploadToGitHub(token, path, base64);
+                    statusBox.innerHTML += `<br>✅ Uploaded: ${finalFileName}`;
+                } catch (err) {
+                    statusBox.className = "block p-4 rounded text-sm bg-red-50 text-red-700";
+                    statusBox.innerHTML = "❌ Error: " + err;
+                    break;
+                }
+            }
+        }
+
+        const toBase64 = file => new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result.split(',')[1]);
+            reader.onerror = error => reject(error);
+        });
+
+        async function uploadToGitHub(token, path, content) {
+            const repo = "Aapka_Username/Aapka_Repo_Name"; // 👈 YAHAN APNI REPO DAALEIN
+            const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+            
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: `Admin: Added product image ${path}`,
+                    content: content
+                })
+            });
+
+            if (!response.ok) throw new Error("GitHub API failed");
+        }
+    </script>
+</body>
+</html>

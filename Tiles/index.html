@@ -56,26 +56,164 @@
         Crafting spaces with precision and elegance
     </div>
 
-    <nav class="sticky top-0 z-50 bg-white border-b border-boen-border transition-all duration-300">
-        <div class="max-w-[1600px] mx-auto px-6 md:px-10 h-[80px] flex justify-between items-center">
-            
-            <a href="/index.html" class="text-2xl md:text-3xl font-sans font-semibold tracking-wide uppercase">
-                FLOORING EXPERT<span class="text-boen-border">.</span>
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
             </a>
 
-            <div class="hidden lg:flex gap-10 text-[14px] font-medium tracking-wide">
-                <a href="/Tiles/floor-tiles.html" class="nav-link">Floor Tiles</a>
-                <a href="/Tiles/kitchen-tiles.html" class="nav-link">Kitchen Tiles</a>
-                <a href="/Tiles/bathroom-tiles.html" class="nav-link">Bathroom Tiles</a>
-                <a href="/Tiles/digital-wall-tiles.html" class="nav-link">Wall Tiles</a>
-                <a href="/Tiles/parking-tiles.html" class="nav-link text-gray-500">Parking Tiles</a>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                  <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                         <div class="border-t my-1"></div>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <!-- Mega Menu Dropdown -->
+                    <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 hidden group-hover:block cursor-default z-50">
+                        <div class="grid grid-cols-2 gap-8">
+                            <!-- Column 1: Flooring -->
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Flooring</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/Pare/lvt-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        LVT Flooring
+                                    </a>
+                                    <a href="/Pare/spc-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        SPC Flooring
+                                    </a>
+                                    <a href="/Pare/hdf-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        HDF Flooring
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Column 2: Wall & Ceiling -->
+                            <div>
+                                <a href="/Pare/wall-and-ceiling.html" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                                <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+                                    <a href="/Pare/wpc/innov-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        INNOV+
+                                    </a>
+                                    <a href="/Pare/wpc/innov2-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        INNOV2+
+                                    </a>
+                                    <a href="/Pare/wpc/easy-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        EASY+
+                                    </a>
+                                    <a href="/Pare/wpc/baffle.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        BAFFLE
+                                    </a>
+                                    <a href="/Pare/wpc/acoustic.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        ACOUSTIC
+                                    </a>
+                                    <a href="/Pare/wpc/luxe.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        LUXE
+                                    </a>
+                                    <a href="/Pare/wpc/evolv-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        EVOLV+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+<!-- 
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </div> -->
+                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                
+
+<!-- 
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </div> -->
+
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
+                <a href="/Brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
+                
+                <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-600 ml-2" title="Search Products & Catalogues">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </button>
+                
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
             </div>
 
-            <div class="flex items-center gap-6 text-lg text-boen-dark">
-                <button class="hover:text-gray-500 transition-colors"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="hover:text-gray-500 transition-colors hidden md:block"><i class="fa-regular fa-heart"></i></button>
-                <button class="lg:hidden hover:text-gray-500 transition-colors"><i class="fa-solid fa-bars"></i></button>
-            </div>
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
         </div>
     </nav>
 
@@ -228,5 +366,7 @@
         </div>
     </footer>
 
+    <script src="/search-data.js"></script>
+    <script src="/global-search.js"></script>
 </body>
 </html>
