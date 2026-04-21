@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flooring Expert | Welspun, Bekker, Pare, Cera, Tiles & MYK</title>
+    <meta name="description" content="Authorized experts for Welspun, Bekker, Pare, Cera Sanitaryware, Premium Tiles, and MYK Laticrete.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            dark: '#1E1E1E',
+                            gold: '#C5A059',
+                            gold_dim: '#A38243',
+                            gray: '#F3F4F6',
+                            text: '#374151',
+                            accent: '#E31E24' /* MYK Red Accent */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Hide default summary marker for custom dropdown arrows */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary {
+            list-style: none;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="antialiased font-sans">
+
+
+   <!-- Global Announcement Banner -->
+   <div id="global-announcement" class="hidden bg-brand-gold text-brand-black text-center py-2 px-6 font-bold text-sm relative z-[60]">
+        <span id="announcement-text"></span>
+   </div>
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <a href="https://www.instagram.com/flooringexpert.in/"><i class="fa-brands fa-instagram text-brand-gold mr-2"></i></a>
+
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 9910927068</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                  <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                         <div class="border-t my-1"></div>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Pare/lvt-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">LVT Flooring</a>
+                        <a href="/Pare/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">SPC Flooring</a>
+                        <a href="/Pare/hdf-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold pl-6">HDF Flooring</a>
+                        <div class="border-t my-1"></div>
+                        <a href="/Pare/wall-and-ceiling.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+<!-- 
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </div> -->
+                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                
+
+<!-- 
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </div> -->
+
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
+                <a href="/Brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
+                
+
+                <a href="/index.html#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu with Accordion Dropdowns -->
+        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
+            <div class="flex flex-col p-6 gap-2">
+                
+                <!-- Carpet Tiles Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Carpet Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                         <a href="/Welspun/carpet tiles/Celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
+                         <a href="/Welspun/carpet tiles/Earthy Woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
+                         <a href="/Welspun/carpet tiles/Meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
+                         <a href="/Welspun/carpet tiles/Savy Street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
+                         <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </details>
+
+                <!-- Welspun Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Welspun
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </details>
+
+                <!-- Pare Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Pare
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">LVT Flooring</a>
+                         <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                         <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">HDF Flooring</a>
+                         <a href="/Pare/wall-and-ceiling.html" class="text-sm text-gray-600 hover:text-brand-gold">Wall & Ceiling</a>
+                    </div>
+                </details>
+
+                <!-- Bekker Accordion -->
+                 <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Bekker
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </details>
+
+                <!-- Cera Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Cera
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
+                    </div>
+                </details>
+
+                 <!-- Tiles Accordion -->
+                <!-- <details class="group border-b border-gray-50 pb-2">
+                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Tiles
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
+                        <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
+                            <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
+                    </div>
+                </details> -->
+
+                <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
+                  <a href="/Brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
+              
+                <a href="/index.html#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- CONTACT SECTION -->
+<section class="py-20">
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+<!-- Contact Info -->
+<div>
+
+<h3 class="text-2xl font-bold text-gray-900 mb-6">
+Contact Information
+</h3>
+
+<div class="space-y-6">
+
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-yellow-100 flex items-center justify-center rounded">
+📞
+</div>
+<div>
+<p class="font-semibold">Phone</p>
+<a href="tel:+919910927068" class="text-gray-600 hover:text-black">
++91 99109 27068
+</a>
+</div>
+</div>
+
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-yellow-100 flex items-center justify-center rounded">
+✉️
+</div>
+<div>
+<p class="font-semibold">Email</p>
+<a href="mailto:info@flooringexpert.in" class="text-gray-600 hover:text-black">
+info@flooringexpert.in
+</a>
+</div>
+</div>
+
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-yellow-100 flex items-center justify-center rounded">
+📍
+</div>
+<div>
+<p class="font-semibold">Location</p>
+<p class="text-gray-600">
+New Delhi, India
+</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- Social -->
+<div class="mt-8">
+<h4 class="font-semibold mb-3">Follow Us</h4>
+
+<a href="https://www.instagram.com/flooringexpert.in/"
+class="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800">
+Instagram
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Contact Form -->
+<div class="bg-white p-8 rounded-lg shadow border">
+
+<h3 class="text-xl font-bold mb-6">
+Request a Quote
+</h3>
+
+<form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-4">
+
+<input type="text" name="name" placeholder="Full Name" required
+class="w-full px-4 py-3 border rounded">
+
+<input type="tel" name="phone" placeholder="Phone Number" required
+class="w-full px-4 py-3 border rounded">
+
+<input type="email" name="email" placeholder="Email Address"
+class="w-full px-4 py-3 border rounded">
+
+<input type="text" name="city" placeholder="City"
+class="w-full px-4 py-3 border rounded">
+
+<textarea name="message" rows="4" placeholder="Project Details"
+class="w-full px-4 py-3 border rounded"></textarea>
+
+<button type="submit"
+class="w-full bg-black text-white py-3 rounded hover:bg-gray-800">
+Send Enquiry
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+</section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/Welspun" class="hover:text-brand-gold transition">Welspun</a></li>
+                        <li><a href="/Bekker" class="hover:text-brand-gold transition">Bekker</a></li>
+                        <li><a href="/Pare" class="hover:text-brand-gold transition">Pare</a></li>
+                        <li><a href="/Cera" class="hover:text-brand-gold transition">Cera</a></li>
+                        <li><a href="/Tiles" class="hover:text-brand-gold transition">Premium</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center">
+                                <i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in
+                            </a>
+                        </li>
+                        <li class="flex items-start mt-1">
+                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> 
+                            <span>Showroom: New Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="https://wa.me/9910927068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Maintenance Overlay -->
+    <div id="maintenance-overlay" class="fixed inset-0 bg-gray-900 z-[100] hidden flex-col items-center justify-center text-center p-6">
+        <div class="w-20 h-20 bg-brand-gold rounded-full flex items-center justify-center mb-6 animate-pulse">
+            <i class="fa-solid fa-screwdriver-wrench text-3xl text-brand-black"></i>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">Under Maintenance</h1>
+        <p id="maintenance-text" class="text-gray-400 text-lg max-w-md">We are currently improving our website. Please check back shortly.</p>
+        
+        <!-- Countdown Timer -->
+        <div id="maintenance-timer" class="flex gap-4 mt-8 hidden">
+            <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-brand-gold font-mono" id="timer-days">00</div>
+                <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Days</div>
+            </div>
+            <div class="text-3xl md:text-4xl font-bold text-gray-700">:</div>
+            <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-brand-gold font-mono" id="timer-hours">00</div>
+                <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Hours</div>
+            </div>
+            <div class="text-3xl md:text-4xl font-bold text-gray-700">:</div>
+            <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-brand-gold font-mono" id="timer-minutes">00</div>
+                <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Minutes</div>
+            </div>
+            <div class="text-3xl md:text-4xl font-bold text-gray-700">:</div>
+            <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-brand-gold font-mono" id="timer-seconds">00</div>
+                <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- FIREBASE CONFIG ---
+        const firebaseConfig = {
+            apiKey: "AIzaSyCoX_p6CRgcCzt8C3L-KDU6iUtHZinweyk",
+            authDomain: "flooringexpert-in.firebaseapp.com",
+            projectId: "flooringexpert-in",
+            storageBucket: "flooringexpert-in.firebasestorage.app",
+            messagingSenderId: "503754148776",
+            appId: "1:503754148776:web:9013025d33fabd8ab7eb9d",
+            measurementId: "G-NDXJP741MT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Real-time Settings Listener
+        db.collection('settings').doc('config').onSnapshot((doc) => {
+            if (!doc.exists) return;
+            const data = doc.data();
+            
+            // 1. Maintenance Mode
+            const overlay = document.getElementById('maintenance-overlay');
+            const msgEl = document.getElementById('maintenance-text');
+            
+            if (data.maintenanceMode) {
+                overlay.classList.remove('hidden');
+                overlay.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                if (data.maintenanceMessage) msgEl.innerText = data.maintenanceMessage;
+
+                // Timer Logic
+                if (data.maintenanceEnd) {
+                    const timerEl = document.getElementById('maintenance-timer');
+                    if (timerEl) timerEl.classList.remove('hidden');
+                    
+                    const end = new Date(data.maintenanceEnd).getTime();
+                    
+                    const updateTimer = () => {
+                        const now = new Date().getTime();
+                        const distance = end - now;
+                        
+                        if (distance < 0) {
+                            if (timerEl) timerEl.innerHTML = '<p class="text-brand-gold font-bold text-xl">We are almost back!</p>';
+                            return;
+                        }
+                        
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        
+                        document.getElementById('timer-days').innerText = String(days).padStart(2, '0');
+                        document.getElementById('timer-hours').innerText = String(hours).padStart(2, '0');
+                        document.getElementById('timer-minutes').innerText = String(minutes).padStart(2, '0');
+                        document.getElementById('timer-seconds').innerText = String(seconds).padStart(2, '0');
+                    };
+                    
+                    setInterval(updateTimer, 1000);
+                    updateTimer();
+                }
+            } else {
+                overlay.classList.add('hidden');
+                overlay.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            // 2. Global Announcement
+            const banner = document.getElementById('global-announcement');
+            const bannerText = document.getElementById('announcement-text');
+            if (data.announcementActive && data.announcementMessage) {
+                banner.classList.remove('hidden');
+                bannerText.innerText = data.announcementMessage;
+            } else {
+                banner.classList.add('hidden');
+            }
+        });
+
+        // --- CATALOGUE LOGIC ---
+        let catalogues = [];
+
+        const grid = document.getElementById('catalogueGrid');
+        const searchInput = document.getElementById('catalogueSearch');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const noResults = document.getElementById('noCatalogues');
+
+        let currentCategory = 'all';
+        let searchTerm = '';
+
+        // Fetch from Firestore
+        db.collection('catalogues').orderBy('createdAt', 'desc').onSnapshot((snapshot) => {
+            catalogues = [];
+            snapshot.forEach((doc) => {
+                catalogues.push({ id: doc.id, ...doc.data() });
+            });
+            renderCatalogues();
+        });
+
+        function renderCatalogues() {
+            if (!grid) return;
+            
+            const filtered = catalogues.filter(item => {
+                const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
+                const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition group overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="${item.image}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=Catalogue'">
+                        <div class="absolute top-3 left-3 bg-brand-black/80 text-white text-xs font-bold px-2 py-1 rounded uppercase">${item.category}</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-gray-900 mb-2 text-lg">${item.title}</h3>
+                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+                            <span class="text-xs text-gray-500 font-mono"><i class="fa-solid fa-file-pdf mr-1 text-red-500"></i> PDF • ${item.size}</span>
+                            <button onclick="openDownloadModal('${item.title.replace(/'/g, "\\'")}', '${item.link}')" class="text-brand-gold font-bold text-sm hover:text-brand-black transition flex items-center cursor-pointer">
+                                Download <i class="fa-solid fa-download ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            if (filtered.length === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                searchTerm = e.target.value;
+                renderCatalogues();
+            });
+        }
+
+        if (filterBtns) {
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-brand-black', 'text-white');
+                        b.classList.add('bg-gray-100', 'text-gray-600');
+                    });
+                    btn.classList.remove('bg-gray-100', 'text-gray-600');
+                    btn.classList.add('bg-brand-black', 'text-white');
+
+                    currentCategory = btn.dataset.category;
+                    renderCatalogues();
+                });
+            });
+        }
+        try {
+            db.collection('analytics').add({
+                page: window.location.pathname,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                referrer: document.referrer,
+                userAgent: navigator.userAgent
+            });
+        } catch (e) {
+            console.log("Analytics tracking disabled");
+        }
+    </script>
+</body>
+</html>
+

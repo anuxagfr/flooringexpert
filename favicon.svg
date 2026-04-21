@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
+  <!-- Background -->
+  <rect width="200" height="200" rx="35" fill="#0f0f0f"/>
+
+  <!-- FE Text -->
+  <text x="50%" y="55%"
+        text-anchor="middle"
+        fill="#A38243"
+        font-size="95"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="700"
+        dominant-baseline="middle">
+        FE
+  </text>
+
+</svg>

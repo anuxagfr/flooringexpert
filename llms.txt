@@ -1,0 +1,45 @@
+txt
+# LLMs.txt for flooringexpert.in
+# Website: https://flooringexpert.in
+# Purpose: Help AI systems understand Flooring Expert services and content
+
+Site: https://flooringexpert.in
+Name: Flooring Expert
+Type: Local Business
+Industry: Flooring Installation Services
+Location: India
+Language: en
+
+Description:
+Flooring Expert provides professional flooring installation services including carpet fitting, vinyl flooring, laminate flooring, wooden flooring and floor repair for homes and commercial spaces.
+
+Main Pages
+https://flooringexpert.in/
+https://flooringexpert.in/Brochure.html
+https://flooringexpert.in/blog/
+https://flooringexpert.in/about.html
+https://flooringexpert.in/contact.html
+
+Services
+Flooring installation
+Carpet installation
+Vinyl flooring
+Wooden flooring
+Laminate flooring
+Floor repair
+Commercial flooring
+Residential flooring
+
+Topics
+Flooring installation guides
+Carpet fitting services
+Vinyl flooring installation
+Wood flooring solutions
+Modern flooring designs
+Floor maintenance tips
+
+Sitemap
+https://flooringexpert.in/sitemap.xml
+
+Robots
+https://flooringexpert.in/robots.txt
