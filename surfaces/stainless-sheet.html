@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stainless Sheet | Architectural Surfaces | Flooring Expert</title>
+    <meta name="description" content="Water-ripple, hammered, and mirrored stainless steel sheets that create fluid, dynamic reflections for ceiling and wall cladding.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            gold: '#C5A059',
+                            gray: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased font-sans">
+
+   <!-- Global Announcement Banner -->
+   <div id="global-announcement" class="hidden bg-brand-gold text-brand-black text-center py-2 px-6 font-bold text-sm relative z-[60]">
+        <span id="announcement-text"></span>
+   </div>
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <a href="https://www.instagram.com/flooringexpert.in/"><i class="fa-brands fa-instagram text-brand-gold mr-2"></i></a>
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 9910927068</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Architectural Surfaces <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 hidden group-hover:block cursor-default z-50">
+                        <div class="grid grid-cols-3 gap-8">
+                            
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Innovative Surfaces</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/aluminum-foam.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Aluminum Foam
+                                    </a>
+                                    <a href="/surfaces/crystal-bricks.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Crystal Bricks
+                                    </a>
+                                    <a href="/surfaces/transparent-stone.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Transparent Stone
+                                    </a>
+                                    <a href="/surfaces/stainless-sheet.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Stainless Sheet
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Refined Facades</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/modified-clay.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Flexible Stone
+                                    </a>
+                                    <a href="/surfaces/cement-board.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Cement Board
+                                    </a>
+                                    <a href="/surfaces/printed-modified-clay.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Modified Clay
+                                    </a>
+                                    <a href="/surfaces/aluminium-profile.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Aluminium Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Designer Interiors</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/resin-decorative-panels.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Resin Panels
+                                    </a>
+                                    <a href="/surfaces/japanese-paper.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Japanese Paper
+                                    </a>
+                                    <a href="/surfaces/ceramic-foam.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Ceramic Foam
+                                    </a>
+                                    <a href="/surfaces/ultra-thin-stone.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        3D Flexible Stone
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 hidden group-hover:block cursor-default z-50">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Flooring</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">LVT Flooring</a>
+                                    <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">SPC Flooring</a>
+                                    <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">HDF Flooring</a>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="/Pare/wall-and-ceiling.html" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                                <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+                                    <a href="/Pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">INNOV+</a>
+                                    <a href="/Pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">INNOV2+</a>
+                                    <a href="/Pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">EASY+</a>
+                                    <a href="/Pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">BAFFLE</a>
+                                    <a href="/Pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">ACOUSTIC</a>
+                                    <a href="/Pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">LUXE</a>
+                                    <a href="/Pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">EVOLV+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+
+                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                
+                <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-600 ml-2" title="Search Products & Catalogues">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </button>
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="relative h-[600px] flex items-center bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1506143925201-0252c51780b0?q=80&w=2000&auto=format&fit=crop" alt="Stainless Sheet Surface" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+                <div class="h-12 mb-6 bg-white/90 px-4 py-2 rounded inline-block font-heading font-bold text-xl tracking-widest text-black">SURFACES</div>
+                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm mb-2 block">Innovative Surfaces</span>
+                <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6">Stainless Sheet<br><span class="text-3xl md:text-4xl font-normal block mt-2 text-gray-200">Dynamic <span class="text-brand-gold">Reflections.</span></span></h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">Water-ripple, hammered, and mirrored stainless steel sheets that create fluid, dynamic reflections for ceiling and wall cladding.</p>
+                <a href="#overview" class="px-6 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">Explore Details</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Metallic Fluidity</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Add a futuristic, high-end feel to your projects. Our Stainless Sheets are stamped with unique patterns like water ripples that play with ambient lighting to create the illusion of flowing metal.</p>
+                <h3 class="font-bold text-lg text-brand-gold mb-4 uppercase tracking-wide">Key Highlights:</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-4"><span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-water text-sm"></i></span><span class="text-gray-700 mt-1 font-medium"><strong>Dynamic Textures:</strong> Water-ripple and hammered finishes available.</span></li>
+                    <li class="flex items-start gap-4"><span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-shield-halved text-sm"></i></span><span class="text-gray-700 mt-1 font-medium"><strong>Anti-Corrosion:</strong> Crafted from premium 304/316 grade stainless steel.</span></li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="font-bold text-xl mb-6 border-b pb-4">Performance Features:</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-broom text-brand-gold text-lg"></i> Exceptionally easy to clean and maintain</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-fire text-brand-gold text-lg"></i> Highly fire-resistant metallic core</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+   <!-- 1. Architectural Applications Gallery (With Video) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-gray-900">Refined Architectural Applications</h2>
+                    <div class="w-20 h-1 bg-brand-gold mt-4"></div>
+                </div>
+                <p class="text-gray-600 max-w-lg">Designed for versatility and durability, our Stainless Steel Molding Boards offer a modern, sleek look for wall cladding, ceilings, and high-traffic areas like elevators.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Feature Wall -->
+                <div class="relative h-[300px] group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/stainless/img (3).jpg" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200'" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Luxe Feature Walls</span>
+                    </div>
+                </div>
+
+                <!-- Video Showcase: Reflective Surfaces (Autoplay) -->
+                <div class="relative h-[300px] md:col-span-2 group overflow-hidden rounded-lg">
+                    <video 
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
+                        autoplay muted loop playsinline
+                        poster="https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?q=80&w=1200">
+                        <source src="/surfaces/assets/stainless/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="absolute inset-0 bg-black/30 flex items-end p-6 pointer-events-none">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                                <i class="fa-solid fa-play text-white text-xs"></i>
+                            </div>
+                            <span class="text-white font-bold">Dynamic Light Reflection (Live View)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elevator Interior -->
+                <div class="relative h-[300px] md:col-span-2 group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/stainless/img (2).jpg" onerror="this.src='this.src=\'https://images.unsplash.com/photo-1600566753351-300877e1d3f1?q=80&w=1200\''" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Modern Elevator Interiors</span>
+                    </div>
+                </div>
+
+                <!-- Bar Fronts -->
+                <div class="relative h-[300px] group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/stainless/img (1).jpg" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200'" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Premium Bar Fronts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Dynamic Product Previewer (Finishes & Textures) -->
+    <section id="product-details" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <!-- Main Preview Display -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-brand-gold/20 rounded-xl blur-lg opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                    
+                    <div id="stainless-display-container" class="relative rounded-xl shadow-2xl w-full h-[500px] overflow-hidden bg-gray-100 transition-all duration-300">
+                        <img id="stainless-main-image" 
+                             src="/surfaces/assets/stainless/img1.jpg" 
+                             onerror="this.src='https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?q=80&w=1200'"
+                             alt="Stainless Steel Finish" 
+                             class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded shadow-lg border-l-4 border-brand-gold">
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Selected Aesthetic</p>
+                        <p id="stainless-finish-name" class="text-brand-black font-bold">Water Ripple (3D Textured)</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Stainless Steel Molding Board</h2>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Refined architectural surfaces that blend sleek modernism with industrial-grade durability. Available in a variety of reflective and textured finishes including brushed, polished, and matte to suit any high-end decorative vision.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Available Finished Options</h3>
+                        <div class="grid grid-cols-4 gap-3">
+                            <!-- Swatches matching the 4 in the document image -->
+                            <div class="group cursor-pointer" onclick="updateStainlessDisplay('Water Ripple', '/surfaces/assets/stainless/img1.jpg')">
+                                <div class="aspect-[2/3] bg-gray-400 rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                    <img src="/surfaces/assets/stainless/img1.jpg" onerror="this.src='https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500">Textured</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateStainlessDisplay('Brushed Gold', '/surfaces/assets/stainless/img2.jpg')">
+                                <div class="aspect-[2/3] bg-[#C5A059] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                    <img src="/surfaces/assets/stainless/img2.jpg" onerror="this.src='https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500">Brushed</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateStainlessDisplay('Polished Mirror', '/surfaces/assets/stainless/img3.jpg')">
+                                <div class="aspect-[2/3] bg-[#312E81] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                    <img src="/surfaces/assets/stainless/img3.jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500">Mirror</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateStainlessDisplay('Organic Relief', '/surfaces/assets/stainless/img4.jpg')">
+                                <div class="aspect-[2/3] bg-gray-300 rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                    <img src="/surfaces/assets/stainless/img4.jpg" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500">Decorative</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm">
+                        <div class="grid grid-cols-2 gap-y-4 text-sm">
+                            <div class="font-bold text-gray-700">Specification</div>
+                            <div class="text-gray-600 text-right">Textured | Reflective</div>
+                            
+                            <div class="font-bold text-gray-700">Standard Size</div>
+                            <div class="text-gray-600 text-right">8' by 4' ft.</div>
+                            
+                            <div class="font-bold text-gray-700">Aesthetics</div>
+                            <div class="text-gray-600 text-right">Brushed, Polished, Matte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Key Benefits Grid -->
+    <section class="py-20 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 mb-4">Sleek, Modern & Sustainable</h2>
+            <div class="w-20 h-1 bg-brand-gold mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Eco-Friendly</h4>
+                    <p class="text-sm text-gray-600">Sustainable material choice with low environmental impact and 100% recyclability.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">High Durability</h4>
+                    <p class="text-sm text-gray-600">Scratch-resistant and impact-resistant surfaces engineered for long-term heavy use.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-soap text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Low Maintenance</h4>
+                    <p class="text-sm text-gray-600">Easy to clean surfaces that maintain their reflective luster with minimal effort.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Modern Aesthetics</h4>
+                    <p class="text-sm text-gray-600">Providing a clean, sleek look that elevates the architectural value of any space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FAQ / Technical Specs -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 text-center mb-12">Product Specifications FAQ</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">What are the standard dimensions for these boards?</h5>
+                    <p class="text-gray-600 text-sm">Our premium stainless steel molding boards come in a standard architectural format of 8' by 4' ft., providing extensive coverage for large-scale projects.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">Can these be used for elevator interiors?</h5>
+                    <p class="text-gray-600 text-sm">Yes, elevator interiors are a primary application due to the material's durability, low maintenance, and sleek modern aesthetic.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">Are there different texture options?</h5>
+                    <p class="text-gray-600 text-sm">Absolutely. We offer various finishes including brushed, polished, mirror-like, and highly textured 3D patterns like Water Ripple and Organic Relief.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Switch Logic Script -->
+    <script>
+    function updateStainlessDisplay(name, imageSrc) {
+        const displayImage = document.getElementById('stainless-main-image');
+        const nameLabel = document.getElementById('stainless-finish-name');
+
+        nameLabel.innerText = name + (name.includes('Ripple') || name.includes('Relief') ? ' (Textured)' : ' (Reflective)');
+
+        if (imageSrc && imageSrc !== '') {
+            displayImage.src = imageSrc;
+            displayImage.classList.remove('hidden');
+        }
+    }
+    </script>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Request a Consultation</h2>
+                <p class="text-gray-500 mt-2">Select your brand preference and get a custom quote. We deliver Pan-India.</p>
+            </div>
+
+            <form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="+91 99999 99999" required>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-sm font-bold text-gray-700 mb-2">City / Location</label>
+                        <input type="text" name="city" id="city" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="e.g. Mumbai, Delhi">
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
+                        <select name="product" id="product" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none bg-white transition">
+                            <option value="Architectural Surfaces" selected>Architectural Surfaces</option>
+                            <option value="Welspun SPC / Click-N-Lock">Welspun SPC / Click-N-Lock</option>
+                            <option value="Pare Flooring / Wall">Pare Flooring / Wall</option>
+                            <option value="Bekker Flooring">Bekker Flooring</option>
+                            <option value="Premium Tiles">Premium Tiles</option>
+                            <option value="Cera Sanitaryware / Tiles">Cera Sanitaryware / Tiles</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Project Details (Area in sq.ft)</label>
+                    <textarea name="message" id="message" rows="3" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-black text-white font-bold py-4 rounded hover:bg-gray-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/surfaces/aluminum-foam.html" class="hover:text-brand-gold transition">Surfaces</a></li>
+                        <li><a href="/Welspun" class="hover:text-brand-gold transition">Welspun</a></li>
+                        <li><a href="/Bekker" class="hover:text-brand-gold transition">Bekker</a></li>
+                        <li><a href="/Pare" class="hover:text-brand-gold transition">Pare</a></li>
+                        <li><a href="/Cera" class="hover:text-brand-gold transition">Cera</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in</a>
+                        </li>
+                        <li class="flex items-start mt-1">
+                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> <span>Showroom: New Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/search-data.js"></script>
+    <script src="/global-search.js"></script>
+</body>
+</html>

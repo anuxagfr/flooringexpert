@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Panels | Architectural Surfaces | Flooring Expert</title>
+    <meta name="description" content="Translucent, decorative resin panels encapsulating organic materials, textures, and colors. Perfect for privacy screens, doors, and illuminated features.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            gold: '#C5A059',
+                            gray: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased font-sans">
+
+   <!-- Global Announcement Banner -->
+   <div id="global-announcement" class="hidden bg-brand-gold text-brand-black text-center py-2 px-6 font-bold text-sm relative z-[60]">
+        <span id="announcement-text"></span>
+   </div>
+
+   <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
+        <div class="flex gap-6">
+            <a href="https://www.instagram.com/flooringexpert.in/"><i class="fa-brands fa-instagram text-brand-gold mr-2"></i></a>
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 9910927068</span>
+            <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
+        </div>
+        <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/index.html" class="flex items-center gap-2 group z-50">
+                <div class="w-10 h-10 bg-brand-black text-brand-gold flex items-center justify-center font-bold text-xl rounded transition-transform group-hover:scale-105">FE</div>
+                <div class="flex flex-col">
+                    <h1 class="font-heading font-bold text-xl text-gray-900 leading-none">Flooring Expert</h1>
+                    <span class="text-xs text-gray-500 uppercase tracking-wide">Surface Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-600">
+               
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Architectural Surfaces <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 hidden group-hover:block cursor-default z-50">
+                        <div class="grid grid-cols-3 gap-8">
+                            
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Innovative Surfaces</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/aluminum-foam.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Aluminum Foam
+                                    </a>
+                                    <a href="/surfaces/crystal-bricks.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Crystal Bricks
+                                    </a>
+                                    <a href="/surfaces/transparent-stone.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Transparent Stone
+                                    </a>
+                                    <a href="/surfaces/stainless-sheet.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Stainless Sheet
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Refined Facades</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/modified-clay.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Flexible Stone
+                                    </a>
+                                    <a href="/surfaces/cement-board.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Cement Board
+                                    </a>
+                                    <a href="/surfaces/printed-modified-clay.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Modified Clay
+                                    </a>
+                                    <a href="/surfaces/aluminium-profile.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Aluminium Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Designer Interiors</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/surfaces/resin-decorative-panels.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Resin Panels
+                                    </a>
+                                    <a href="/surfaces/japanese-paper.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Japanese Paper
+                                    </a>
+                                    <a href="/surfaces/ceramic-foam.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        Ceramic Foam
+                                    </a>
+                                    <a href="/surfaces/ultra-thin-stone.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
+                                        3D Flexible Stone
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Carpet Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Welspun <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Pare <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 hidden group-hover:block cursor-default z-50">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="border-r border-gray-100 pr-6">
+                                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Flooring</h3>
+                                <div class="flex flex-col gap-3">
+                                    <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">LVT Flooring</a>
+                                    <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">SPC Flooring</a>
+                                    <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">HDF Flooring</a>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="/Pare/wall-and-ceiling.html" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                                <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+                                    <a href="/Pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">INNOV+</a>
+                                    <a href="/Pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">INNOV2+</a>
+                                    <a href="/Pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">EASY+</a>
+                                    <a href="/Pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">BAFFLE</a>
+                                    <a href="/Pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">ACOUSTIC</a>
+                                    <a href="/Pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">LUXE</a>
+                                    <a href="/Pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold transition-colors">EVOLV+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group h-full py-4 cursor-pointer">
+                    <span class="hover:text-brand-gold transition-colors flex items-center gap-1">
+                        Bekker <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </span>
+                    <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
+                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                    </div>
+                </div>
+
+                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                
+                <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-600 ml-2" title="Search Products & Catalogues">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </button>
+
+                <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
+            </div>
+
+            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="relative h-[600px] flex items-center bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1520699049698-acd2fce18736?q=80&w=2000&auto=format&fit=crop" alt="Resin Panels Surface" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+                <div class="h-12 mb-6 bg-white/90 px-4 py-2 rounded inline-block font-heading font-bold text-xl tracking-widest text-black">SURFACES</div>
+                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm mb-2 block">Designer Interiors</span>
+                <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6">Resin Panels<br><span class="text-3xl md:text-4xl font-normal block mt-2 text-gray-200">Encapsulated <span class="text-brand-gold">Art.</span></span></h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">Translucent, decorative resin panels encapsulating organic materials, textures, and colors. Perfect for privacy screens, doors, and illuminated features.</p>
+                <a href="#overview" class="px-6 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">Explore Details</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Bespoke Light Diffusion</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Resin panels offer glass-like aesthetics but with half the weight and 40 times the impact resistance. Embed bamboo, fabrics, or spun metal to create truly custom interior partitions.</p>
+                <h3 class="font-bold text-lg text-brand-gold mb-4 uppercase tracking-wide">Key Highlights:</h3>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-4"><span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-leaf text-sm"></i></span><span class="text-gray-700 mt-1 font-medium"><strong>Organic Embeds:</strong> Real leaves, metals, and textiles preserved inside.</span></li>
+                    <li class="flex items-start gap-4"><span class="w-8 h-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0 shadow"><i class="fa-solid fa-lightbulb text-sm"></i></span><span class="text-gray-700 mt-1 font-medium"><strong>Custom Translucency:</strong> Control light flow and privacy levels.</span></li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 class="font-bold text-xl mb-6 border-b pb-4">Performance Features:</h3>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-shield-halved text-brand-gold text-lg"></i> Virtually shatterproof and highly durable</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-scissors text-brand-gold text-lg"></i> Formable and easily cut on-site</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+ <!-- 1. Architectural Applications Gallery (With Video) -->
+
+ 
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-gray-900">Designer Resin Wall Solutions</h2>
+                    <div class="w-20 h-1 bg-brand-gold mt-4"></div>
+                </div>
+                <p class="text-gray-600 max-w-lg">Resin decorative panels create a striking visual statement, blending artistic depth, luminous textures, and premium craftsmanship to elevate contemporary interiors.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Partition Application -->
+                <div class="relative h-[300px] group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/resin/img (8).jpg" onerror="this.src='https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Artistic Office Partitions</span>
+                    </div>
+                </div>
+
+                <!-- Video Showcase (Autoplay) -->
+                <div class="relative h-[300px] md:col-span-2 group overflow-hidden rounded-lg">
+                    <video 
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
+                        autoplay muted loop playsinline
+                        poster="https://images.unsplash.com/photo-1518005020481-a68515605041?q=80&w=1200">
+                        <source src="/surfaces/assets/rattan/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="absolute inset-0 bg-black/30 flex items-end p-6 pointer-events-none">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                                <i class="fa-solid fa-play text-white text-xs"></i>
+                            </div>
+                            <span class="text-white font-bold">Luminous Textures & Light Play</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Interior -->
+                <div class="relative h-[300px] md:col-span-2 group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/resin/img (1).jpg" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200'" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Contemporary Interior Cladding</span>
+                    </div>
+                </div>
+
+                <!-- Restaurant Feature -->
+                <div class="relative h-[300px] group overflow-hidden rounded-lg">
+                    <img src="/surfaces/assets/resin/img (7).jpg " onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800'" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                        <span class="text-white font-bold">Premium Hospitality Surfaces</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Dynamic Product Previewer (Rattan Weaves) -->
+    <section id="product-details" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <!-- Main Preview Display -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-brand-gold/20 rounded-xl blur-lg opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                    
+                    <div id="main-display-container" class="relative rounded-xl shadow-2xl w-full h-[500px] overflow-hidden bg-gray-50 transition-all duration-300 flex items-center justify-center">
+                        <img id="main-product-image" 
+                             src="/surfaces/assets/resin/img (1).jpg" 
+                             onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800'"
+                             alt="Rattan Resin Board Detail" 
+                             class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded shadow-lg border-l-4 border-brand-gold">
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Selected Pattern</p>
+                        <p id="selected-finish-name" class="text-brand-black font-bold">TBSZ01 - Traditional Weave</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Rattan Woven Resin Board</h2>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Elevate your interiors with our designer resin wall solutions. These boards blend the organic beauty of woven rattan with the modern performance of resin, offering a transparent and natural look that captures light beautifully.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Available Weave Options</h3>
+                        <div class="grid grid-cols-5 gap-3">
+                            <!-- Swatches for TBSZ01 - TBSZ05 -->
+                            <div class="group cursor-pointer" onclick="updateProductDisplay('TBSZ01 - Traditional Weave', '#FDFBF7', '/surfaces/assets/resin/img (2).jpg')">
+                                <div class="aspect-square bg-[#EAD8B1] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                     <img src="/surfaces/assets/resin/img (2).jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500 truncate">TBSZ01</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateProductDisplay('TBSZ02 - Hexagonal Mesh', '#FDFBF7', '/surfaces/assets/resin/img (3).jpg')">
+                                <div class="aspect-square bg-[#EAD8B1] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                     <img src="/surfaces/assets/resin/img (3).jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500 truncate">TBSZ02</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateProductDisplay('TBSZ03 - Fine Star Weave', '#FDFBF7', '/surfaces/assets/resin/img (4).jpg')">
+                                <div class="aspect-square bg-[#EAD8B1] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                     <img src="/surfaces/assets/resin/img (4).jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500 truncate">TBSZ03</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateProductDisplay('TBSZ04 - Dense Panel', '#FDFBF7', '/surfaces/assets/resin/img (5).jpg')">
+                                <div class="aspect-square bg-[#EAD8B1] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                     <img src="/surfaces/assets/resin/img (5).jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500 truncate">TBSZ04</p>
+                            </div>
+                            <div class="group cursor-pointer" onclick="updateProductDisplay('TBSZ05 - Dot Matrix Weave', '#FDFBF7', '/surfaces/assets/resin/img (6).jpg')">
+                                <div class="aspect-square bg-[#EAD8B1] rounded-lg shadow-sm border-2 border-transparent group-hover:border-brand-gold transition-all overflow-hidden">
+                                     <img src="/surfaces/assets/resin/img (6).jpg" onerror="this.src='https://images.unsplash.com/photo-1544115089-567a9ef38965?q=80&w=200'" class="w-full h-full object-cover">
+                                </div>
+                                <p class="text-[10px] text-center mt-2 font-bold text-gray-500 truncate">TBSZ05</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm">
+                        <div class="grid grid-cols-2 gap-y-4 text-sm">
+                            <div class="font-bold text-gray-700">Thickness</div>
+                            <div class="text-gray-600 text-right">4-5 mm</div>
+                            
+                            <div class="font-bold text-gray-700">Panel Size</div>
+                            <div class="text-gray-600 text-right">1220 mm * 2440 mm</div>
+                            
+                            <div class="font-bold text-gray-700">Aesthetic Look</div>
+                            <div class="text-brand-gold font-bold text-right">Transparent & Natural</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Key Benefits Grid -->
+    <section class="py-20 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 mb-4">Crafted for Excellence</h2>
+            <div class="w-20 h-1 bg-brand-gold mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Artistic Depth</h4>
+                    <p class="text-sm text-gray-600">The 4-5mm thickness provides depth and layers to the woven rattan texture.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Eco-friendly</h4>
+                    <p class="text-sm text-gray-600">Sustainable material choices that are both durable and environmentally responsible.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hand-sparkles text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Low Maintenance</h4>
+                    <p class="text-sm text-gray-600">The resin surface protects the rattan, making it easy to clean and highly durable.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="w-16 h-16 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Durable Build</h4>
+                    <p class="text-sm text-gray-600">Engineered for architectural use in partitions and high-traffic interior feature walls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FAQ / Technical Specs -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 text-center mb-12">Product Specifications FAQ</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">What is the thickness of these resin boards?</h5>
+                    <p class="text-gray-600 text-sm">Our rattan woven resin panels are available in a slim yet sturdy thickness of 4-5 mm, optimized for partition and wall cladding applications.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">What are the primary applications?</h5>
+                    <p class="text-gray-600 text-sm">These boards are ideally suited for room partitions, furniture accents, and decorative wall solutions where a luminous and natural aesthetic is desired.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h5 class="font-bold text-gray-900 mb-2">How large are the standard panels?</h5>
+                    <p class="text-gray-600 text-sm">Our standard architectural sheets come in a $1220\text{ mm} \times 2440\text{ mm}$ format, suitable for floor-to-ceiling installations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Switch Logic Script -->
+    <script>
+    function updateProductDisplay(name, color, imageSrc) {
+        const displayImage = document.getElementById('main-product-image');
+        const nameLabel = document.getElementById('selected-finish-name');
+
+        nameLabel.innerText = name;
+
+        if (imageSrc && imageSrc !== '') {
+            displayImage.src = imageSrc;
+            displayImage.classList.remove('hidden');
+        }
+    }
+    </script>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-gray-900">Request a Consultation</h2>
+                <p class="text-gray-500 mt-2">Select your brand preference and get a custom quote. We deliver Pan-India.</p>
+            </div>
+
+            <form action="https://formsubmit.co/flooringexpert.in@gmail.com" method="POST" class="space-y-6 bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="+91 99999 99999" required>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-sm font-bold text-gray-700 mb-2">City / Location</label>
+                        <input type="text" name="city" id="city" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="e.g. Mumbai, Delhi">
+                    </div>
+                    <div>
+                        <label for="product" class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
+                        <select name="product" id="product" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none bg-white transition">
+                            <option value="Architectural Surfaces" selected>Architectural Surfaces</option>
+                            <option value="Welspun SPC / Click-N-Lock">Welspun SPC / Click-N-Lock</option>
+                            <option value="Pare Flooring / Wall">Pare Flooring / Wall</option>
+                            <option value="Bekker Flooring">Bekker Flooring</option>
+                            <option value="Premium Tiles">Premium Tiles</option>
+                            <option value="Cera Sanitaryware / Tiles">Cera Sanitaryware / Tiles</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Project Details (Area in sq.ft)</label>
+                    <textarea name="message" id="message" rows="3" class="w-full px-4 py-3 rounded border border-gray-300 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-black text-white font-bold py-4 rounded hover:bg-gray-800 transition shadow-md hover:shadow-lg transform hover:-translate-y-1">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h2 class="text-white font-bold text-xl mb-4">Flooring Expert</h2>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Your trusted partner for premium architectural surfaces. We provide end-to-end solutions from material selection to professional installation for residential and commercial projects.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/flooringexpert.in/" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/surfaces/aluminum-foam.html" class="hover:text-brand-gold transition">Surfaces</a></li>
+                        <li><a href="/Welspun" class="hover:text-brand-gold transition">Welspun</a></li>
+                        <li><a href="/Bekker" class="hover:text-brand-gold transition">Bekker</a></li>
+                        <li><a href="/Pare" class="hover:text-brand-gold transition">Pare</a></li>
+                        <li><a href="/Cera" class="hover:text-brand-gold transition">Cera</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in</a>
+                        </li>
+                        <li class="flex items-start mt-1">
+                            <i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> <span>Showroom: New Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Flooring Expert. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="/terms-of-service.html" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/search-data.js"></script>
+    <script src="/global-search.js"></script>
+</body>
+</html>
