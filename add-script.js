@@ -3,7 +3,7 @@ const path = require('path');
 
 // Yahan us file ka naam likhein jo aap sab pages me link karna chahte hain
 const jsFileName = '/main.js'; 
-const scriptToInject = `<script src="${jsFileName}"></script>`;
+const scriptToInject = `<script src="${jsfilename}"></script>`;
 
 const directoryToScan = './';
 
@@ -22,7 +22,7 @@ function injectScriptInFiles(dir) {
                 let content = fs.readFileSync(filePath, 'utf8');
 
                 // Code check karega ki kya '/main.js' pehle se file me linked hai ya nahi
-                if (!content.includes(`src="${jsFileName}"`)) {
+                if (!content.includes(`src="${jsfilename}"`)) {
                     
                     const bodyRegex = /<\/body>/i;
                     

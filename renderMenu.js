@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let borderRightClass = isLast ? '' : 'border-r border-gray-100 pr-6';
                 
                 let colHeader = col.headerUrl 
-                    ? `<a href="${col.headerUrl}" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">${col.header}</a>`
+                    ? `<a href="${col.headerurl}" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">${col.header}</a>`
                     : `<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">${col.header}</h3>`;
                 
                 let desktopColLinksHTML = '';

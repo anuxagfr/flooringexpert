@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welspun MultiStile™ | Floor to Wall Solutions</title>
-    <meta name="description" content="Discover Welspun MultiStile - The flexible, waterproof, and termite-proof solution perfect for both floors and walls. Installation in less than a day.">
+    <title>Welspun Celestial Collection | Artistic Flooring</title>
+    <meta name="description" content="Discover the Welspun Celestial Collection. Adonia, Calix, Eon, Vega, and Gemini series offering bold, contemporary, and artistic carpet tiles.">
 
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="/style.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -22,13 +21,15 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         heading: ['Roboto', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
                         brand: {
                             black: '#121212',
                             gold: '#C5A059',
                             gray: '#F3F4F6',
-                            welspun: '#D32F2F'
+                            welspun: '#D32F2F',
+                            nebula: '#2D3748'
                         }
                     }
                 }
@@ -37,30 +38,26 @@
     </script>
 
     <style>
-        .clip-path-slant {
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
         .feature-card:hover i {
             transform: scale(1.15);
             transition: transform 0.3s ease;
         }
-        /* Updated Swatch Circle to match Click-N-Lock Style (Rounder/Smaller) */
         .swatch-circle {
             width: 100%;
-            height: 60px; /* Reduced from 80px to match reference */
+            height: 70px;
             border-radius: 4px;
             margin-bottom: 8px;
             box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
             background-size: cover;
             background-position: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #e5e7eb;
         }
         .group:hover .swatch-circle {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         
-        /* Modal Animation */
         #swatch-modal:not(.hidden) {
             display: flex;
         }
@@ -79,7 +76,6 @@
             to { transform: scale(1); opacity: 1; }
         }
 
-        /* Slider Styles */
         .slide {
             transition: opacity 0.5s ease-in-out;
         }
@@ -92,7 +88,6 @@
             z-index: 0;
         }
 
-        /* Thumb Box Active State */
         .thumb-box {
             opacity: 0.6;
             border: 2px solid transparent;
@@ -217,11 +212,11 @@
                     </span>
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
                          <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">carpet tiles</div>
-                        <a href="/Welspun/carpet tiles/Celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
-                        <a href="/Welspun/carpet tiles/Earthy Woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
-                        <a href="/Welspun/carpet tiles/Meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
-                        <a href="/Welspun/carpet tiles/Savy Street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
-                        <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
+                        <a href="/welspun/carpet-tiles/celestial.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Celestial</a>
+                        <a href="/welspun/carpet-tiles/earthy-woods.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Earthy Woods</a>
+                        <a href="/welspun/carpet-tiles/meander.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Meander</a>
+                        <a href="/welspun/carpet-tiles/savy-street.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Savy Street</a>
+                        <a href="/welspun/carpet-tiles/urban-streaks.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Urban Streaks</a>
                     </div>
                 </div>
 
@@ -232,10 +227,10 @@
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
 
-                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
-                        <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
+                        <a href="/welspun/welspun-lick-n-lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
                          <div class="border-t my-1"></div>
-                        <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
+                        <a href="/welspun/carpet-tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
                     </div>
                 </div>
 
@@ -250,15 +245,15 @@
                             <div class="border-r border-gray-100 pr-6">
                                 <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">Flooring</h3>
                                 <div class="flex flex-col gap-3">
-                                    <a href="/Pare/lvt-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/lvt-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         LVT Flooring
                                     </a>
-                                    <a href="/Pare/spc-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/spc-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         SPC Flooring
                                     </a>
-                                    <a href="/Pare/hdf-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/hdf-flooring.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         HDF Flooring
                                     </a>
@@ -267,30 +262,30 @@
 
                             <!-- Column 2: Wall & Ceiling -->
                             <div>
-                                <a href="/Pare/wall-and-ceiling.html" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                                <a href="/pare/wall-and-ceiling.html" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2 hover:text-brand-gold transition-colors">Wall & Ceiling</a>
                                 <div class="grid grid-cols-2 gap-x-4 gap-y-3">
-                                    <a href="/Pare/wpc/innov-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/innov-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         INNOV+
                                     </a>
-                                    <a href="/Pare/wpc/innov2-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/innov2-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         INNOV2+
                                     </a>
-                                    <a href="/Pare/wpc/easy-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/easy-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         EASY+
                                     </a>
                                     
-                                    <a href="/Pare/wpc/acoustic.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/acoustic.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         ACOUSTIC
                                     </a>
-                                    <a href="/Pare/wpc/luxe.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/luxe.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         LUXE
                                     </a>
-                                    <a href="/Pare/wpc/evolv-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
+                                    <a href="/pare/wpc/evolv-plus.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         EVOLV+
                                     </a>
@@ -306,9 +301,9 @@
                     </span>
                     <div class="dropdown-menu absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
                          <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
-                        <a href="/Bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
-                        <a href="/Bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
-                        <a href="/Bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
+                        <a href="/bekker/engineered-wood.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/bekker/laminate-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/bekker/spc-flooring.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">SPC Flooring</a>
                     </div>
                 </div>
 <!-- 
@@ -317,11 +312,11 @@
                         Cera <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </span>
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <a href="/Cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
-                        <a href="/Cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
+                        <a href="/cera/sanitaryware.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Sanitaryware</a>
+                        <a href="/cera/faucets.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Faucets</a>
                     </div>
                 </div> -->
-                <a href="/Cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
+                <a href="/cera/index.html" class="hover:text-brand-gold transition-colors">Cera</a>
                 
 
 <!-- 
@@ -330,17 +325,17 @@
                         Tiles <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                     </span>
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
-                        <a href="/Tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
-                        <a href="/Tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
-                        <a href="/Tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
-                        <a href="/Tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
-                        <a href="/Tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
+                        <a href="/tiles/floor-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Floor Tiles</a>
+                        <a href="/tiles/kitchen-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Kitchen Tiles</a>
+                        <a href="/tiles/bathroom-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Bathroom Tiles</a>
+                        <a href="/tiles/digital-wall-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Digital Wall Tiles</a>
+                        <a href="/tiles/parking-tiles.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Parking Tiles</a>
                     </div>
                 </div> -->
 
-                <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
+                <a href="/myk-laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
                 <!-- <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
-                <a href="/Brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
+                <a href="/brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
                  -->
                 <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-600 ml-2" title="Search Products & Catalogues">
                     <i class="fa-solid fa-magnifying-glass text-lg"></i>
@@ -405,11 +400,11 @@
                         </span>
                     </summary>
                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
-                         <a href="/Welspun/carpet tiles/Celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
-                         <a href="/Welspun/carpet tiles/Earthy Woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
-                         <a href="/Welspun/carpet tiles/Meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
-                         <a href="/Welspun/carpet tiles/Savy Street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
-                         <a href="/Welspun/carpet tiles/Urban-Streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
+                         <a href="/welspun/carpet-tiles/celestial.html" class="text-sm text-gray-600 hover:text-brand-gold">Celestial</a>
+                         <a href="/welspun/carpet-tiles/earthy-woods.html" class="text-sm text-gray-600 hover:text-brand-gold">Earthy Woods</a>
+                         <a href="/welspun/carpet-tiles/meander.html" class="text-sm text-gray-600 hover:text-brand-gold">Meander</a>
+                         <a href="/welspun/carpet-tiles/savy-street.html" class="text-sm text-gray-600 hover:text-brand-gold">Savy Street</a>
+                         <a href="/welspun/carpet-tiles/urban-streaks.html" class="text-sm text-gray-600 hover:text-brand-gold">Urban Streaks</a>
                     </div>
                 </details>
 
@@ -422,9 +417,9 @@
                         </span>
                     </summary>
                      <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
-                        <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
-                        <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
+                        <a href="/welspun/welspun-lick-n-lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
+                        <a href="/welspun/carpet-tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
                     </div>
                 </details><!-- Pare Accordion (Fixed for Mobile) -->
                 <details class="group border-b border-gray-50 pb-2">
@@ -438,21 +433,21 @@
                         
                         <!-- Flooring Section -->
                         <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Flooring</div>
-                        <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LVT Flooring</a>
-                        <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">SPC Flooring</a>
-                        <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">HDF Flooring</a>
+                        <a href="/pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LVT Flooring</a>
+                        <a href="/pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">SPC Flooring</a>
+                        <a href="/pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">HDF Flooring</a>
 
                         <!-- Wall & Ceiling Section -->
                         <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2 border-t border-gray-50 pt-3 mb-1">
-                            <a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                            <a href="/pare/wall-and-ceiling.html" class="hover:text-brand-gold transition-colors">Wall & Ceiling</a>
                         </div>
-                        <a href="/Pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV+</a>
-                        <a href="/Pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV2+</a>
-                        <a href="/Pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EASY+</a>
-                        <a href="/Pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">BAFFLE</a>
-                        <a href="/Pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">ACOUSTIC</a>
-                        <a href="/Pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LUXE</a>
-                        <a href="/Pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EVOLV+</a>
+                        <a href="/pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV+</a>
+                        <a href="/pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV2+</a>
+                        <a href="/pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EASY+</a>
+                        <a href="/pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">BAFFLE</a>
+                        <a href="/pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">ACOUSTIC</a>
+                        <a href="/pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LUXE</a>
+                        <a href="/pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EVOLV+</a>
                     </div>
                 </details>
                 <!-- Bekker Accordion -->
@@ -464,15 +459,15 @@
                         </span>
                     </summary>
                     <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                        <a href="/Bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
-                        <a href="/Bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
-                        <a href="/Bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
+                        <a href="/bekker/engineered-wood.html" class="text-sm text-gray-600 hover:text-brand-gold">Engineered Wood</a>
+                        <a href="/bekker/laminate-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">Laminate Flooring</a>
+                        <a href="/bekker/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold">SPC Flooring</a>
                     </div>
                 </details>
 
-                <a href="/Cera/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Cera</a>
-                <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
-                <a href="/Brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
+                <a href="/cera/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Cera</a>
+                <a href="/myk-laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
+                <a href="/brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
               
                 <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="py-3 font-bold text-left text-gray-800 hover:text-brand-gold border-b border-gray-50 flex items-center justify-between">
                     Search <i class="fa-solid fa-magnifying-glass"></i>
@@ -483,28 +478,25 @@
         </div>
     </nav>
 
-    <header class="relative h-[600px] flex items-center bg-gray-900">
+<header class="relative h-[600px] flex items-center bg-gray-900">
         <div class="absolute inset-0">
-            <img src="assets-welspun-carpet-tiles/meander-look-book.pdf.png" alt="Welspun Meander Collection" class="w-full h-full object-cover opacity-70" onerror="this.style.opacity='0.3'">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+            <img src="assets/assets-welspun-celestial/hero-celestial.jpg" alt="Celestial Flooring" class="w-full h-full object-cover opacity-60" onerror="this.style.opacity='0.4'">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-nebula/90 to-black/60"></div>
         </div>
         
-        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
-            <div class="max-w-2xl">
-                <img src="https://welspunflooring.com/assets/images/logo.png" onerror="this.style.display='none'" alt="Welspun Flooring" class="h-12 mb-6 bg-white/90 p-2 rounded">
-                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm mb-2 block">Carpet Tile Collection</span>
-                <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6">
-                    Meander<br>
-                    <span class="text-3xl md:text-4xl font-normal block mt-2 text-gray-200">Follow the <span class="text-brand-gold">Flowing Line</span></span>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full text-center md:text-left">
+            <div class="max-w-3xl">
+                <img src="https://welspunflooring.com/assets/images/logo.png" onerror="this.style.display='none'" alt="Welspun Flooring" class="h-12 mb-6 bg-white/90 p-2 rounded inline-block md:block">
+                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm mb-2 block">Design-Driven Series</span>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
+                    Celestial<br>
+                    <span class="text-3xl md:text-4xl font-sans font-light block mt-3 text-gray-200">Designs that Transform Any Ambience</span>
                 </h1>
-                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-                    The Meander collection captures the essence of organic movement and textural landscapes, bringing the feeling of winding paths and natural flows into commercial spaces.
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                    Move beyond the ordinary. A collection of bold, contemporary, and artistic textures designed for statement commercial flooring.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#collections" class="px-6 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">View Shades</a>
-                    <a href="#specs" class="px-6 py-3 border border-white text-white font-bold rounded hover:bg-white/10 transition flex items-center gap-2">
-                        View Specs
-                    </a>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#collections" class="px-8 py-3 bg-brand-gold text-white font-bold rounded shadow-lg hover:bg-white hover:text-brand-gold transition">Explore Collections</a>
                 </div>
             </div>
         </div>
@@ -512,169 +504,268 @@
 
     <section id="collections" class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-heading font-bold text-gray-900">The Collection</h2>
-                <p class="text-gray-500 mt-2">Premium Square Tiles | 50 x 50 cm</p>
-                <div class="w-24 h-1 bg-brand-gold mx-auto mt-4"></div>
-            </div>
-
+            
             <div class="flex flex-col md:flex-row gap-12 mb-24">
                 <div class="md:w-1/3">
                     <div class="sticky top-24">
-                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">Explore Designs from Meander</div>
-                        <h3 class="text-3xl font-bold mb-4 text-brand-gold">Meander</h3>
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">TEXTURED STONE</div>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-brand-nebula">Adonia</h3>
                         <p class="text-gray-600 mb-6">
-                           The Meander collection translates the beauty of natural journeys into sophisticated flooring. Its divergent surfaces echo organic textures and grains, perfect for creating a sense of calm and direction.
+                            Inspired by layered textures and architectural stone patterns. A subtle yet sophisticated choice for formal spaces.
                         </p>
-                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                            <li><i class="fa-solid fa-ruler-combined text-brand-gold mr-2"></i> 50cm x 50cm</li>
-                            <li><i class="fa-solid fa-building text-brand-gold mr-2"></i> Heavy Commercial Use</li>
-                            <li><i class="fa-solid fa-grip-lines text-brand-gold mr-2"></i> Organic Linear Patterns</li>
-                        </ul>
+                        <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Best For:</h4>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Corporate Offices</p>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Meeting Rooms</p>
+                        </div>
                     </div>
                 </div>
-                
                 <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
-
-
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Trek', 'CTY00210')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/trek1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">wellow accent (Trek)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00210</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Stroll', 'CTY00212')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/stroll1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">red accent (Stroll)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00212</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Ramble', 'CTY00209')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/ramble1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">purpel accent (Ramble)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00209</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Eggplant', 'CTY00213')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/eggplant1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">violet accent (Eggplant)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00213</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Roam', 'CTY00211')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/roam1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">blue accent (Roam)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00211</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Wander', 'CTY00208')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/wander1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">green accent (Wander)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00208</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Hazel', 'CTY00207')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/hazel1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">drak brown (Hazel)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00207</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Rowe Trek', 'CTY00216')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/rowe%20trek1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">wellow transition (Rowe Trek)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00216</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Relic Stroll', 'CTY00218')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/relic%20stroll1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">red transition (Relic Stroll)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00218</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Rowe Ramble', 'CTY00215')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/rowe%20ramble1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">purpel transition (Rowe Ramble)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00215</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Relic Eggplant', 'CTY00219')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/relic%20eggplant1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">violet transition (Relic Eggplant)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00219</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Rowe Roam', 'CTY00217')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/rowe%20roam1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">blue transition (Rowe Roam)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00217</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Rowe wander', 'CTY00214')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/rowe%20wander1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">green transition (Rowe wander)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00214</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Relic Gray', 'CTY00204')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/relic%20gray1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">medium grey (Relic Gray)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00204</p>
-                        </div>
-                    
-                        <div class="text-center group cursor-pointer" onclick="openModal('Meander', 'Rowe Gray', 'CTY00203')">
-                            <div class="swatch-circle" style="background-image: url('/Welspun/carpet tiles/assets/Meander/rowe%20gray1.jpg');"></div>
-                            <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">light grey (Rowe Gray)</h4>
-                            <p class="text-[10px] text-gray-400">CTY00203</p>
-                        </div>
-                    
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Bologna', 'CTY00282')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/bologna1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Bologna</h4>
+                        <p class="text-[10px] text-gray-400">CTY00282</p>
                     </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Turin', 'CTY00286')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/turin1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Turin</h4>
+                        <p class="text-[10px] text-gray-400">CTY00286</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Salzburg', 'CTY00285')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/salzburg1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Salzburg</h4>
+                        <p class="text-[10px] text-gray-400">CTY00285</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Naples', 'CTY00284')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/naples1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Naples</h4>
+                        <p class="text-[10px] text-gray-400">CTY00284</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Dublin', 'CTY00283')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/dublin1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Dublin</h4>
+                        <p class="text-[10px] text-gray-400">CTY00283</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 mb-24 border-t border-gray-100 pt-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">ABSTRACT ART</div>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-brand-nebula">Calix</h3>
+                        <p class="text-gray-600 mb-6">
+                            Bold and artistic. Features abstract paint splashes and nebula textures for a high-energy, creative atmosphere.
+                        </p>
+                        <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Best For:</h4>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Creative Agencies</p>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Breakout Areas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Twinge (Yellow)', 'CTY00278')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/twinge1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Twinge</h4>
+                        <p class="text-[10px] text-gray-400">CTY00278</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Subtle (Beige)', 'CTY00279')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/subtle1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Subtle</h4>
+                        <p class="text-[10px] text-gray-400">CTY00279</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Course (Green)', 'CTY00281')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/course1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Course</h4>
+                        <p class="text-[10px] text-gray-400">CTY00281</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Converge (Grey)', 'CTY00277')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/converge1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Converge</h4>
+                        <p class="text-[10px] text-gray-400">CTY00277</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Trackway (Dark)', 'CTY00280')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/trackway1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Trackway</h4>
+                        <p class="text-[10px] text-gray-400">CTY00280</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 mb-24 border-t border-gray-100 pt-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">DIGITAL GEOMETRIC</div>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-brand-nebula">Eon</h3>
+                        <p class="text-gray-600 mb-6">
+                            A digital pattern vibe featuring pixel and block inspired designs. Perfectly suited for dynamic, modern interiors.
+                        </p>
+                        <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Best For:</h4>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Tech Offices</p>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Co-working Spaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Ember (Blue)', 'CTY00289')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/ember1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Ember</h4>
+                        <p class="text-[10px] text-gray-400">CTY00289</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Sand (Beige)', 'CTY00291')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/sand1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Sand</h4>
+                        <p class="text-[10px] text-gray-400">CTY00291</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Platform (Brown)', 'CTY00290')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/platform1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Platform</h4>
+                        <p class="text-[10px] text-gray-400">CTY00290</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Route (Grey Mix)', 'CTY00288')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/route1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Route</h4>
+                        <p class="text-[10px] text-gray-400">CTY00288</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Channel (Grey)', 'CTY00287')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/channel3.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Channel</h4>
+                        <p class="text-[10px] text-gray-400">CTY00287</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 mb-24 border-t border-gray-100 pt-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">STARDUST SHIMMER</div>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-brand-nebula">Vega</h3>
+                        <p class="text-gray-600 mb-6">
+                            A luminous design inspired by the brightest star in the northern constellation. Subtle elegance with a touch of stardust shimmer.
+                        </p>
+                        <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Best For:</h4>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Executive Cabins</p>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Premium Lounges</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Aerglo', 'CTY00292')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/aerglo1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Aerglo</h4>
+                        <p class="text-[10px] text-gray-400">CTY00292</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Alya', 'CTY00293')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/alya1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Alya</h4>
+                        <p class="text-[10px] text-gray-400">CTY00293</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Antlia', 'CTY00294')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/antlia1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Antlia</h4>
+                        <p class="text-[10px] text-gray-400">CTY00294</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Apus', 'CTY00295')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/apus1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Apus</h4>
+                        <p class="text-[10px] text-gray-400">CTY00295</p>
+                    </div>
+                      <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Aquarius', 'CTY00296')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/aquarius1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Aquarius</h4>
+                        <p class="text-[10px] text-gray-400">CTY00296</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 mb-24 border-t border-gray-100 pt-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-24">
+                        <div class="bg-brand-black text-white text-xs font-bold px-3 py-1 inline-block rounded mb-2">DUAL TONE</div>
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-brand-nebula">Gemini</h3>
+                        <p class="text-gray-600 mb-6">
+                            Celebrating duality. A balanced collection offering complementary dual-tone patterns for dynamic floor layouts.
+                        </p>
+                        <div class="p-4 bg-gray-50 rounded border border-gray-200">
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Best For:</h4>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Corridors</p>
+                            <p class="text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-green-500 mr-2"></i>Zoning Areas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Aquila', 'CTY00297')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/aquila1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Aquila</h4>
+                        <p class="text-[10px] text-gray-400">CTY00297</p>
+                    </div>
+                   <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Ara', 'CTY00298')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/ara1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Ara</h4>
+                        <p class="text-[10px] text-gray-400">CTY00298</p>
+                    </div>
+                    <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Archer', 'CTY00299')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/archer1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Archer</h4>
+                        <p class="text-[10px] text-gray-400">CTY00299</p>
+                    </div>
+                     <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Ariel', 'CTY00300')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/ariel1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Ariel</h4>
+                        <p class="text-[10px] text-gray-400">CTY00300</p>
+                    </div>
+                     <div class="text-center group cursor-pointer swatch-item" onclick="openModal('Celestial', 'Astrid', 'CTY00301')">
+                        <div class="swatch-circle" style="background-image: url('/welspun/carpet-tiles/assets/celestial/astrid1.jpg');"></div>
+                        <h4 class="font-bold text-sm text-gray-800 group-hover:text-brand-gold transition">Astrid</h4>
+                        <p class="text-[10px] text-gray-400">CTY00301</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-
-    <section id="specs" class="py-20 bg-brand-black text-white">
+    <section id="specs" class="py-20 bg-brand-nebula text-white">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-12">
                 <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Product Matrix</span>
-                <h2 class="text-3xl font-bold mt-2">The Meander Palette</h2>
-                <p class="text-gray-400 mt-2">Inspired by Nature's Winding Paths.</p>
+                <h2 class="text-3xl font-bold mt-2">Technical Specifications</h2>
+                <p class="text-gray-300 mt-2">Premium Commercial Carpet Tiles</p>
             </div>
             
-            <div class="overflow-x-auto bg-gray-900 rounded-xl shadow-lg border border-gray-800">
+            <div class="overflow-x-auto bg-gray-900/50 rounded-xl shadow-lg border border-gray-700">
                 <table class="w-full text-left border-collapse">
                     <tbody class="text-sm">
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                        <tr class="border-b border-gray-700 hover:bg-white/5 transition">
                             <td class="p-6 font-bold text-gray-400 w-1/2">Format</td>
                             <td class="p-6 font-bold text-white text-lg w-1/2">Square Tile</td>
                         </tr>
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                        <tr class="border-b border-gray-700 hover:bg-white/5 transition">
                             <td class="p-6 font-bold text-gray-400">Size</td>
                             <td class="p-6 font-bold text-brand-gold text-lg">50 cm x 50 cm</td>
                         </tr>
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
-                            <td class="p-6 font-bold text-gray-400 w-1/2">Yarn Type</td>
-                            <td class="p-6 font-bold text-white text-lg w-1/2">PET (Polyethylene Terephthalate)</td>
+                        <tr class="border-b border-gray-700 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold text-gray-400">Installation Method</td>
+                            <td class="p-6 text-white">Monolithic / Quarter Turn</td>
                         </tr>
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
-                            <td class="p-6 font-bold text-gray-400">Machine Gauge</td>
-                            <td class="p-6 font-bold text-white text-lg">1/12 Rainbow</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
-                            <td class="p-6 font-bold text-gray-400">Pile Thickness</td>
-                            <td class="p-6 font-bold text-white text-lg">3.5 - 4.0 mm</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
+                        <tr class="border-b border-gray-700 hover:bg-white/5 transition">
                             <td class="p-6 font-bold text-gray-400">Total Thickness</td>
-                            <td class="p-6 text-white">5.0 - 5.5 mm</td>
+                            <td class="p-6 text-white">5 mm (Approx.)</td>
                         </tr>
-                         <tr class="border-b border-gray-800 hover:bg-gray-800/50 transition">
-                            <td class="p-6 font-bold text-gray-400">Tufted Weight</td>
-                            <td class="p-6 text-white">(15 oz approx.)</td>
+                         <tr class="border-b border-gray-700 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold text-gray-400">Application Area</td>
+                            <td class="p-6 text-white">Heavy Commercial</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-    </section><!-- Contact Form -->
+    </section>
+
+<!-- Contact Form -->
     <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-12">
@@ -739,11 +830,11 @@
                 <div>
                     <h4 class="text-white font-bold mb-6">Products</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="/Welspun/multistile/index.html" class="hover:text-brand-gold transition">Welspun Flooring</a></li>
-                        <li><a href="/Bekker/engineered-wood.html" class="hover:text-brand-gold transition">Bekker German Tech</a></li>
-                        <li><a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition">Pare Surfaces</a></li>
-                        <li><a href="/Cera/sanitaryware.html" class="hover:text-brand-gold transition">Cera Bathware</a></li>
-                        <li><a href="/Tiles/floor-tiles.html" class="hover:text-brand-gold transition">Premium Tiles</a></li>
+                        <li><a href="/welspun" class="hover:text-brand-gold transition">Welspun</a></li>
+                        <li><a href="/bekker" class="hover:text-brand-gold transition">Bekker</a></li>
+                        <li><a href="/pare" class="hover:text-brand-gold transition">Pare</a></li>
+                        <li><a href="/cera" class="hover:text-brand-gold transition">Cera</a></li>
+                        <li><a href="/tiles" class="hover:text-brand-gold transition">Premium</a></li>
                     </ul>
                 </div>
                 
@@ -751,7 +842,7 @@
                     <h4 class="text-white font-bold mb-6">Contact</h4>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="tel:+91 99109 27068" class="hover:text-brand-gold transition flex items-center">
+                            <a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center">
                                 <i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068
                             </a>
                         </li>
@@ -793,20 +884,12 @@
             <div class="md:w-1/2 h-64 md:h-full relative overflow-hidden group bg-gray-100">
                 <div id="modal-slider" class="w-full h-full relative">
                     <div class="slide active absolute inset-0 w-full h-full">
-                         <img id="main-img-0" src="" alt="Wood Texture" class="absolute inset-0 w-full h-full object-cover">
+                         <img id="main-img-0" src="" alt="Texture" class="absolute inset-0 w-full h-full object-cover">
                          <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Texture View</div>
                     </div>
                     <div class="slide inactive absolute inset-0 w-full h-full">
                          <img id="main-img-1" src="" class="w-full h-full object-cover">
                          <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Room View</div>
-                    </div>
-                    <div class="slide inactive absolute inset-0 w-full h-full">
-                         <img id="main-img-2" src="" class="w-full h-full object-cover">
-                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Detail View</div>
-                    </div>
-                    <div class="slide inactive absolute inset-0 w-full h-full">
-                         <img id="main-img-3" src="" class="w-full h-full object-cover">
-                         <div class="absolute bottom-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded">Wall Application</div>
                     </div>
                 </div>
                 
@@ -827,25 +910,15 @@
                 </p>
                 
                 <p class="text-xs text-gray-500 mb-6 leading-relaxed">
-                    Transform your walls and floors with this versatile shade. Features AC6 Scratch Resistance and waterproof technology for lasting beauty.
+                    Part of the <strong>Celestial Lookbook</strong>. This design features premium textures designed to transform commercial ambience.
                 </p>
 
                 <div class="grid grid-cols-4 gap-2 mb-8">
                     <button onclick="showSlide(0)" class="thumb-box active h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group">
                         <img id="thumb-img-0" src="" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
                     </button>
                     <button onclick="showSlide(1)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group">
                         <img id="thumb-img-1" src="" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
-                    </button>
-                    <button onclick="showSlide(2)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group">
-                        <img id="thumb-img-2" src="" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
-                    </button>
-                    <button onclick="showSlide(3)" class="thumb-box h-12 w-full rounded border border-gray-200 overflow-hidden relative cursor-pointer group">
-                        <img id="thumb-img-3" src="" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
                     </button>
                 </div>
 
@@ -869,7 +942,7 @@
         const thumbBoxes = document.querySelectorAll('.thumb-box');
 
         /**
-         * @param {string} collection - 'Allure'
+         * @param {string} collection - Adonia / Calix / Eon / Vega / Gemini
          * @param {string} name - Product Name
          * @param {string} sku - SKU Code
          */
@@ -881,23 +954,20 @@
             // 2. Update Text & WhatsApp
             titleText.innerText = name;
             skuText.innerText = sku;
-            const message = encodeURIComponent(`Hi! I'm interested in the Welspun MultiStile (${collection}) in shade: *${name}* (SKU: ${sku}). Please share pricing and details.`);
+            const message = encodeURIComponent(`Hi! I'm interested in the Celestial Collection (${collection}) shade: *${name}* (SKU: ${sku}). Please share pricing and availability.`);
             whatsappLink.href = `https://wa.me/919876543210?text=${message}`;
 
             // 3. Dynamic Image Paths
-            const basePath = `/Welspun/carpet tiles/assets/${collection}/${name}`;
+            // Looks for images in: Assets/assets-welspun-celestial/[Collection Name]/[Product Name].jpg
+            const basePath = `/Welspun/carpet tiles/assets/${collection}/${name.split(' (')[0]}`; 
             
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}.jpg`;
             document.getElementById('main-img-1').src = `${basePath}1.jpg`;
-            document.getElementById('main-img-2').src = `${basePath}2.jpg`;
-            document.getElementById('main-img-3').src = `${basePath}3.jpg`;
-
+            
             // Update Thumbnails
             document.getElementById('thumb-img-0').src = `${basePath}.jpg`;
             document.getElementById('thumb-img-1').src = `${basePath}1.jpg`;
-            document.getElementById('thumb-img-2').src = `${basePath}2.jpg`;
-            document.getElementById('thumb-img-3').src = `${basePath}3.jpg`;
 
             // 4. Show Modal
             modal.classList.remove('hidden');
