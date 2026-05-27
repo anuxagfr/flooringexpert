@@ -197,7 +197,7 @@
                     <div class="dropdown-menu absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg border border-gray-100 overflow-hidden py-2 hidden group-hover:block">
                         <div class="px-4 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">Flooring</div>
 
-                        <a href="/Welspun/welspun-click-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Click-N-Lock</a>
                         <a href="/Welspun/multistile/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Multistile</a>
                          <div class="border-t my-1"></div>
                         <a href="/Welspun/carpet tiles/index.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-brand-gold">Carpet Tiles</a>
@@ -246,10 +246,7 @@
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         EASY+
                                     </a>
-                                    <a href="/Pare/wpc/baffle.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
-                                        <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
-                                        BAFFLE
-                                    </a>
+                                    
                                     <a href="/Pare/wpc/acoustic.html" class="flex items-center text-gray-600 hover:text-brand-gold transition-colors duration-200 font-medium group/link">
                                         <i class="fa-solid fa-caret-right text-[10px] mr-2 opacity-0 -translate-x-2 transition-all group-hover/link:opacity-100 group-hover/link:translate-x-0 text-brand-gold"></i>
                                         ACOUSTIC
@@ -307,9 +304,9 @@
                 </div> -->
 
                 <a href="/MYK Laticrete/index.html" class="hover:text-brand-gold transition-colors">MYK Laticrete</a>
-                <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
+                <!-- <a href="/blog/index.html" class="hover:text-brand-gold transition-colors">Blog</a>
                 <a href="/Brochure.html" class="hover:text-brand-gold transition-colors">Brochure</a>
-                
+                 -->
                 <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="hover:text-brand-gold transition-colors text-gray-600 ml-2" title="Search Products & Catalogues">
                     <i class="fa-solid fa-magnifying-glass text-lg"></i>
                 </button>
@@ -317,16 +314,53 @@
 
                 <a href="#contact" class="px-5 py-2.5 bg-brand-black text-white rounded hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl">Get Quote</a>
             </div>
+<!-- Mobile Right Icons (Search + Hamburger Menu) -->
+<div class="lg:hidden flex items-center gap-5">
+    <!-- Mobile Search Icon -->
+    <button onclick="document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="text-gray-800 focus:outline-none hover:text-brand-gold transition-colors">
+        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+    </button>
 
-            <button class="lg:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
+    <!-- Mobile Hamburger Icon -->
+    <button class="text-gray-800 focus:outline-none hover:text-brand-gold transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fa-solid fa-bars text-xl"></i>
+    </button>
+</div>
         </div>
-        
+      
         <!-- Mobile Menu with Accordion Dropdowns -->
         <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 absolute w-full shadow-lg h-screen overflow-y-auto pb-32 z-40 left-0">
             <div class="flex flex-col p-6 gap-2">
                 
+                <!-- Architectural Surfaces Accordion -->
+                <details class="group border-b border-gray-50 pb-2">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                        Architectural Surfaces
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
+                        </span>
+                    </summary>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Innovative Surfaces</div>
+                        <a href="/surfaces/aluminum-foam.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Aluminum Foam</a>
+                        <a href="/surfaces/crystal-bricks.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Crystal Bricks</a>
+                        <a href="/surfaces/transparent-stone.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Transparent Stone</a>
+                        <a href="/surfaces/stainless-sheet.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Stainless Sheet</a>
+                        
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2 border-t border-gray-50 pt-2">Refined Facades</div>
+                        <a href="/surfaces/flexible-stone.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Flexible Stone</a>
+                        <a href="/surfaces/cement-board.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Cement Board</a>
+                        <a href="/surfaces/modified-clay.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Modified Clay</a>
+                        <a href="/surfaces/aluminium-profile.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Aluminium Profile</a>
+
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2 border-t border-gray-50 pt-2">Designer Interiors</div>
+                        <a href="/surfaces/resin-panels.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Resin Panels</a>
+                        <a href="/surfaces/japanese-paper.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Japanese Paper</a>
+                        <a href="/surfaces/ceramic-foam.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">Ceramic Foam</a>
+                        <a href="/surfaces/3d-flexible-stone.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">3D Flexible Stone</a>
+                    </div>
+                </details>
+
                 <!-- Carpet Tiles Accordion -->
                 <details class="group border-b border-gray-50 pb-2">
                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
@@ -353,37 +387,39 @@
                         </span>
                     </summary>
                      <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                        <a href="/Welspun/welspun-click-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
+                        <a href="/Welspun/welspun-lick-N-Lock/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Click-N-Lock</a>
                         <a href="/Welspun/multistile/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Multistile</a>
                         <a href="/Welspun/carpet tiles/index.html" class="text-sm text-gray-600 hover:text-brand-gold">Carpet Tiles</a>
                     </div>
-                </details>
-
-                <!-- Pare Accordion -->
+                </details><!-- Pare Accordion (Fixed for Mobile) -->
                 <details class="group border-b border-gray-50 pb-2">
-                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
+                    <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
                         Pare
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
                         </span>
                     </summary>
-                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                         <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Flooring</div>
-                         <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LVT Flooring</a>
-                         <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">SPC Flooring</a>
-                         <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">HDF Flooring</a>
-                         
-                         <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2 border-t border-gray-50 pt-2">Wall & Ceiling</div>
-                         <a href="/Pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV+</a>
-                         <a href="/Pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV2+</a>
-                         <a href="/Pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EASY+</a>
-                         <a href="/Pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">BAFFLE</a>
-                         <a href="/Pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">ACOUSTIC</a>
-                         <a href="/Pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LUXE</a>
-                         <a href="/Pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EVOLV+</a>
+                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2 animate-fade-in-down">
+                        
+                        <!-- Flooring Section -->
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">Flooring</div>
+                        <a href="/Pare/lvt-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LVT Flooring</a>
+                        <a href="/Pare/spc-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">SPC Flooring</a>
+                        <a href="/Pare/hdf-flooring.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">HDF Flooring</a>
+
+                        <!-- Wall & Ceiling Section -->
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-2 border-t border-gray-50 pt-3 mb-1">
+                            <a href="/Pare/wall-and-ceiling.html" class="hover:text-brand-gold transition-colors">Wall & Ceiling</a>
+                        </div>
+                        <a href="/Pare/wpc/innov-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV+</a>
+                        <a href="/Pare/wpc/innov2-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">INNOV2+</a>
+                        <a href="/Pare/wpc/easy-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EASY+</a>
+                        <a href="/Pare/wpc/baffle.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">BAFFLE</a>
+                        <a href="/Pare/wpc/acoustic.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">ACOUSTIC</a>
+                        <a href="/Pare/wpc/luxe.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">LUXE</a>
+                        <a href="/Pare/wpc/evolv-plus.html" class="text-sm text-gray-600 hover:text-brand-gold pl-2">EVOLV+</a>
                     </div>
                 </details>
-
                 <!-- Bekker Accordion -->
                  <details class="group border-b border-gray-50 pb-2">
                      <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
@@ -399,45 +435,15 @@
                     </div>
                 </details>
 
-                <!-- Cera Accordion -->
-                <details class="group border-b border-gray-50 pb-2">
-                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
-                        Cera
-                        <span class="transition-transform duration-300 group-open:rotate-180">
-                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
-                        </span>
-                    </summary>
-                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                        <a href="/Cera/sanitaryware.html" class="text-sm text-gray-600 hover:text-brand-gold">Sanitaryware</a>
-                        <a href="/Cera/faucets.html" class="text-sm text-gray-600 hover:text-brand-gold">Faucets</a>
-                    </div>
-                </details>
-
-                 <!-- Tiles Accordion -->
-                <!-- <details class="group border-b border-gray-50 pb-2">
-                     <summary class="list-none flex justify-between items-center cursor-pointer py-3 font-bold text-gray-800">
-                        Tiles
-                        <span class="transition-transform duration-300 group-open:rotate-180">
-                            <i class="fa-solid fa-chevron-down text-xs text-brand-gold"></i>
-                        </span>
-                    </summary>
-                    <div class="flex flex-col gap-3 pl-4 py-2 border-l-2 border-gray-100 ml-2">
-                        <a href="/Tiles/floor-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Floor Tiles</a>
-                        <a href="/Tiles/kitchen-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Kitchen Tiles</a>
-                        <a href="/Tiles/bathroom-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Bathroom Tiles</a>
-                            <a href="/Tiles/digital-wall-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Digital Wall Tiles</a>
-                        <a href="/Tiles/parking-tiles.html" class="text-sm text-gray-600 hover:text-brand-gold">Parking Tiles</a>
-                    </div>
-                </details> -->
-
+                <a href="/Cera/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Cera</a>
                 <a href="/MYK Laticrete/index.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">MYK Laticrete</a>
-                  <a href="/Brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
+                <a href="/Brochure.html" class="py-3 font-bold text-gray-800 hover:text-brand-gold border-b border-gray-50">Brochure</a>
               
                 <button onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.getElementById('globalSearchModal').classList.remove('hidden'); document.getElementById('globalSearchInput').focus();" class="py-3 font-bold text-left text-gray-800 hover:text-brand-gold border-b border-gray-50 flex items-center justify-between">
                     Search <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
-                <a href="#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
+                <a href="/index.html#contact" class="bg-brand-black text-white text-center py-4 rounded mt-6 font-medium shadow-lg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get Quote</a>
             </div>
         </div>
     </nav>
@@ -541,7 +547,7 @@
                     </div>
 
                     <div class="w-full lg:w-2/3 h-[300px] lg:h-[400px] rounded-2xl overflow-hidden relative shadow-inner bg-gray-100">
-                        <img id="acousticPreviewImage" src="/Pare/Assets/wpc/acoustic/LOUVERS-ACOUSTIC-SPICED-WALNUT.webp" alt="Spiced Walnut Preview" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out opacity-100" onerror="this.src='https://via.placeholder.com/800x600/8B4513/ffffff?text=Spiced+Walnut';">
+                        <img id="acousticPreviewImage" src="/Pare/Assets/wpc/acoustic/louvers-acoustic-spiced-walnut.webp" alt="Spiced Walnut Preview" class="w-full h-full object-cover transition-opacity duration-300 ease-in-out opacity-100" onerror="this.src='https://via.placeholder.com/800x600/8B4513/ffffff?text=Spiced+Walnut';">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                         <div class="absolute bottom-8 left-8 text-white">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-gold bg-black/60 px-3 py-1 rounded backdrop-blur-sm mb-2 inline-block">Viewing</span>
@@ -572,52 +578,52 @@
 
                     <div id="shadeSliderAcoustic" class="flex overflow-x-auto gap-8 pb-6 pt-2 snap-x no-scrollbar scroll-smooth items-center">
                         <div class="flex gap-6 shrink-0 pl-4">
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Spiced Walnut', '/Pare/Assets/wpc/acoustic/spiced walnut.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-2 ring-offset-2 ring-brand-black shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/spiced walnut.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/8B4513/ffffff?text=Walnut'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Spiced Walnut', '/Pare/Assets/wpc/acoustic/spiced-walnut.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-2 ring-offset-2 ring-brand-black shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/spiced-walnut.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/8B4513/ffffff?text=Walnut'"></div>
                                 <p class="text-left mt-4 text-sm font-semibold text-gray-900 transition-colors">Spiced Walnut</p>
                             </div>
                             <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Mahogany', '/Pare/Assets/wpc/acoustic/mahogany.webp')">
                                 <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/mahogany.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/4A0E0E/ffffff?text=Mahogany'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Mahogany</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Royal Nut', '/Pare/Assets/wpc/acoustic/royal nut.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/royal nut.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/A0522D/ffffff?text=Royal+Nut'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Royal Nut', '/Pare/Assets/wpc/acoustic/royal-nut.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/royal-nut.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/A0522D/ffffff?text=Royal+Nut'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Royal Nut</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Ashwood Grey', '/Pare/Assets/wpc/acoustic/ashwood grey.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/ashwood grey.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/808080/ffffff?text=Ash+Wood'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Ashwood Grey', '/Pare/Assets/wpc/acoustic/ashwood-grey.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/ashwood-grey.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/808080/ffffff?text=Ash+Wood'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Ashwood Grey</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Beech Wood', '/Pare/Assets/wpc/acoustic/beech wood.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/beech wood.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/F5F5DC/121212?text=Beechwood'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="wooden" onclick="updatePreviewAcoustic(this, 'Beech Wood', '/Pare/Assets/wpc/acoustic/beech-wood.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/beech-wood.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/F5F5DC/121212?text=Beechwood'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Beech Wood</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Armani Grey', '/Pare/Assets/wpc/acoustic/Armani Grey.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Armani Grey.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/555555/ffffff?text=Armani+Grey'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Armani Grey', '/Pare/Assets/wpc/acoustic/armani-grey.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/armani-grey.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/555555/ffffff?text=Armani+Grey'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Armani Grey</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Portoro', '/Pare/Assets/wpc/acoustic/Portoro.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Portoro.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/111111/ffffff?text=Portoro'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Portoro', '/Pare/Assets/wpc/acoustic/portoro.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/portoro.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/111111/ffffff?text=Portoro'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Portoro</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Statuario', '/Pare/Assets/wpc/acoustic/Statuario.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Statuario.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/EAEAEA/121212?text=Statuario'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="marble" onclick="updatePreviewAcoustic(this, 'Statuario', '/Pare/Assets/wpc/acoustic/statuario.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/statuario.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/EAEAEA/121212?text=Statuario'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Statuario</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Gold', '/Pare/Assets/wpc/acoustic/Gold.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Gold.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/D4AF37/ffffff?text=Gold'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Gold', '/Pare/Assets/wpc/acoustic/gold.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/gold.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/D4AF37/ffffff?text=Gold'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Gold</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Silver', '/Pare/Assets/wpc/acoustic/Silver.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Silver.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/C0C0C0/ffffff?text=Silver'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Silver', '/Pare/Assets/wpc/acoustic/silver.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/silver.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/C0C0C0/ffffff?text=Silver'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Silver</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Copper', '/Pare/Assets/wpc/acoustic/Copper.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Copper.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/B87333/ffffff?text=Copper'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="metallic" onclick="updatePreviewAcoustic(this, 'Copper', '/Pare/Assets/wpc/acoustic/copper.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/copper.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/B87333/ffffff?text=Copper'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Copper</p>
                             </div>
-                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="fabric" onclick="updatePreviewAcoustic(this, 'Pearl', '/Pare/Assets/wpc/acoustic/Pearl.webp')">
-                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/Pearl.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/F0EAD6/121212?text=Pearl'"></div>
+                            <div class="shade-card min-w-[140px] cursor-pointer group snap-start" data-category="fabric" onclick="updatePreviewAcoustic(this, 'Pearl', '/Pare/Assets/wpc/acoustic/pearl.webp')">
+                                <div class="h-20 w-full rounded-lg overflow-hidden ring-1 ring-gray-200 hover:ring-gray-400 hover:shadow-md transition-all box-border texture-box relative"><img src="/Pare/Assets/wpc/acoustic/pearl.webp" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150/F0EAD6/121212?text=Pearl'"></div>
                                 <p class="text-left mt-4 text-sm font-medium text-gray-500 group-hover:text-gray-900 transition-colors">Pearl</p>
                             </div>
                         </div>
@@ -888,10 +894,10 @@
             document.getElementById('thumb-img-1').src = `${basePath}.webp`;
 
             // Simple error handling for images
-            document.getElementById('main-img-0').onerror = function() { this.src = '/Pare/assets/wall/OakWoodOcre.jpg'; };
-            document.getElementById('main-img-1').onerror = function() { this.src = '/Pare/assets/wall/OakWoodOcre.jpg'; };
-            document.getElementById('thumb-img-0').onerror = function() { this.src = '/Pare/assets/wall/OakWoodOcre.jpg'; };
-            document.getElementById('thumb-img-1').onerror = function() { this.src = '/Pare/assets/wall/OakWoodOcre.jpg'; };
+            document.getElementById('main-img-0').onerror = function() { this.src = '/Pare/assets/wall/oakwoodocre.jpg'; };
+            document.getElementById('main-img-1').onerror = function() { this.src = '/Pare/assets/wall/oakwoodocre.jpg'; };
+            document.getElementById('thumb-img-0').onerror = function() { this.src = '/Pare/assets/wall/oakwoodocre.jpg'; };
+            document.getElementById('thumb-img-1').onerror = function() { this.src = '/Pare/assets/wall/oakwoodocre.jpg'; };
 
             modal.classList.remove('hidden');
             modal.classList.add('active');
@@ -993,5 +999,6 @@
     </script>
     <script src="/search-data.js"></script>
     <script src="/global-search.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>
