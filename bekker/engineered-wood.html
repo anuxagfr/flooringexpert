@@ -944,7 +944,8 @@
             whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
 
             // 3. Dynamic Image Paths specifically targeted to a Bekker Engineered Wood folder structure
-            const basePath = `/Bekker/assets/engineered-wood/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Bekker/assets/engineered-wood/${formattedName}`;
             
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}1.jpg`;

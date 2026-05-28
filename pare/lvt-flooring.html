@@ -1113,7 +1113,8 @@
             whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
 
             // 3. Dynamic Image Paths specifically targeted to a PARÉ LVT folder structure
-            const basePath = `/Pare/assets/lvt/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Pare/assets/lvt/${formattedName}`;
             
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}1.jpg`;

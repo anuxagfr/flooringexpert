@@ -842,7 +842,8 @@ Experience Earth's Essence Underfoot.
 
           
             // 3. Dynamic Image Paths
-            const basePath = `/Welspun/carpet\ tiles/assets/${collection}/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Welspun/carpet-tiles/assets/${collection}/${formattedName}`;
             // EarthyWoods/Sunlit Yellow1.png
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}.jpg`;

@@ -885,7 +885,8 @@
             whatsappLink.href = `https://wa.me/919876543210?text=${message}`;
 
             // 3. Dynamic Image Paths
-            const basePath = `/Welspun/carpet tiles/assets/${collection}/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Welspun/carpet-tiles/assets/${collection}/${formattedName}`;
             
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}.jpg`;

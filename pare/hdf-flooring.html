@@ -930,7 +930,8 @@
             whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
 
             // 3. Dynamic Image Paths specifically targeted to a PARÉ HDF folder structure
-            const basePath = `/Pare/assets/hdf/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Pare/assets/hdf/${formattedName}`;
             
             // Update Main Slides
             document.getElementById('main-img-0').src = `${basePath}.jpg`;

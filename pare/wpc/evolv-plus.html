@@ -1133,7 +1133,8 @@ A curated selection of premium wood and solid finishes for 3D louvered panels.
             const message = encodeURIComponent(`Hi! I'm interested in the PARÉ EVOLV+ Panel (${collection}) in shade: *${name}* (SKU: ${sku}). Please share pricing and details.`);
             whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
 
-            const basePath = `/Pare/assets/wall/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Pare/assets/wall/${formattedName}`;
             
             document.getElementById('main-img-0').src = `${basePath}1.jpg`;
             document.getElementById('main-img-1').src = `${basePath}2.jpg`;

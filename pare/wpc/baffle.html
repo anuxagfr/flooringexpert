@@ -720,7 +720,8 @@
             whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
 
             // Use placeholders or actual images from the wall section
-            const basePath = `/Pare/assets/wall/${name}`;
+            const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+            const basePath = `/Pare/assets/wall/${formattedName}`;
             
             // Set images, fallback logic can be handled via CSS onerror but setting direct for now
             document.getElementById('main-img-0').src = `${basePath}1.jpg`;
