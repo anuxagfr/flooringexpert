@@ -244,13 +244,50 @@ function initGlobalSearch() {
             globalSearchResultsContainer.classList.remove('hidden');
             
             const matchedProducts = productData.filter(p => {
-                const matchesQuery = !query || 
-                    (p.code && p.code.toLowerCase().includes(query)) || 
-                    (p.name && p.name.toLowerCase().includes(query)) ||
-                    (p.catalogue && p.catalogue.toLowerCase().includes(query)) || 
-                    (p.category && p.category.toLowerCase().includes(query));
+                // Sabhi fields ko lowercase me convert karein safely
+                const cat = (p.category || '').toLowerCase();
+                const name = (p.name || '').toLowerCase();
+                const code = (p.code || '').toLowerCase();
+                const brand = (p.catalogue || '').toLowerCase();
+                const url = (p.url || '').toLowerCase();
+
+                // 🌟 NEW LOGIC: Automatically match broad keywords based on context
+                let implicitKeywords = [];
                 
-                const matchesBrand = brandFilter === 'all' || (p.catalogue && p.catalogue.toLowerCase().includes(brandFilter));
+                if (cat.includes('lvt') || url.includes('lvt')) {
+                    implicitKeywords.push('lvt', 'lvt flooring', 'vinyl flooring', 'luxury vinyl tiles', 'tiles');
+                }
+                if (cat.includes('spc') || url.includes('spc')) {
+                    implicitKeywords.push('spc', 'spc flooring', 'stone plastic composite', 'rigid core');
+                }
+                if (cat.includes('hdf') || url.includes('hdf')) {
+                    implicitKeywords.push('hdf', 'hdf flooring', 'tough flooring', 'wooden flooring');
+                }
+                if (cat.includes('carpet') || url.includes('carpet')) {
+                    implicitKeywords.push('carpet tiles', 'carpet flooring', 'office carpet', 'carpet', 'tiles');
+                }
+                if (cat.includes('laminate') || url.includes('laminate')) {
+                    implicitKeywords.push('laminate flooring', 'wooden flooring', 'wood flooring');
+                }
+                if (brand.includes('welspun') || cat.includes('multistile') || cat.includes('click-n-lock')) {
+                    implicitKeywords.push('welspun flooring');
+                }
+                
+                // Agar product adhesive (chemical) nahi hai, toh wo kisi na kisi type ki flooring hai
+                if (!cat.includes('adhesives')) {
+                    implicitKeywords.push('flooring', 'floor', 'sheets', 'plank');
+                }
+
+                // Main Search Condition
+                const matchesQuery = !query || 
+                    code.includes(query) || 
+                    name.includes(query) ||
+                    brand.includes(query) || 
+                    cat.includes(query) ||
+                    // Yeh line check karegi ki user ka keyword hamare automatic tags se match ho raha hai ya nahi
+                    implicitKeywords.some(kw => kw.includes(query) || query.includes(kw));
+                
+                const matchesBrand = brandFilter === 'all' || brand.includes(brandFilter);
                 return matchesQuery && matchesBrand;
             });
 
@@ -265,7 +302,7 @@ function initGlobalSearch() {
                 matchedProducts.forEach(p => {
                     globalSearchResults.insertAdjacentHTML('beforeend', `
                         <li>
-                            <a href="${p.url}" class="flex items-center justify-between p-4 hover:bg-brand-gold/5 transition-colors duration-200 group">
+                            <a href="${p.url}?searchcode=${encodeURIComponent(p.code)}" class="flex items-center justify-between p-4 hover:bg-brand-gold/5 transition-colors duration-200 group">
                                 <div class="flex items-center gap-4 min-w-0">
                                     ${p.image 
                                         ? `<img src="${p.image}" alt="${p.name}" class="w-12 h-12 rounded-lg object-cover bg-gray-100 shrink-0 border border-gray-200" onerror="this.onerror=null; this.src='https://via.placeholder.com/100x100.png/f3f4f6/9ca3af?text=Error';">`
