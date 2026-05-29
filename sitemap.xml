@@ -1,197 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url>
+    <loc>https://flooringexpert.in/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/about</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/contact</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/brochure</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/blog/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
 
-<url>
-  <loc>https://flooringexpert.in/</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/Celestial.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/Earthy%20Woods.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/Meander.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/Savy%20Street.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/Urban-Streaks.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/welspun-lick-N-Lock/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/multistile/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/carpet%20tiles/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/lvt-flooring.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/spc-flooring.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/hdf-flooring.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/wall-and-ceiling.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Bekker/engineered-wood.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Bekker/laminate-flooring.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Bekker/spc-flooring.html</loc>
-  <lastmod>2026-03-13T07:51:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Cera/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/MYK%20Laticrete/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/blog/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Brochure.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Bekker/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/index.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Welspun/</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Bekker/</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Pare/</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Cera/</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/</loc>
-  <lastmod>2026-03-13T07:51:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/privacy-policy.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/terms-of-service.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/floor-tiles.html</loc>
-  <lastmod>2026-03-13T07:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/kitchen-tiles.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/bathroom-tiles.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/digital-wall-tiles.html</loc>
-  <lastmod>2026-03-13T07:51:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://flooringexpert.in/Tiles/parking-tiles.html</loc>
-  <lastmod>2026-03-13T07:51:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>https://flooringexpert.in/pare/lvt-flooring</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/spc-flooring</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/hdf-flooring</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/welspun-lick-n-lock/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/multistile/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/bekker/engineered-wood</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/bekker/laminate-flooring</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/bekker/spc-flooring</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <url>
+    <loc>https://flooringexpert.in/welspun/carpet-tiles/celestial</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/carpet-tiles/earthy-woods</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/carpet-tiles/meander</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/carpet-tiles/savy-street</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/welspun/carpet-tiles/urban-streaks</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://flooringexpert.in/pare/wall-and-ceiling</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/wpc/innov-plus</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/wpc/easy-plus</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/wpc/evolv-plus</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/pare/wpc/acoustic</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://flooringexpert.in/surfaces/aluminum-foam</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/crystal-bricks</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/transparent-stone</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/stainless-sheet</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/flexible-stone</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/cement-board</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/modified-clay</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/aluminium-profile</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/resin-panels</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/japanese-paper</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/ceramic-foam</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/surfaces/3d-flexible-stone</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://flooringexpert.in/cera/index</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://flooringexpert.in/myk-laticrete/index</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
 </urlset>
