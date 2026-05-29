@@ -23,20 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-// Register Service Worker for Offline Mode Support
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('🚀 Service Worker Registered Successfully!'))
-            .catch(err => console.log('⚠️ Service Worker Registration Failed: ', err));
-    });
-}
-
-// Live Offline Tracker (Agar user site chala raha hai aur chalte-chalte net band ho jaye)
-window.addEventListener('offline', () => {
-    // Instant reload karke offline page par bhej dega bina unstyled HTML dikhaye
-    window.location.reload();
-});
     document.addEventListener('DOMContentLoaded', () => {
     // 1. URL se 'searchcode' parameter nikaalein (e.g., ?searchcode=CTY00232)
     const urlParams = new URLSearchParams(window.location.search);
