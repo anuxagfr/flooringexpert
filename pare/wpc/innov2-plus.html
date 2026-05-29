@@ -80,7 +80,7 @@
    <div class="bg-brand-black text-white text-sm py-2 px-6 hidden md:flex justify-between items-center">
         <div class="flex gap-6">
             <a href="https://www.instagram.com/flooringexpert.in/"><i class="fa-brands fa-instagram text-brand-gold mr-2"></i></a>
-            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 9910927068</span>
+            <span><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 87963 27068</span>
             <span><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> info@flooringexpert.in</span>
         </div>
         <div class="uppercase tracking-wider text-xs font-bold text-brand-gold">Authorized Distributor: Welspun • Bekker • Pare • Cera • MYK</div>
@@ -642,7 +642,7 @@
                 <div>
                     <h4 class="text-white font-bold mb-6">Contact</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="tel:+919910927068" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 99109 27068</a></li>
+                        <li><a href="tel:+918796327068" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-phone w-5 text-brand-gold mr-3"></i> +91 87963 27068</a></li>
                         <li><a href="mailto:info@flooringexpert.in" class="hover:text-brand-gold transition flex items-center"><i class="fa-solid fa-envelope w-5 text-brand-gold mr-3"></i> info@flooringexpert.in</a></li>
                         <li class="flex items-start mt-1"><i class="fa-solid fa-location-dot w-5 text-brand-gold mr-3 mt-1"></i> <span>Showroom: New Delhi, India</span></li>
                     </ul>
@@ -657,7 +657,7 @@
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/9910927068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
+    <a href="https://wa.me/918796327068" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform z-40">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -722,23 +722,66 @@
         function openModal(collection, name, sku) {
             currentSlideIndex = 0;
             showSlide(0);
-
-            titleText.innerText = name;
-            skuText.innerText = sku;
-            const message = encodeURIComponent(`Hi! I'm interested in the PARÉ INNOV2+ Panel (${collection}) in shade: *${name}* (SKU: ${sku}). Please share pricing and details.`);
-            whatsappLink.href = `https://wa.me/919958998122?text=${message}`;
+            
+            if(document.getElementById('modal-title')) document.getElementById('modal-title').innerText = name;
+            if(document.getElementById('modal-sku')) document.getElementById('modal-sku').innerText = sku;
+            
+            const message = encodeURIComponent(`Hi! I'm interested in the ${collection} in shade: *${name}* (SKU: ${sku}). Please share pricing.`);
+            if(document.getElementById('whatsapp-link')) document.getElementById('whatsapp-link').href = `https://wa.me/918796327068?text=${message}`;
 
             const formattedName = name.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
-            const basePath = `/Pare/assets/wall/${formattedName}`;
+            const currentURL = window.location.pathname.toLowerCase();
             
-            document.getElementById('main-img-0').src = `${basePath}1.jpg`;
-            document.getElementById('main-img-1').src = `${basePath}2.jpg`;
-            document.getElementById('thumb-img-0').src = `${basePath}1.jpg`;
-            document.getElementById('thumb-img-1').src = `${basePath}2.jpg`;
+            let folderPath = '';
+            
+            // 1. Automatically detect correct folder based on URL context
+            if (currentURL.includes('carpet-tiles')) {
+                let sub = collection.toLowerCase().replace('carpet tiles', '').replace('series', '').trim().replace(/\s+/g, '');
+                if (sub === 'savy-street') sub = 'savy-street'; // Keep hyphen for savy-street
+                folderPath = `/welspun/carpet-tiles/assets/${sub}/${formattedName}`;
+            } else if (currentURL.includes('welspun-lick-n-lock')) {
+                let sub = collection.toLowerCase().replace('click-n-lock', '').replace('collection', '').trim().replace(/\s+/g, '');
+                folderPath = `/welspun/welspun-lick-n-lock/assets/${sub}/${formattedName}`;
+            } else if (currentURL.includes('multistile')) {
+                folderPath = `/welspun/multistile/assets/allure/${formattedName}`;
+            } else if (currentURL.includes('pare')) {
+                let sub = currentURL.includes('lvt') ? 'lvt/' : currentURL.includes('spc') ? 'spc/' : 'hdf/';
+                if(collection === 'Comfort Series') sub += 'comfort/';
+                folderPath = `/pare/assets/${sub}${formattedName}`;
+            }
+
+            // 2. Hybrid Extension Loader (.jpg -> .png -> safety backup)
+            function loadImageWithFallback(elementId, baseSrc) {
+                const img = document.getElementById(elementId);
+                if (!img) return;
+                
+                img.src = baseSrc + '.jpg'; // Try JPG first
+                
+                img.onerror = function() {
+                    if (this.src.endsWith('.jpg')) {
+                        this.src = baseSrc + '.png'; // Fallback to PNG if JPG fails
+                    } else if (this.src.endsWith('.png')) {
+                        this.src = baseSrc + '.webp'; // Fallback to WEBP
+                    } else {
+                        this.src = '/assets/image/placeholder.jpg'; // Safety image
+                        this.onerror = null;
+                    }
+                };
+            }
+
+            // Load main images and thumbnails dynamically
+            for (let i = 0; i <= 3; i++) {
+                let suffix = i === 0 ? '' : i;
+                if(document.getElementById(`main-img-${i}`)) loadImageWithFallback(`main-img-${i}`, folderPath + suffix);
+                if(document.getElementById(`thumb-img-${i}`)) {
+                    document.getElementById(`thumb-img-${i}`).style.display = 'block';
+                    loadImageWithFallback(`thumb-img-${i}`, folderPath + suffix);
+                }
+            }
 
             modal.classList.remove('hidden');
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; 
+            document.body.style.overflow = 'hidden';
         }
 
         function changeSlide(direction) {
