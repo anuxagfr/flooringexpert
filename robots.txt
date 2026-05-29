@@ -1,17 +1,24 @@
 User-agent: *
 Allow: /
 
-# Allow important pages
-Allow: /index.html
-Allow: /about.html
-Allow: /contact.html
-Allow: /Brochure.html
+# Allow important clean URL pages (No extensions, lowercase)
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /brochure
 Allow: /blog/
+Allow: /pare/
+Allow: /welspun/
+Allow: /bekker/
+Allow: /cera/
+Allow: /myk-laticrete/
 
-# Block unnecessary folders (if any)
+# Block unnecessary or secure folders from Google Search
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /*.js$
+Disallow: /*.json$
 
 # Sitemap location
 Sitemap: https://flooringexpert.in/sitemap.xml

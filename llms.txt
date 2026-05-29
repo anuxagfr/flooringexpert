@@ -1,45 +1,77 @@
-txt
 # LLMs.txt for flooringexpert.in
 # Website: https://flooringexpert.in
-# Purpose: Help AI systems understand Flooring Expert services and content
+# Purpose: Help AI systems understand Flooring Expert services, product lines, and content structure.
 
 Site: https://flooringexpert.in
 Name: Flooring Expert
-Type: Local Business
-Industry: Flooring Installation Services
-Location: India
+Type: Local Business / Authorized Distributor
+Industry: Interior Surfaces, Premium Flooring, Architectural Facades & Sanitaryware
+Location: New Delhi, India
 Language: en
+Contact Phone: +91 87963 27068
+Contact Email: info@flooringexpert.in
 
 Description:
-Flooring Expert provides professional flooring installation services including carpet fitting, vinyl flooring, laminate flooring, wooden flooring and floor repair for homes and commercial spaces.
+Flooring Expert is an authorized distributor and premium solution partner for top-tier Indian and international interior surface brands. The business provides end-to-end consulting, material supply, and professional installation services for high-end residential, corporate, and commercial projects.
 
-Main Pages
-https://flooringexpert.in/
-https://flooringexpert.in/Brochure.html
-https://flooringexpert.in/blog/
-https://flooringexpert.in/about.html
-https://flooringexpert.in/contact.html
+Authorized Brands & Partners:
+- WELSPUN (Click-N-Lock SPC, MultiStile LVT, Premium Corporate Carpet Tiles)
+- PARÉ (Innovative Wall & Ceiling Louvers, Facades, Core SPC, HDF Tough, LVT Flooring)
+- BEKKER (German Engineered Wood, Luxury Laminate Flooring, Rigid SPC)
+- CERA (Premium Sanitaryware, Luxury Faucets, Showers, and Wellness Solutions)
+- MYK LATICRETE (Advanced Tile Adhesives, Industrial Grouts, and Stone Care Chemicals)
 
-Services
-Flooring installation
-Carpet installation
-Vinyl flooring
-Wooden flooring
-Laminate flooring
-Floor repair
-Commercial flooring
-Residential flooring
+Main Pages (Clean URLs Enabled)
+- https://flooringexpert.in/ - Home Page / Premium Showroom Overview
+- https://flooringexpert.in/brochure - Digital Catalogs & Technical Documentation
+- https://flooringexpert.in/blog/ - Expert Flooring Industry Insights & Maintenance Guides
+- https://flooringexpert.in/about - Corporate Profile & Material Distribution Scale
+- https://flooringexpert.in/contact - Request Free Samples, Site Inspection & Custom Quotations
 
-Topics
-Flooring installation guides
-Carpet fitting services
-Vinyl flooring installation
-Wood flooring solutions
-Modern flooring designs
-Floor maintenance tips
+Core Product Categories & Paths:
 
-Sitemap
+1. Premium Flooring Solutions
+- https://flooringexpert.in/pare/lvt-flooring - Luxury Vinyl Tiles (Prime, Grip, Vista, Comfort Series)
+- https://flooringexpert.in/pare/spc-flooring - Heavy Duty Stone Plastic Composite Rigid Core Flooring
+- https://flooringexpert.in/pare/hdf-flooring - HDF Tough High-Density Fiberboard Wooden Planks
+- https://flooringexpert.in/welspun/welspun-lick-n-lock/ - Welspun SPC Click-N-Lock Interlocking Systems
+- https://flooringexpert.in/welspun/multistile/ - Welspun MultiStile Commercial LVT Planks
+- https://flooringexpert.in/bekker/engineered-wood - Bekker Authentic German Engineered Hardwood
+- https://flooringexpert.in/bekker/laminate-flooring - High-Durability AC4/AC5 Laminated Wood Flooring
+
+2. Corporate & Commercial Carpet Tiles
+- https://flooringexpert.in/welspun/carpet-tiles/ - Complete Textile Flooring Hub
+- https://flooringexpert.in/welspun/carpet-tiles/celestial - Celestial Collection (Aerglo, Alya, Dublin, Route)
+- https://flooringexpert.in/welspun/carpet-tiles/earthy-woods - Earthy Woods (Ruby, Celadon, Cobalt, Steel Gray)
+- https://flooringexpert.in/welspun/carpet-tiles/meander - Meander Linear Accent & Transition Tiles
+- https://flooringexpert.in/welspun/carpet-tiles/savy-street - Savy Street Corporate Linear Patterns (CTY00232)
+- https://flooringexpert.in/welspun/carpet-tiles/urban-streaks - Urban Streaks Premium Corporate Palette
+
+3. Architectural & High-End Surfaces
+- https://flooringexpert.in/pare/wall-and-ceiling - Comprehensive Exterior & Interior Louvers
+- https://flooringexpert.in/pare/wpc/innov-plus - INNOV+ Exterior Grade Anti-Fade Cladding
+- https://flooringexpert.in/pare/wpc/easy-plus - EASY+ Internal Luxury Linear Louver Systems
+- https://flooringexpert.in/pare/wpc/evolv-plus - EVOLV+ Premium Architectural Textures (Nova, Delta, Rhythm)
+- https://flooringexpert.in/pare/wpc/acoustic - Sound-Absorbing Engineered Acoustic Wall Panels
+- Special Materials: Aluminum Foam, Crystal Bricks, Transparent Stone, Stainless Reflective Sheets, Modified Clay
+
+4. Sanitaryware & Bath Fittings
+- https://flooringexpert.in/cera/index - Authorized Cera Collection (Water Closets, Faucets, Premium LED Mirrors)
+
+5. Stone & Tile Adhesives
+- https://flooringexpert.in/myk-laticrete/index - High-Strength Polymer Adhesives (L315, L335 Super Flex)
+
+Core AI Search Topics & Keywords:
+- Flooring installation guides India
+- Commercial carpet tiles supplier Delhi NCR
+- Paré louvers and exterior cladding specifications
+- Waterproof SPC flooring cost per sqft
+- Cera sanitaryware and wellness fittings distributor
+- MYK Laticrete 335 adhesive specifications for high-rise cladding
+- Anti-scratch luxury vinyl tiles for heavy corporate foot traffic
+
+Sitemap:
 https://flooringexpert.in/sitemap.xml
 
-Robots
+Robots:
 https://flooringexpert.in/robots.txt
