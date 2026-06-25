@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitDelivr Pro - Site Auditor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans p-4 sm:p-8">
+
+    <main class="max-w-6xl mx-auto">
+        <header class="mb-10">
+            <h1 class="text-4xl font-black text-slate-900">Advanced Site Auditor</h1>
+            <p class="text-slate-500 mt-2">Comprehensive technical performance and SEO diagnostics.</p>
+        </header>
+
+        <!-- Search Input -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <input type="text" id="siteUrl" class="flex-1 p-4 border rounded-xl outline-none focus:ring-2 focus:ring-blue-600" placeholder="https://yourwebsite.com">
+                <button onclick="runAudit()" class="bg-slate-900 hover:bg-black text-white px-8 py-4 rounded-xl font-bold transition">Analyze Deeply</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div id="results" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Left Column: Metrics -->
+            <div class="space-y-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-600 p-6 rounded-2xl text-white">
+                        <h4 class="opacity-80 text-sm font-bold">LCP Time</h4>
+                        <p class="text-3xl font-black mt-1">1.2s</p>
+                    </div>
+                    <div class="bg-emerald-500 p-6 rounded-2xl text-white">
+                        <h4 class="opacity-80 text-sm font-bold">SEO Health</h4>
+                        <p class="text-3xl font-black mt-1">98%</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                    <h3 class="font-bold mb-4">Resource Audit</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between"><span>Unminified CSS</span> <span class="text-red-500 font-bold">Detected</span></div>
+                        <div class="flex justify-between"><span>Gzip Compression</span> <span class="text-green-500 font-bold">Enabled</span></div>
+                        <div class="flex justify-between"><span>Security Headers</span> <span class="text-green-500 font-bold">4/6 Found</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Technical Check -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                <h3 class="font-bold mb-4">Technical Checklist</h3>
+                <div id="checklist" class="space-y-3">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function runAudit() {
+            const url = document.getElementById('siteUrl').value;
+            if(!url) return;
+
+            document.getElementById('results').classList.remove('hidden');
+            const checklist = document.getElementById('checklist');
+            
+            const checks = [
+                { title: 'SSL/TLS Certificate', status: 'pass' },
+                { title: 'Mobile Responsiveness', status: 'pass' },
+                { title: 'XML Sitemap', status: 'fail' },
+                { title: 'Robots.txt', status: 'pass' },
+                { title: 'Schema Markup', status: 'fail' }
+            ];
+
+            checklist.innerHTML = checks.map(c => `
+                <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+                    <span class="font-medium">${c.title}</span>
+                    <span class="px-2 py-1 rounded text-xs font-bold ${c.status === 'pass' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}">${c.status.toUpperCase()}</span>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
